@@ -1708,8 +1708,9 @@ module ddr3_controller #(
     //    o_phy_dq_tri_control, i_phy_iserdes_dqs[15:8], lane[2:0]};
     //assign o_debug1 = {debug_trigger, o_wb2_stall, { {(3-lanes_clog2){1'b0}} , lane[lanes_clog2-1:0] } , dqs_start_index_stored[2:0], dqs_target_index[2:0], delay_before_read_data[2:0], 
     //            o_phy_idelay_dqs_ld[lane], state_calibrate[4:0], dqs_store[11:0]};
-    assign o_debug1 = {debug_trigger, 2'b00, delay_before_read_data[3:0] ,i_phy_idelayctrl_rdy, 2'b00, lane, dqs_start_index_stored[4:0], 
-        dqs_target_index[4:0], instruction_address[4:0], state_calibrate[4:0], o_wb2_stall};       
+    //assign o_debug1 = {debug_trigger, 2'b00, delay_before_read_data[3:0] ,i_phy_idelayctrl_rdy, 2'b00, lane, dqs_start_index_stored[4:0], 
+    //    dqs_target_index[4:0], instruction_address[4:0], state_calibrate[4:0], o_wb2_stall};       
+    assign o_debug1 = {debug_trigger,stage1_we,stage1_col[5:0],stage1_data[7:0],stage1_dm[15:0]};
     assign o_debug2 = {debug_trigger, idelay_dqs_cntvaluein[lane][4:0], idelay_data_cntvaluein[lane][4:0], i_phy_iserdes_dqs[15:0], 
                 o_phy_dqs_tri_control, o_phy_dq_tri_control,
                 (i_phy_iserdes_data == 0), (i_phy_iserdes_data == {(DQ_BITS*LANES*8){1'b1}}), (i_phy_iserdes_data < { {(DQ_BITS*LANES*4){1'b0}}, {(DQ_BITS*LANES*4){1'b1}} } )
