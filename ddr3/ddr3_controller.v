@@ -1690,7 +1690,7 @@ module ddr3_controller #(
                             o_wb2_data <= stage2_data_unaligned[31:0]; //first 32 bit of the patern written on the first write just for checking (128'h80dbcfd275f12c3d_9177298cd0ad51c1)
                         end   
                     12: if(!wb2_we) begin
-                            o_wb2_data <= {stage1_we,stage1_bank[2:0],stage1_col[7:0],stage1_data[11:0],stage1_dm[7:0]}; 
+                            o_wb2_data <= {stage1_we,stage1_col[6:0],stage1_data[7:0],stage1_dm[15:0]}; //check if proper request is received
                         end   
               default: if(!wb2_we) begin //read 
                            o_wb2_data <= {(WB2_DATA_BITS/2){2'b10}}; //return alternating 1s and 0s when address to be read is invalid 
