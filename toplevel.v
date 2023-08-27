@@ -113,7 +113,7 @@ module	toplevel(
 `endif	// BKROM_ACCESS
 	//
 	// The number of valid bits on the bus
-	localparam	ZIP_ADDRESS_WIDTH = 26; // Zip-CPU address width
+	localparam	ZIP_ADDRESS_WIDTH = 22; // Zip-CPU address width
 	//
 	// Number of ZipCPU interrupts
 	localparam	ZIP_INTS = 16;
