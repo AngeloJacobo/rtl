@@ -88,7 +88,7 @@ module	toplevel(
                     DDR3_CONTROLLERCOL_BITS = 10,  // width of column address
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
-                    DDR3_CONTROLLERLANES = 2, //8, //8 lanes of DQ
+                    DDR3_CONTROLLERLANES = 2, //0, //8 lanes of DQ
                     DDR3_CONTROLLERAUX_WIDTH = 1,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
@@ -108,12 +108,12 @@ module	toplevel(
 `ifdef	FLASH_ACCESS
 	localparam	RESET_ADDRESS = @$RESET_ADDRESS;
 `else
-	localparam	RESET_ADDRESS = 67108864;
+	localparam	RESET_ADDRESS = 33554432;
 `endif	// FLASH_ACCESS
 `endif	// BKROM_ACCESS
 	//
 	// The number of valid bits on the bus
-	localparam	ZIP_ADDRESS_WIDTH = 25; // Zip-CPU address width
+	localparam	ZIP_ADDRESS_WIDTH = 26; // Zip-CPU address width
 	//
 	// Number of ZipCPU interrupts
 	localparam	ZIP_INTS = 16;
@@ -211,8 +211,8 @@ module	toplevel(
 	wire    [DDR3_CONTROLLERCMD_LEN*DDR3_CONTROLLERSERDES_RATIO-1:0] ddr3_controller_cmd;
 	wire    ddr3_controller_dqs_tri_control, ddr3_controller_dq_tri_control;
 	wire    ddr3_controller_toggle_dqs;
-	wire    [512-1:0] ddr3_controller_data;
-	wire    [512/8-1:0] ddr3_controller_dm;
+	wire    [32-1:0] ddr3_controller_data;
+	wire    [32/8-1:0] ddr3_controller_dm;
 	wire    [4:0] ddr3_controller_odelay_data_cntvaluein, ddr3_controller_odelay_dqs_cntvaluein;
 	wire    [4:0] ddr3_controller_idelay_data_cntvaluein, ddr3_controller_idelay_dqs_cntvaluein;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_odelay_data_ld, ddr3_controller_odelay_dqs_ld;

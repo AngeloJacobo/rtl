@@ -39,7 +39,7 @@
 //
 module iscachable(
 		// {{{
-		input	wire	[31-1:0]	i_addr,
+		input	wire	[32-1:0]	i_addr,
 		output	reg			o_cachable
 		// }}}
 	);
@@ -48,13 +48,13 @@ module iscachable(
 	begin
 		o_cachable = 1'b0;
 		// Bus master: wbwide
+		// bkram
+		if ((i_addr[32:0] & 33'h0fe000000) == 33'h002000000)
+			o_cachable = 1'b1;
 		// Bus master: wb32
 		// Bus master: wb32_sio
-		// bkram
-		if ((i_addr[30:0] & 31'h7e000000) == 31'h04000000)
-			o_cachable = 1'b1;
 		// ddr3_controller
-		if ((i_addr[30:0] & 31'h40000000) == 31'h40000000)
+		if ((i_addr[32:0] & 33'h0c0000000) == 33'h0c0000000)
 			o_cachable = 1'b1;
 	end
 

@@ -153,7 +153,7 @@ module	main(i_clk, i_reset,
                     DDR3_CONTROLLERCOL_BITS = 10,  // width of column address
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
-                    DDR3_CONTROLLERLANES = 2, //8, //8 lanes of DQ
+                    DDR3_CONTROLLERLANES = 2, //0, //8 lanes of DQ
                     DDR3_CONTROLLERAUX_WIDTH = 1,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
@@ -173,12 +173,12 @@ module	main(i_clk, i_reset,
 `ifdef	FLASH_ACCESS
 	localparam	RESET_ADDRESS = @$RESET_ADDRESS;
 `else
-	localparam	RESET_ADDRESS = 67108864;
+	localparam	RESET_ADDRESS = 33554432;
 `endif	// FLASH_ACCESS
 `endif	// BKROM_ACCESS
 	//
 	// The number of valid bits on the bus
-	localparam	ZIP_ADDRESS_WIDTH = 25; // Zip-CPU address width
+	localparam	ZIP_ADDRESS_WIDTH = 26; // Zip-CPU address width
 	//
 	// Number of ZipCPU interrupts
 	localparam	ZIP_INTS = 16;
@@ -233,8 +233,8 @@ module	main(i_clk, i_reset,
 	output wire    [DDR3_CONTROLLERCMD_LEN*DDR3_CONTROLLERSERDES_RATIO-1:0] o_ddr3_controller_cmd;
 	output wire    o_ddr3_controller_dqs_tri_control, o_ddr3_controller_dq_tri_control;
 	output wire    o_ddr3_controller_toggle_dqs;
-	output wire    [512-1:0] o_ddr3_controller_data;
-	output wire    [512/8-1:0] o_ddr3_controller_dm;
+	output wire    [32-1:0] o_ddr3_controller_data;
+	output wire    [32/8-1:0] o_ddr3_controller_dm;
 	output wire    [4:0] o_ddr3_controller_odelay_data_cntvaluein, o_ddr3_controller_odelay_dqs_cntvaluein;
 	output wire    [4:0] o_ddr3_controller_idelay_data_cntvaluein, o_ddr3_controller_idelay_dqs_cntvaluein;
 	output wire    [DDR3_CONTROLLERLANES-1:0] o_ddr3_controller_odelay_data_ld, o_ddr3_controller_odelay_dqs_ld;
@@ -265,7 +265,7 @@ module	main(i_clk, i_reset,
 	//
 `ifdef	VERILATOR
 	output	wire		cpu_prof_stb;
-	output	wire	[25+$clog2(512/8)-1:0]	cpu_prof_addr;
+	output	wire	[26+$clog2(512/8)-1:0]	cpu_prof_addr;
 	output	wire [31:0]	cpu_prof_ticks;
 `endif
 	input	wire		i_cpu_reset;
@@ -359,7 +359,7 @@ module	main(i_clk, i_reset,
 	// {{{
 `ifndef	VERILATOR
 	wire		cpu_prof_stb;
-	wire	[25+$clog2(512/8)-1:0]	cpu_prof_addr;
+	wire	[26+$clog2(512/8)-1:0]	cpu_prof_addr;
 	wire [31:0]	cpu_prof_ticks;
 `endif
 	// All we define here is a set of scope wires
@@ -417,7 +417,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbwide, component i2cdma
 	// Verilator lint_off UNUSED
 	wire		wbwide_i2cdma_cyc, wbwide_i2cdma_stb, wbwide_i2cdma_we;
-	wire	[24:0]	wbwide_i2cdma_addr;
+	wire	[25:0]	wbwide_i2cdma_addr;
 	wire	[511:0]	wbwide_i2cdma_data;
 	wire	[63:0]	wbwide_i2cdma_sel;
 	wire		wbwide_i2cdma_stall, wbwide_i2cdma_ack, wbwide_i2cdma_err;
@@ -426,7 +426,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbwide, component i2c
 	// Verilator lint_off UNUSED
 	wire		wbwide_i2cm_cyc, wbwide_i2cm_stb, wbwide_i2cm_we;
-	wire	[24:0]	wbwide_i2cm_addr;
+	wire	[25:0]	wbwide_i2cm_addr;
 	wire	[511:0]	wbwide_i2cm_data;
 	wire	[63:0]	wbwide_i2cm_sel;
 	wire		wbwide_i2cm_stall, wbwide_i2cm_ack, wbwide_i2cm_err;
@@ -435,7 +435,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbwide, component zip
 	// Verilator lint_off UNUSED
 	wire		wbwide_zip_cyc, wbwide_zip_stb, wbwide_zip_we;
-	wire	[24:0]	wbwide_zip_addr;
+	wire	[25:0]	wbwide_zip_addr;
 	wire	[511:0]	wbwide_zip_data;
 	wire	[63:0]	wbwide_zip_sel;
 	wire		wbwide_zip_stall, wbwide_zip_ack, wbwide_zip_err;
@@ -444,38 +444,29 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbwide, component wbu_arbiter
 	// Verilator lint_off UNUSED
 	wire		wbwide_wbu_arbiter_cyc, wbwide_wbu_arbiter_stb, wbwide_wbu_arbiter_we;
-	wire	[24:0]	wbwide_wbu_arbiter_addr;
+	wire	[25:0]	wbwide_wbu_arbiter_addr;
 	wire	[511:0]	wbwide_wbu_arbiter_data;
 	wire	[63:0]	wbwide_wbu_arbiter_sel;
 	wire		wbwide_wbu_arbiter_stall, wbwide_wbu_arbiter_ack, wbwide_wbu_arbiter_err;
 	wire	[511:0]	wbwide_wbu_arbiter_idata;
 	// Verilator lint_on UNUSED
-	// Wishbone definitions for bus wbwide, component wbdown
-	// Verilator lint_off UNUSED
-	wire		wbwide_wbdown_cyc, wbwide_wbdown_stb, wbwide_wbdown_we;
-	wire	[24:0]	wbwide_wbdown_addr;
-	wire	[511:0]	wbwide_wbdown_data;
-	wire	[63:0]	wbwide_wbdown_sel;
-	wire		wbwide_wbdown_stall, wbwide_wbdown_ack, wbwide_wbdown_err;
-	wire	[511:0]	wbwide_wbdown_idata;
-	// Verilator lint_on UNUSED
 	// Wishbone definitions for bus wbwide, component bkram
 	// Verilator lint_off UNUSED
 	wire		wbwide_bkram_cyc, wbwide_bkram_stb, wbwide_bkram_we;
-	wire	[24:0]	wbwide_bkram_addr;
+	wire	[25:0]	wbwide_bkram_addr;
 	wire	[511:0]	wbwide_bkram_data;
 	wire	[63:0]	wbwide_bkram_sel;
 	wire		wbwide_bkram_stall, wbwide_bkram_ack, wbwide_bkram_err;
 	wire	[511:0]	wbwide_bkram_idata;
 	// Verilator lint_on UNUSED
-	// Wishbone definitions for bus wbwide, component ddr3_controller
+	// Wishbone definitions for bus wbwide, component wbdown
 	// Verilator lint_off UNUSED
-	wire		wbwide_ddr3_controller_cyc, wbwide_ddr3_controller_stb, wbwide_ddr3_controller_we;
-	wire	[24:0]	wbwide_ddr3_controller_addr;
-	wire	[511:0]	wbwide_ddr3_controller_data;
-	wire	[63:0]	wbwide_ddr3_controller_sel;
-	wire		wbwide_ddr3_controller_stall, wbwide_ddr3_controller_ack, wbwide_ddr3_controller_err;
-	wire	[511:0]	wbwide_ddr3_controller_idata;
+	wire		wbwide_wbdown_cyc, wbwide_wbdown_stb, wbwide_wbdown_we;
+	wire	[25:0]	wbwide_wbdown_addr;
+	wire	[511:0]	wbwide_wbdown_data;
+	wire	[63:0]	wbwide_wbdown_sel;
+	wire		wbwide_wbdown_stall, wbwide_wbdown_ack, wbwide_wbdown_err;
+	wire	[511:0]	wbwide_wbdown_idata;
 	// Verilator lint_on UNUSED
 	// }}}
 	// Bus wb32
@@ -483,7 +474,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component wbdown
 	// Verilator lint_off UNUSED
 	wire		wb32_wbdown_cyc, wb32_wbdown_stb, wb32_wbdown_we;
-	wire	[7:0]	wb32_wbdown_addr;
+	wire	[28:0]	wb32_wbdown_addr;
 	wire	[31:0]	wb32_wbdown_data;
 	wire	[3:0]	wb32_wbdown_sel;
 	wire		wb32_wbdown_stall, wb32_wbdown_ack, wb32_wbdown_err;
@@ -492,7 +483,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32(SIO), component buildtime
 	// Verilator lint_off UNUSED
 	wire		wb32_buildtime_cyc, wb32_buildtime_stb, wb32_buildtime_we;
-	wire	[7:0]	wb32_buildtime_addr;
+	wire	[28:0]	wb32_buildtime_addr;
 	wire	[31:0]	wb32_buildtime_data;
 	wire	[3:0]	wb32_buildtime_sel;
 	wire		wb32_buildtime_stall, wb32_buildtime_ack, wb32_buildtime_err;
@@ -501,7 +492,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32(SIO), component gpio
 	// Verilator lint_off UNUSED
 	wire		wb32_gpio_cyc, wb32_gpio_stb, wb32_gpio_we;
-	wire	[7:0]	wb32_gpio_addr;
+	wire	[28:0]	wb32_gpio_addr;
 	wire	[31:0]	wb32_gpio_data;
 	wire	[3:0]	wb32_gpio_sel;
 	wire		wb32_gpio_stall, wb32_gpio_ack, wb32_gpio_err;
@@ -510,7 +501,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32(SIO), component sirefclk
 	// Verilator lint_off UNUSED
 	wire		wb32_sirefclk_cyc, wb32_sirefclk_stb, wb32_sirefclk_we;
-	wire	[7:0]	wb32_sirefclk_addr;
+	wire	[28:0]	wb32_sirefclk_addr;
 	wire	[31:0]	wb32_sirefclk_data;
 	wire	[3:0]	wb32_sirefclk_sel;
 	wire		wb32_sirefclk_stall, wb32_sirefclk_ack, wb32_sirefclk_err;
@@ -519,7 +510,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32(SIO), component spio
 	// Verilator lint_off UNUSED
 	wire		wb32_spio_cyc, wb32_spio_stb, wb32_spio_we;
-	wire	[7:0]	wb32_spio_addr;
+	wire	[28:0]	wb32_spio_addr;
 	wire	[31:0]	wb32_spio_data;
 	wire	[3:0]	wb32_spio_sel;
 	wire		wb32_spio_stall, wb32_spio_ack, wb32_spio_err;
@@ -528,7 +519,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32(SIO), component version
 	// Verilator lint_off UNUSED
 	wire		wb32_version_cyc, wb32_version_stb, wb32_version_we;
-	wire	[7:0]	wb32_version_addr;
+	wire	[28:0]	wb32_version_addr;
 	wire	[31:0]	wb32_version_data;
 	wire	[3:0]	wb32_version_sel;
 	wire		wb32_version_stall, wb32_version_ack, wb32_version_err;
@@ -537,7 +528,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component i2cscope
 	// Verilator lint_off UNUSED
 	wire		wb32_i2cscope_cyc, wb32_i2cscope_stb, wb32_i2cscope_we;
-	wire	[7:0]	wb32_i2cscope_addr;
+	wire	[28:0]	wb32_i2cscope_addr;
 	wire	[31:0]	wb32_i2cscope_data;
 	wire	[3:0]	wb32_i2cscope_sel;
 	wire		wb32_i2cscope_stall, wb32_i2cscope_ack, wb32_i2cscope_err;
@@ -546,7 +537,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component scope1_ddr3
 	// Verilator lint_off UNUSED
 	wire		wb32_scope1_ddr3_cyc, wb32_scope1_ddr3_stb, wb32_scope1_ddr3_we;
-	wire	[7:0]	wb32_scope1_ddr3_addr;
+	wire	[28:0]	wb32_scope1_ddr3_addr;
 	wire	[31:0]	wb32_scope1_ddr3_data;
 	wire	[3:0]	wb32_scope1_ddr3_sel;
 	wire		wb32_scope1_ddr3_stall, wb32_scope1_ddr3_ack, wb32_scope1_ddr3_err;
@@ -555,7 +546,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component scope2_ddr3
 	// Verilator lint_off UNUSED
 	wire		wb32_scope2_ddr3_cyc, wb32_scope2_ddr3_stb, wb32_scope2_ddr3_we;
-	wire	[7:0]	wb32_scope2_ddr3_addr;
+	wire	[28:0]	wb32_scope2_ddr3_addr;
 	wire	[31:0]	wb32_scope2_ddr3_data;
 	wire	[3:0]	wb32_scope2_ddr3_sel;
 	wire		wb32_scope2_ddr3_stall, wb32_scope2_ddr3_ack, wb32_scope2_ddr3_err;
@@ -564,7 +555,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component scope3_ddr3
 	// Verilator lint_off UNUSED
 	wire		wb32_scope3_ddr3_cyc, wb32_scope3_ddr3_stb, wb32_scope3_ddr3_we;
-	wire	[7:0]	wb32_scope3_ddr3_addr;
+	wire	[28:0]	wb32_scope3_ddr3_addr;
 	wire	[31:0]	wb32_scope3_ddr3_data;
 	wire	[3:0]	wb32_scope3_ddr3_sel;
 	wire		wb32_scope3_ddr3_stall, wb32_scope3_ddr3_ack, wb32_scope3_ddr3_err;
@@ -573,7 +564,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component i2c
 	// Verilator lint_off UNUSED
 	wire		wb32_i2cs_cyc, wb32_i2cs_stb, wb32_i2cs_we;
-	wire	[7:0]	wb32_i2cs_addr;
+	wire	[28:0]	wb32_i2cs_addr;
 	wire	[31:0]	wb32_i2cs_data;
 	wire	[3:0]	wb32_i2cs_sel;
 	wire		wb32_i2cs_stall, wb32_i2cs_ack, wb32_i2cs_err;
@@ -582,7 +573,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component i2cdma
 	// Verilator lint_off UNUSED
 	wire		wb32_i2cdma_cyc, wb32_i2cdma_stb, wb32_i2cdma_we;
-	wire	[7:0]	wb32_i2cdma_addr;
+	wire	[28:0]	wb32_i2cdma_addr;
 	wire	[31:0]	wb32_i2cdma_data;
 	wire	[3:0]	wb32_i2cdma_sel;
 	wire		wb32_i2cdma_stall, wb32_i2cdma_ack, wb32_i2cdma_err;
@@ -591,7 +582,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component uart
 	// Verilator lint_off UNUSED
 	wire		wb32_uart_cyc, wb32_uart_stb, wb32_uart_we;
-	wire	[7:0]	wb32_uart_addr;
+	wire	[28:0]	wb32_uart_addr;
 	wire	[31:0]	wb32_uart_data;
 	wire	[3:0]	wb32_uart_sel;
 	wire		wb32_uart_stall, wb32_uart_ack, wb32_uart_err;
@@ -600,7 +591,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component fan
 	// Verilator lint_off UNUSED
 	wire		wb32_fan_cyc, wb32_fan_stb, wb32_fan_we;
-	wire	[7:0]	wb32_fan_addr;
+	wire	[28:0]	wb32_fan_addr;
 	wire	[31:0]	wb32_fan_data;
 	wire	[3:0]	wb32_fan_sel;
 	wire		wb32_fan_stall, wb32_fan_ack, wb32_fan_err;
@@ -609,7 +600,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component wb32_sio
 	// Verilator lint_off UNUSED
 	wire		wb32_sio_cyc, wb32_sio_stb, wb32_sio_we;
-	wire	[7:0]	wb32_sio_addr;
+	wire	[28:0]	wb32_sio_addr;
 	wire	[31:0]	wb32_sio_data;
 	wire	[3:0]	wb32_sio_sel;
 	wire		wb32_sio_stall, wb32_sio_ack, wb32_sio_err;
@@ -618,7 +609,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component cfg
 	// Verilator lint_off UNUSED
 	wire		wb32_cfg_cyc, wb32_cfg_stb, wb32_cfg_we;
-	wire	[7:0]	wb32_cfg_addr;
+	wire	[28:0]	wb32_cfg_addr;
 	wire	[31:0]	wb32_cfg_data;
 	wire	[3:0]	wb32_cfg_sel;
 	wire		wb32_cfg_stall, wb32_cfg_ack, wb32_cfg_err;
@@ -627,11 +618,20 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wb32, component ddr3_phy
 	// Verilator lint_off UNUSED
 	wire		wb32_ddr3_phy_cyc, wb32_ddr3_phy_stb, wb32_ddr3_phy_we;
-	wire	[7:0]	wb32_ddr3_phy_addr;
+	wire	[28:0]	wb32_ddr3_phy_addr;
 	wire	[31:0]	wb32_ddr3_phy_data;
 	wire	[3:0]	wb32_ddr3_phy_sel;
 	wire		wb32_ddr3_phy_stall, wb32_ddr3_phy_ack, wb32_ddr3_phy_err;
 	wire	[31:0]	wb32_ddr3_phy_idata;
+	// Verilator lint_on UNUSED
+	// Wishbone definitions for bus wb32, component ddr3_controller
+	// Verilator lint_off UNUSED
+	wire		wb32_ddr3_controller_cyc, wb32_ddr3_controller_stb, wb32_ddr3_controller_we;
+	wire	[28:0]	wb32_ddr3_controller_addr;
+	wire	[31:0]	wb32_ddr3_controller_data;
+	wire	[3:0]	wb32_ddr3_controller_sel;
+	wire		wb32_ddr3_controller_stall, wb32_ddr3_controller_ack, wb32_ddr3_controller_err;
+	wire	[31:0]	wb32_ddr3_controller_idata;
 	// Verilator lint_on UNUSED
 	// }}}
 	// Bus wbu
@@ -639,7 +639,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbu, component wbu
 	// Verilator lint_off UNUSED
 	wire		wbu_cyc, wbu_stb, wbu_we;
-	wire	[29:0]	wbu_addr;
+	wire	[30:0]	wbu_addr;
 	wire	[31:0]	wbu_data;
 	wire	[3:0]	wbu_sel;
 	wire		wbu_stall, wbu_ack, wbu_err;
@@ -648,7 +648,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbu, component wbu_arbiter
 	// Verilator lint_off UNUSED
 	wire		wbu_wbu_arbiter_cyc, wbu_wbu_arbiter_stb, wbu_wbu_arbiter_we;
-	wire	[29:0]	wbu_wbu_arbiter_addr;
+	wire	[30:0]	wbu_wbu_arbiter_addr;
 	wire	[31:0]	wbu_wbu_arbiter_data;
 	wire	[3:0]	wbu_wbu_arbiter_sel;
 	wire		wbu_wbu_arbiter_stall, wbu_wbu_arbiter_ack, wbu_wbu_arbiter_err;
@@ -657,7 +657,7 @@ module	main(i_clk, i_reset,
 	// Wishbone definitions for bus wbu, component zip
 	// Verilator lint_off UNUSED
 	wire		wbu_zip_cyc, wbu_zip_stb, wbu_zip_we;
-	wire	[29:0]	wbu_zip_addr;
+	wire	[30:0]	wbu_zip_addr;
 	wire	[31:0]	wbu_zip_data;
 	wire	[3:0]	wbu_zip_sel;
 	wire		wbu_zip_stall, wbu_zip_ack, wbu_zip_err;
@@ -680,30 +680,27 @@ module	main(i_clk, i_reset,
 	// No class DOUBLE peripherals on the "wbwide" bus
 	//
 
-	// info: @ERROR.WIRE for wbdown matches the buses error name, wbwide_wbdown_err
 	assign	wbwide_bkram_err= 1'b0;
-	assign	wbwide_ddr3_controller_err= 1'b0;
+	// info: @ERROR.WIRE for wbdown matches the buses error name, wbwide_wbdown_err
 	//
 	// Connect the wbwide bus components together using the wbxbar()
 	//
 	//
 	wbxbar #(
-		.NM(4), .NS(3), .AW(25), .DW(512),
+		.NM(4), .NS(2), .AW(26), .DW(512),
 		.SLAVE_ADDR({
-			// Address width    = 25
+			// Address width    = 26
 			// Address LSBs     = 6
-			// Slave name width = 15
-			{ 25'h1000000 }, // ddr3_controller: 0x40000000
-			{ 25'h0100000 }, //           bkram: 0x04000000
-			{ 25'h0080000 }  //          wbdown: 0x02000000
+			// Slave name width = 6
+			{ 26'h2000000 }, // wbdown: 0x80000000
+			{ 26'h0080000 }  //  bkram: 0x02000000
 		}),
 		.SLAVE_MASK({
-			// Address width    = 25
+			// Address width    = 26
 			// Address LSBs     = 6
-			// Slave name width = 15
-			{ 25'h1000000 }, // ddr3_controller
-			{ 25'h1f80000 }, //           bkram
-			{ 25'h1f80000 }  //          wbdown
+			// Slave name width = 6
+			{ 26'h2000000 }, // wbdown
+			{ 26'h3f80000 }  //  bkram
 		}),
 		.OPT_DBLBUFFER(1'b1))
 	wbwide_xbar(
@@ -770,54 +767,44 @@ module	main(i_clk, i_reset,
 		}),
 		// Slave connections
 		.o_scyc({
-			wbwide_ddr3_controller_cyc,
-			wbwide_bkram_cyc,
-			wbwide_wbdown_cyc
+			wbwide_wbdown_cyc,
+			wbwide_bkram_cyc
 		}),
 		.o_sstb({
-			wbwide_ddr3_controller_stb,
-			wbwide_bkram_stb,
-			wbwide_wbdown_stb
+			wbwide_wbdown_stb,
+			wbwide_bkram_stb
 		}),
 		.o_swe({
-			wbwide_ddr3_controller_we,
-			wbwide_bkram_we,
-			wbwide_wbdown_we
+			wbwide_wbdown_we,
+			wbwide_bkram_we
 		}),
 		.o_saddr({
-			wbwide_ddr3_controller_addr,
-			wbwide_bkram_addr,
-			wbwide_wbdown_addr
+			wbwide_wbdown_addr,
+			wbwide_bkram_addr
 		}),
 		.o_sdata({
-			wbwide_ddr3_controller_data,
-			wbwide_bkram_data,
-			wbwide_wbdown_data
+			wbwide_wbdown_data,
+			wbwide_bkram_data
 		}),
 		.o_ssel({
-			wbwide_ddr3_controller_sel,
-			wbwide_bkram_sel,
-			wbwide_wbdown_sel
+			wbwide_wbdown_sel,
+			wbwide_bkram_sel
 		}),
 		.i_sstall({
-			wbwide_ddr3_controller_stall,
-			wbwide_bkram_stall,
-			wbwide_wbdown_stall
+			wbwide_wbdown_stall,
+			wbwide_bkram_stall
 		}),
 		.i_sack({
-			wbwide_ddr3_controller_ack,
-			wbwide_bkram_ack,
-			wbwide_wbdown_ack
+			wbwide_wbdown_ack,
+			wbwide_bkram_ack
 		}),
 		.i_sdata({
-			wbwide_ddr3_controller_idata,
-			wbwide_bkram_idata,
-			wbwide_wbdown_idata
+			wbwide_wbdown_idata,
+			wbwide_bkram_idata
 		}),
 		.i_serr({
-			wbwide_ddr3_controller_err,
-			wbwide_bkram_err,
-			wbwide_wbdown_err
+			wbwide_wbdown_err,
+			wbwide_bkram_err
 		})
 		);
 
@@ -860,27 +847,27 @@ module	main(i_clk, i_reset,
 	// Our goal here is to make certain that all of
 	// the slave bus inputs match the SIO bus wires
 	assign	wb32_buildtime_cyc = wb32_sio_cyc;
-	assign	wb32_buildtime_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h0);  // 0x00
+	assign	wb32_buildtime_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h0);  // 0x00000000
 	assign	wb32_buildtime_we  = wb32_sio_we;
 	assign	wb32_buildtime_data= wb32_sio_data;
 	assign	wb32_buildtime_sel = wb32_sio_sel;
 	assign	wb32_gpio_cyc = wb32_sio_cyc;
-	assign	wb32_gpio_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h1);  // 0x04
+	assign	wb32_gpio_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h1);  // 0x00000004
 	assign	wb32_gpio_we  = wb32_sio_we;
 	assign	wb32_gpio_data= wb32_sio_data;
 	assign	wb32_gpio_sel = wb32_sio_sel;
 	assign	wb32_sirefclk_cyc = wb32_sio_cyc;
-	assign	wb32_sirefclk_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h2);  // 0x08
+	assign	wb32_sirefclk_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h2);  // 0x00000008
 	assign	wb32_sirefclk_we  = wb32_sio_we;
 	assign	wb32_sirefclk_data= wb32_sio_data;
 	assign	wb32_sirefclk_sel = wb32_sio_sel;
 	assign	wb32_spio_cyc = wb32_sio_cyc;
-	assign	wb32_spio_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h3);  // 0x0c
+	assign	wb32_spio_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h3);  // 0x0000000c
 	assign	wb32_spio_we  = wb32_sio_we;
 	assign	wb32_spio_data= wb32_sio_data;
 	assign	wb32_spio_sel = wb32_sio_sel;
 	assign	wb32_version_cyc = wb32_sio_cyc;
-	assign	wb32_version_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h4);  // 0x10
+	assign	wb32_version_stb = wb32_sio_stb && (wb32_sio_addr[ 2: 0] ==  3'h4);  // 0x00000010
 	assign	wb32_version_we  = wb32_sio_we;
 	assign	wb32_version_data= wb32_sio_data;
 	assign	wb32_version_sel = wb32_sio_sel;
@@ -899,43 +886,46 @@ module	main(i_clk, i_reset,
 	assign	wb32_sio_err= 1'b0;
 	assign	wb32_cfg_err= 1'b0;
 	assign	wb32_ddr3_phy_err= 1'b0;
+	assign	wb32_ddr3_controller_err= 1'b0;
 	//
 	// Connect the wb32 bus components together using the wbxbar()
 	//
 	//
 	wbxbar #(
-		.NM(1), .NS(11), .AW(8), .DW(32),
+		.NM(1), .NS(12), .AW(29), .DW(32),
 		.SLAVE_ADDR({
-			// Address width    = 8
+			// Address width    = 29
 			// Address LSBs     = 2
-			// Slave name width = 11
-			{ 8'h80 }, //    ddr3_phy: 0x200
-			{ 8'h60 }, //         cfg: 0x180
-			{ 8'h40 }, //    wb32_sio: 0x100
-			{ 8'h38 }, //         fan: 0x0e0
-			{ 8'h30 }, //        uart: 0x0c0
-			{ 8'h28 }, //      i2cdma: 0x0a0
-			{ 8'h20 }, //         i2c: 0x080
-			{ 8'h18 }, // scope3_ddr3: 0x060
-			{ 8'h10 }, // scope2_ddr3: 0x040
-			{ 8'h08 }, // scope1_ddr3: 0x020
-			{ 8'h00 }  //    i2cscope: 0x000
+			// Slave name width = 15
+			{ 29'h10000000 }, // ddr3_controller: 0x40000000
+			{ 29'h0a000000 }, //        ddr3_phy: 0x28000000
+			{ 29'h09000000 }, //             cfg: 0x24000000
+			{ 29'h08000000 }, //        wb32_sio: 0x20000000
+			{ 29'h07000000 }, //             fan: 0x1c000000
+			{ 29'h06000000 }, //            uart: 0x18000000
+			{ 29'h05000000 }, //          i2cdma: 0x14000000
+			{ 29'h04000000 }, //             i2c: 0x10000000
+			{ 29'h03000000 }, //     scope3_ddr3: 0x0c000000
+			{ 29'h02000000 }, //     scope2_ddr3: 0x08000000
+			{ 29'h01000000 }, //     scope1_ddr3: 0x04000000
+			{ 29'h00000000 }  //        i2cscope: 0x00000000
 		}),
 		.SLAVE_MASK({
-			// Address width    = 8
+			// Address width    = 29
 			// Address LSBs     = 2
-			// Slave name width = 11
-			{ 8'h80 }, //    ddr3_phy
-			{ 8'he0 }, //         cfg
-			{ 8'hf8 }, //    wb32_sio
-			{ 8'hf8 }, //         fan
-			{ 8'hf8 }, //        uart
-			{ 8'hf8 }, //      i2cdma
-			{ 8'hf8 }, //         i2c
-			{ 8'hf8 }, // scope3_ddr3
-			{ 8'hf8 }, // scope2_ddr3
-			{ 8'hf8 }, // scope1_ddr3
-			{ 8'hf8 }  //    i2cscope
+			// Slave name width = 15
+			{ 29'h10000000 }, // ddr3_controller
+			{ 29'h1f000000 }, //        ddr3_phy
+			{ 29'h1f000000 }, //             cfg
+			{ 29'h1f000000 }, //        wb32_sio
+			{ 29'h1f000000 }, //             fan
+			{ 29'h1f000000 }, //            uart
+			{ 29'h1f000000 }, //          i2cdma
+			{ 29'h1f000000 }, //             i2c
+			{ 29'h1f000000 }, //     scope3_ddr3
+			{ 29'h1f000000 }, //     scope2_ddr3
+			{ 29'h1f000000 }, //     scope1_ddr3
+			{ 29'h1f000000 }  //        i2cscope
 		}),
 		.OPT_DBLBUFFER(1'b1))
 	wb32_xbar(
@@ -972,6 +962,7 @@ module	main(i_clk, i_reset,
 		}),
 		// Slave connections
 		.o_scyc({
+			wb32_ddr3_controller_cyc,
 			wb32_ddr3_phy_cyc,
 			wb32_cfg_cyc,
 			wb32_sio_cyc,
@@ -985,6 +976,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_cyc
 		}),
 		.o_sstb({
+			wb32_ddr3_controller_stb,
 			wb32_ddr3_phy_stb,
 			wb32_cfg_stb,
 			wb32_sio_stb,
@@ -998,6 +990,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_stb
 		}),
 		.o_swe({
+			wb32_ddr3_controller_we,
 			wb32_ddr3_phy_we,
 			wb32_cfg_we,
 			wb32_sio_we,
@@ -1011,6 +1004,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_we
 		}),
 		.o_saddr({
+			wb32_ddr3_controller_addr,
 			wb32_ddr3_phy_addr,
 			wb32_cfg_addr,
 			wb32_sio_addr,
@@ -1024,6 +1018,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_addr
 		}),
 		.o_sdata({
+			wb32_ddr3_controller_data,
 			wb32_ddr3_phy_data,
 			wb32_cfg_data,
 			wb32_sio_data,
@@ -1037,6 +1032,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_data
 		}),
 		.o_ssel({
+			wb32_ddr3_controller_sel,
 			wb32_ddr3_phy_sel,
 			wb32_cfg_sel,
 			wb32_sio_sel,
@@ -1050,6 +1046,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_sel
 		}),
 		.i_sstall({
+			wb32_ddr3_controller_stall,
 			wb32_ddr3_phy_stall,
 			wb32_cfg_stall,
 			wb32_sio_stall,
@@ -1063,6 +1060,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_stall
 		}),
 		.i_sack({
+			wb32_ddr3_controller_ack,
 			wb32_ddr3_phy_ack,
 			wb32_cfg_ack,
 			wb32_sio_ack,
@@ -1076,6 +1074,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_ack
 		}),
 		.i_sdata({
+			wb32_ddr3_controller_idata,
 			wb32_ddr3_phy_idata,
 			wb32_cfg_idata,
 			wb32_sio_idata,
@@ -1089,6 +1088,7 @@ module	main(i_clk, i_reset,
 			wb32_i2cscope_idata
 		}),
 		.i_serr({
+			wb32_ddr3_controller_err,
 			wb32_ddr3_phy_err,
 			wb32_cfg_err,
 			wb32_sio_err,
@@ -1123,20 +1123,20 @@ module	main(i_clk, i_reset,
 	//
 	//
 	wbxbar #(
-		.NM(1), .NS(2), .AW(30), .DW(32),
+		.NM(1), .NS(2), .AW(31), .DW(32),
 		.SLAVE_ADDR({
-			// Address width    = 30
+			// Address width    = 31
 			// Address LSBs     = 2
 			// Slave name width = 11
-			{ 30'h20000000 }, //         zip: 0x80000000
-			{ 30'h00000000 }  // wbu_arbiter: 0x00000000
+			{ 31'h40000000 }, //         zip: 0x100000000
+			{ 31'h00000000 }  // wbu_arbiter: 0x000000000
 		}),
 		.SLAVE_MASK({
-			// Address width    = 30
+			// Address width    = 31
 			// Address LSBs     = 2
 			// Slave name width = 11
-			{ 30'h38000000 }, //         zip
-			{ 30'h20000000 }  // wbu_arbiter
+			{ 31'h78000000 }, //         zip
+			{ 31'h40000000 }  // wbu_arbiter
 		}),
 		.OPT_DBLBUFFER(1'b1))
 	wbu_xbar(
@@ -1395,11 +1395,11 @@ module	main(i_clk, i_reset,
             .i_controller_clk(i_clk), //i_controller_clk has period of CONTROLLER_CLK_PERIOD 
             .i_rst_n(!i_reset), //200MHz input clock
             // Wishbone 1 (Controller)
-            .i_wb_cyc(wbwide_ddr3_controller_cyc), .i_wb_stb(wbwide_ddr3_controller_stb), .i_wb_we(wbwide_ddr3_controller_we),
-			.i_wb_addr(wbwide_ddr3_controller_addr[24-1:0]),
-			.i_wb_data(wbwide_ddr3_controller_data), // 512 bits wide
-			.i_wb_sel(wbwide_ddr3_controller_sel),  // 512/8 bits wide
-		.o_wb_stall(wbwide_ddr3_controller_stall),.o_wb_ack(wbwide_ddr3_controller_ack), .o_wb_data(wbwide_ddr3_controller_idata),
+            .i_wb_cyc(wb32_ddr3_controller_cyc), .i_wb_stb(wb32_ddr3_controller_stb), .i_wb_we(wb32_ddr3_controller_we),
+			.i_wb_addr(wb32_ddr3_controller_addr[28-1:0]),
+			.i_wb_data(wb32_ddr3_controller_data), // 32 bits wide
+			.i_wb_sel(wb32_ddr3_controller_sel),  // 32/8 bits wide
+		.o_wb_stall(wb32_ddr3_controller_stall),.o_wb_ack(wb32_ddr3_controller_ack), .o_wb_data(wb32_ddr3_controller_idata),
             .i_aux(0),
             .o_aux(ddr3_controller_aux_out),	// Leaving this empty would've caused a Verilator warning
             // Wishbone 2 (PHY)
@@ -1442,12 +1442,12 @@ module	main(i_clk, i_reset,
 	// {{{
 
 	//
-	// In the case that there is no wbwide_ddr3_controller peripheral
-	// responding on the wbwide bus
-	assign	wbwide_ddr3_controller_ack   = 1'b0;
-	assign	wbwide_ddr3_controller_err   = (wbwide_ddr3_controller_stb);
-	assign	wbwide_ddr3_controller_stall = 0;
-	assign	wbwide_ddr3_controller_idata = 0;
+	// In the case that there is no wb32_ddr3_controller peripheral
+	// responding on the wb32 bus
+	assign	wb32_ddr3_controller_ack   = 1'b0;
+	assign	wb32_ddr3_controller_err   = (wb32_ddr3_controller_stb);
+	assign	wb32_ddr3_controller_stall = 0;
+	assign	wb32_ddr3_controller_idata = 0;
 
 	// }}}
 	// }}}
@@ -1542,7 +1542,7 @@ module	main(i_clk, i_reset,
 `ifdef	I2CDMA_ACCESS
 	// {{{
 	wbi2cdma #(
-		.AW(25), .DW(512), .SW(8),
+		.AW(26), .DW(512), .SW(8),
 		.OPT_LITTLE_ENDIAN(1'b0)
 	) u_i2cdma (
 		.i_clk(i_clk),
@@ -1556,7 +1556,7 @@ module	main(i_clk, i_reset,
 		.S_VALID(i2c_valid && i2c_id == 2), .S_READY(i2cdma_ready),
 			.S_DATA(i2c_data), .S_LAST(i2c_last),
 		.o_dma_cyc(wbwide_i2cdma_cyc), .o_dma_stb(wbwide_i2cdma_stb), .o_dma_we(wbwide_i2cdma_we),
-			.o_dma_addr(wbwide_i2cdma_addr[25-1:0]),
+			.o_dma_addr(wbwide_i2cdma_addr[26-1:0]),
 			.o_dma_data(wbwide_i2cdma_data), // 512 bits wide
 			.o_dma_sel(wbwide_i2cdma_sel),  // 512/8 bits wide
 		.i_dma_stall(wbwide_i2cdma_stall), .i_dma_ack(wbwide_i2cdma_ack), .i_dma_data(wbwide_i2cdma_idata), .i_dma_err(wbwide_i2cdma_err)
@@ -1639,7 +1639,7 @@ module	main(i_clk, i_reset,
 	// {{{
 
 	wbi2ccpu #(
-		.ADDRESS_WIDTH(25),
+		.ADDRESS_WIDTH(26),
 		.DATA_WIDTH(512),
 		.AXIS_ID_WIDTH(2)
 	) i2ci (
@@ -1651,7 +1651,7 @@ module	main(i_clk, i_reset,
 			.i_wb_sel(wb32_i2cs_sel),  // 32/8 bits wide
 		.o_wb_stall(wb32_i2cs_stall),.o_wb_ack(wb32_i2cs_ack), .o_wb_data(wb32_i2cs_idata),
 		.o_pf_cyc(wbwide_i2cm_cyc), .o_pf_stb(wbwide_i2cm_stb), .o_pf_we(wbwide_i2cm_we),
-			.o_pf_addr(wbwide_i2cm_addr[25-1:0]),
+			.o_pf_addr(wbwide_i2cm_addr[26-1:0]),
 			.o_pf_data(wbwide_i2cm_data), // 512 bits wide
 			.o_pf_sel(wbwide_i2cm_sel),  // 512/8 bits wide
 		.i_pf_stall(wbwide_i2cm_stall), .i_pf_ack(wbwide_i2cm_ack), .i_pf_data(wbwide_i2cm_idata), .i_pf_err(wbwide_i2cm_err),
@@ -1706,7 +1706,7 @@ module	main(i_clk, i_reset,
 
 	wbdown #(
 		// {{{
-		.ADDRESS_WIDTH(8+$clog2(32/8)),
+		.ADDRESS_WIDTH(29+$clog2(32/8)),
 		.WIDE_DW(512),
 		.SMALL_DW(32),
 		.OPT_LITTLE_ENDIAN(1'b0),
@@ -1721,7 +1721,7 @@ module	main(i_clk, i_reset,
 		.i_wcyc(  wbwide_wbdown_cyc),
 		.i_wstb(  wbwide_wbdown_stb),
 		.i_wwe(   wbwide_wbdown_we),
-		.i_waddr( wbwide_wbdown_addr[4-1:0]),
+		.i_waddr( wbwide_wbdown_addr[25-1:0]),
 		.i_wdata( wbwide_wbdown_data),
 		.i_wsel(  wbwide_wbdown_sel),
 		.o_wstall(wbwide_wbdown_stall),
@@ -1734,7 +1734,7 @@ module	main(i_clk, i_reset,
 		.o_scyc(  wb32_wbdown_cyc),
 		.o_sstb(  wb32_wbdown_stb),
 		.o_swe(   wb32_wbdown_we),
-		.o_saddr( wb32_wbdown_addr[8-1:0]),
+		.o_saddr( wb32_wbdown_addr[29-1:0]),
 		.o_sdata( wb32_wbdown_data),
 		.o_ssel(  wb32_wbdown_sel),
 		.i_sstall(wb32_wbdown_stall),
@@ -1846,7 +1846,7 @@ module	main(i_clk, i_reset,
 		.i_clk(i_clk), .i_reset(i_reset || i_cpu_reset),
 			// Zipsys wishbone interface
 			.o_wb_cyc(wbwide_zip_cyc), .o_wb_stb(wbwide_zip_stb), .o_wb_we(wbwide_zip_we),
-			.o_wb_addr(wbwide_zip_addr[25-1:0]),
+			.o_wb_addr(wbwide_zip_addr[26-1:0]),
 			.o_wb_data(wbwide_zip_data), // 512 bits wide
 			.o_wb_sel(wbwide_zip_sel),  // 512/8 bits wide
 		.i_wb_stall(wbwide_zip_stall), .i_wb_ack(wbwide_zip_ack), .i_wb_data(wbwide_zip_idata), .i_wb_err(wbwide_zip_err),
@@ -2049,7 +2049,7 @@ module	main(i_clk, i_reset,
 `endif
 
 	assign	wbu_sel = 4'hf;
-	assign	wbu_addr = wbu_tmp_addr[(30-1):0];
+	assign	wbu_addr = wbu_tmp_addr[(31-1):0];
 	// }}}
 	// }}}
 `else	// WBUBUS_MASTER
@@ -2230,7 +2230,7 @@ module	main(i_clk, i_reset,
 	// {{{
 	wbupsz #(
 		// {{{
-		.ADDRESS_WIDTH(25+$clog2(512/8)),
+		.ADDRESS_WIDTH(26+$clog2(512/8)),
 		.SMALL_DW(32),
 		.WIDE_DW(512),
 		.OPT_LITTLE_ENDIAN(1'b0)
@@ -2240,12 +2240,12 @@ module	main(i_clk, i_reset,
 		.i_clk(i_clk),
 		.i_reset(i_reset),
 		.i_scyc(wbu_wbu_arbiter_cyc), .i_sstb(wbu_wbu_arbiter_stb), .i_swe(wbu_wbu_arbiter_we),
-			.i_saddr(wbu_wbu_arbiter_addr[29-1:0]),
+			.i_saddr(wbu_wbu_arbiter_addr[30-1:0]),
 			.i_sdata(wbu_wbu_arbiter_data), // 32 bits wide
 			.i_ssel(wbu_wbu_arbiter_sel),  // 32/8 bits wide
 		.o_sstall(wbu_wbu_arbiter_stall),.o_sack(wbu_wbu_arbiter_ack), .o_sdata(wbu_wbu_arbiter_idata), .o_serr(wbu_wbu_arbiter_err),
 		.o_wcyc(wbwide_wbu_arbiter_cyc), .o_wstb(wbwide_wbu_arbiter_stb), .o_wwe(wbwide_wbu_arbiter_we),
-			.o_waddr(wbwide_wbu_arbiter_addr[25-1:0]),
+			.o_waddr(wbwide_wbu_arbiter_addr[26-1:0]),
 			.o_wdata(wbwide_wbu_arbiter_data), // 512 bits wide
 			.o_wsel(wbwide_wbu_arbiter_sel),  // 512/8 bits wide
 		.i_wstall(wbwide_wbu_arbiter_stall), .i_wack(wbwide_wbu_arbiter_ack), .i_wdata(wbwide_wbu_arbiter_idata), .i_werr(wbwide_wbu_arbiter_err)
