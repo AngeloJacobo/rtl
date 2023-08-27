@@ -129,8 +129,8 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     vlSelf->o_ddr3_controller_dqs_tri_control = VL_RAND_RESET_I(1);
     vlSelf->o_ddr3_controller_dq_tri_control = VL_RAND_RESET_I(1);
     vlSelf->o_ddr3_controller_toggle_dqs = VL_RAND_RESET_I(1);
-    vlSelf->o_ddr3_controller_data = VL_RAND_RESET_I(32);
-    vlSelf->o_ddr3_controller_dm = VL_RAND_RESET_I(4);
+    VL_RAND_RESET_W(128, vlSelf->o_ddr3_controller_data);
+    vlSelf->o_ddr3_controller_dm = VL_RAND_RESET_I(16);
     vlSelf->o_ddr3_controller_odelay_data_cntvaluein = VL_RAND_RESET_I(5);
     vlSelf->o_ddr3_controller_odelay_dqs_cntvaluein = VL_RAND_RESET_I(5);
     vlSelf->o_ddr3_controller_idelay_data_cntvaluein = VL_RAND_RESET_I(5);

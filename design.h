@@ -128,7 +128,7 @@
 
 #ifndef	DATESTAMP
 #define DATESTAMP 0x20230827
-#define BUILDTIME 0x00093822
+#define BUILDTIME 0x00102339
 #endif
 
 #endif // DESIGN_H

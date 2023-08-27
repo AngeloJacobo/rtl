@@ -1700,10 +1700,16 @@ VL_ATTR_COLD void Vmain___024root___stl_sequent__TOP__0(Vmain___024root* vlSelf)
         = (1U & (~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
                     >> 2U)));
     vlSelf->o_ddr3_controller_toggle_dqs = (1U & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_val));
-    vlSelf->o_ddr3_controller_data = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+    vlSelf->o_ddr3_controller_data[0U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
         [1U][0U];
-    vlSelf->o_ddr3_controller_dm = (0xfU & vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
-                                    [1U]);
+    vlSelf->o_ddr3_controller_data[1U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][1U];
+    vlSelf->o_ddr3_controller_data[2U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][2U];
+    vlSelf->o_ddr3_controller_data[3U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][3U];
+    vlSelf->o_ddr3_controller_dm = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
+        [1U];
     vlSelf->o_sirefclk_ce = vlSelf->main__DOT__r_sirefclk_en;
     vlSelf->cpu_sim_idata = vlSelf->main__DOT__wbu_zip_idata;
     vlSelf->cpu_prof_stb = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_stb;

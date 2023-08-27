@@ -18,7 +18,6 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , o_ddr3_controller_dqs_tri_control{vlSymsp->TOP.o_ddr3_controller_dqs_tri_control}
     , o_ddr3_controller_dq_tri_control{vlSymsp->TOP.o_ddr3_controller_dq_tri_control}
     , o_ddr3_controller_toggle_dqs{vlSymsp->TOP.o_ddr3_controller_toggle_dqs}
-    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , o_ddr3_controller_odelay_data_cntvaluein{vlSymsp->TOP.o_ddr3_controller_odelay_data_cntvaluein}
     , o_ddr3_controller_odelay_dqs_cntvaluein{vlSymsp->TOP.o_ddr3_controller_odelay_dqs_cntvaluein}
     , o_ddr3_controller_idelay_data_cntvaluein{vlSymsp->TOP.o_ddr3_controller_idelay_data_cntvaluein}
@@ -59,6 +58,7 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , o_led{vlSymsp->TOP.o_led}
     , i_ddr3_controller_iserdes_dqs{vlSymsp->TOP.i_ddr3_controller_iserdes_dqs}
     , i_ddr3_controller_iserdes_bitslip_reference{vlSymsp->TOP.i_ddr3_controller_iserdes_bitslip_reference}
+    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , i_gpio{vlSymsp->TOP.i_gpio}
     , i_ddr3_controller_iserdes_data{vlSymsp->TOP.i_ddr3_controller_iserdes_data}
     , o_ddr3_controller_cmd{vlSymsp->TOP.o_ddr3_controller_cmd}

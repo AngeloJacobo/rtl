@@ -32,7 +32,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain VL_NOT_FINAL : public VerilatedModel {
     VL_OUT8(&o_ddr3_controller_dqs_tri_control,0,0);
     VL_OUT8(&o_ddr3_controller_dq_tri_control,0,0);
     VL_OUT8(&o_ddr3_controller_toggle_dqs,0,0);
-    VL_OUT8(&o_ddr3_controller_dm,3,0);
     VL_OUT8(&o_ddr3_controller_odelay_data_cntvaluein,4,0);
     VL_OUT8(&o_ddr3_controller_odelay_dqs_cntvaluein,4,0);
     VL_OUT8(&o_ddr3_controller_idelay_data_cntvaluein,4,0);
@@ -73,10 +72,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain VL_NOT_FINAL : public VerilatedModel {
     VL_OUT8(&o_led,7,0);
     VL_IN16(&i_ddr3_controller_iserdes_dqs,15,0);
     VL_IN16(&i_ddr3_controller_iserdes_bitslip_reference,15,0);
+    VL_OUT16(&o_ddr3_controller_dm,15,0);
     VL_IN16(&i_gpio,15,0);
     VL_INW(&i_ddr3_controller_iserdes_data,127,0,4);
     VL_OUTW(&o_ddr3_controller_cmd,95,0,3);
-    VL_OUT(&o_ddr3_controller_data,31,0);
+    VL_OUTW(&o_ddr3_controller_data,127,0,4);
     VL_IN(&cpu_sim_data,31,0);
     VL_OUT(&cpu_sim_idata,31,0);
     VL_OUT(&cpu_prof_addr,27,0);

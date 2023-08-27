@@ -10923,7 +10923,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__0(Vmain___024root* vlSelf
                                                   (((IData)(vlSelf->main__DOT__gpioi__DOT__r_gpio) 
                                                     << 0x10U) 
                                                    | (IData)(vlSelf->o_gpio))
-                                                   : 0x93822U)));
+                                                   : 0x102339U)));
     if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_pipe_stalled)) 
                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_rd_pending))))) {
         vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_addr 

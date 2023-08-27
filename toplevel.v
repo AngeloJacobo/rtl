@@ -211,8 +211,8 @@ module	toplevel(
 	wire    [DDR3_CONTROLLERCMD_LEN*DDR3_CONTROLLERSERDES_RATIO-1:0] ddr3_controller_cmd;
 	wire    ddr3_controller_dqs_tri_control, ddr3_controller_dq_tri_control;
 	wire    ddr3_controller_toggle_dqs;
-	wire    [32-1:0] ddr3_controller_data;
-	wire    [32/8-1:0] ddr3_controller_dm;
+	wire    [DDR3_CONTROLLERDQ_BITS*DDR3_CONTROLLERLANES*8-1:0] ddr3_controller_data;
+	wire    [(DDR3_CONTROLLERDQ_BITS*DDR3_CONTROLLERLANES*8)/8-1:0] ddr3_controller_dm;
 	wire    [4:0] ddr3_controller_odelay_data_cntvaluein, ddr3_controller_odelay_dqs_cntvaluein;
 	wire    [4:0] ddr3_controller_idelay_data_cntvaluein, ddr3_controller_idelay_dqs_cntvaluein;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_odelay_data_ld, ddr3_controller_odelay_dqs_ld;

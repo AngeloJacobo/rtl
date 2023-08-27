@@ -233,8 +233,8 @@ module	main(i_clk, i_reset,
 	output wire    [DDR3_CONTROLLERCMD_LEN*DDR3_CONTROLLERSERDES_RATIO-1:0] o_ddr3_controller_cmd;
 	output wire    o_ddr3_controller_dqs_tri_control, o_ddr3_controller_dq_tri_control;
 	output wire    o_ddr3_controller_toggle_dqs;
-	output wire    [32-1:0] o_ddr3_controller_data;
-	output wire    [32/8-1:0] o_ddr3_controller_dm;
+	output wire    [DDR3_CONTROLLERDQ_BITS*DDR3_CONTROLLERLANES*8-1:0] o_ddr3_controller_data;
+	output wire    [(DDR3_CONTROLLERDQ_BITS*DDR3_CONTROLLERLANES*8)/8-1:0] o_ddr3_controller_dm;
 	output wire    [4:0] o_ddr3_controller_odelay_data_cntvaluein, o_ddr3_controller_odelay_dqs_cntvaluein;
 	output wire    [4:0] o_ddr3_controller_idelay_data_cntvaluein, o_ddr3_controller_idelay_dqs_cntvaluein;
 	output wire    [DDR3_CONTROLLERLANES-1:0] o_ddr3_controller_odelay_data_ld, o_ddr3_controller_odelay_dqs_ld;

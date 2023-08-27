@@ -8130,10 +8130,16 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
     vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq_q 
         = ((IData)(vlSelf->main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n) 
            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq_d));
-    vlSelf->o_ddr3_controller_dm = (0xfU & vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
-                                    [1U]);
-    vlSelf->o_ddr3_controller_data = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+    vlSelf->o_ddr3_controller_dm = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
+        [1U];
+    vlSelf->o_ddr3_controller_data[0U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
         [1U][0U];
+    vlSelf->o_ddr3_controller_data[1U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][1U];
+    vlSelf->o_ddr3_controller_data[2U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][2U];
+    vlSelf->o_ddr3_controller_data[3U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
+        [1U][3U];
     vlSelf->main__DOT__wb32_xbar__DOT__s_data[0xaU] 
         = vlSelf->main__DOT__wb32_ddr3_phy_idata;
     vlSelf->main__DOT____Vcellinp__scope1_ddr3i____pinNumber4 
