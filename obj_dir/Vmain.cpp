@@ -14,10 +14,13 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , vlSymsp{new Vmain__Syms(contextp(), _vcname__, this)}
     , i_clk{vlSymsp->TOP.i_clk}
     , i_reset{vlSymsp->TOP.i_reset}
+    , i_ddr3_controller_iserdes_dqs{vlSymsp->TOP.i_ddr3_controller_iserdes_dqs}
+    , i_ddr3_controller_iserdes_bitslip_reference{vlSymsp->TOP.i_ddr3_controller_iserdes_bitslip_reference}
     , i_ddr3_controller_idelayctrl_rdy{vlSymsp->TOP.i_ddr3_controller_idelayctrl_rdy}
     , o_ddr3_controller_dqs_tri_control{vlSymsp->TOP.o_ddr3_controller_dqs_tri_control}
     , o_ddr3_controller_dq_tri_control{vlSymsp->TOP.o_ddr3_controller_dq_tri_control}
     , o_ddr3_controller_toggle_dqs{vlSymsp->TOP.o_ddr3_controller_toggle_dqs}
+    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , o_ddr3_controller_odelay_data_cntvaluein{vlSymsp->TOP.o_ddr3_controller_odelay_data_cntvaluein}
     , o_ddr3_controller_odelay_dqs_cntvaluein{vlSymsp->TOP.o_ddr3_controller_odelay_dqs_cntvaluein}
     , o_ddr3_controller_idelay_data_cntvaluein{vlSymsp->TOP.o_ddr3_controller_idelay_data_cntvaluein}
@@ -57,16 +60,13 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , i_btn{vlSymsp->TOP.i_btn}
     , o_led{vlSymsp->TOP.o_led}
     , i_gpio{vlSymsp->TOP.i_gpio}
-    , i_ddr3_controller_iserdes_data{vlSymsp->TOP.i_ddr3_controller_iserdes_data}
-    , i_ddr3_controller_iserdes_dqs{vlSymsp->TOP.i_ddr3_controller_iserdes_dqs}
-    , i_ddr3_controller_iserdes_bitslip_reference{vlSymsp->TOP.i_ddr3_controller_iserdes_bitslip_reference}
     , o_ddr3_controller_cmd{vlSymsp->TOP.o_ddr3_controller_cmd}
-    , o_ddr3_controller_data{vlSymsp->TOP.o_ddr3_controller_data}
-    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , cpu_sim_data{vlSymsp->TOP.cpu_sim_data}
     , cpu_sim_idata{vlSymsp->TOP.cpu_sim_idata}
     , cpu_prof_addr{vlSymsp->TOP.cpu_prof_addr}
     , cpu_prof_ticks{vlSymsp->TOP.cpu_prof_ticks}
+    , i_ddr3_controller_iserdes_data{vlSymsp->TOP.i_ddr3_controller_iserdes_data}
+    , o_ddr3_controller_data{vlSymsp->TOP.o_ddr3_controller_data}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context

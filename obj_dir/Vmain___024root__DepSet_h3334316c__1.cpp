@@ -369,13 +369,13 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__pf_stb;
     vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__pre_shift 
         = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__pre_shift;
+    vlSelf->main__DOT__i2cscopei__DOT__dr_primed = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_primed;
     vlSelf->main__DOT__scope3_ddr3i__DOT__dr_primed 
         = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_primed;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_primed 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_primed;
-    vlSelf->main__DOT__i2cscopei__DOT__dr_primed = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_primed;
     vlSelf->main__DOT__scope2_ddr3i__DOT__dr_primed 
         = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_primed;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_primed 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_primed;
     vlSelf->main__DOT__i2ci__DOT__pf_illegal = vlSelf->__Vdly__main__DOT__i2ci__DOT__pf_illegal;
     vlSelf->main__DOT__clock_generator__DOT__counter[1U] 
         = vlSelf->__Vdlyvval__main__DOT__clock_generator__DOT__counter__v0;
@@ -454,28 +454,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__genbus__DOT__ps_full = 1U;
         vlSelf->main__DOT__genbus__DOT__ps_data = vlSelf->main__DOT__w_console_tx_data;
     }
-    vlSelf->main__DOT__scope3_ddr3i__DOT__record_ce 
-        = (1U & (((~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr)) 
-                  | (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr))) 
-                 & (~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe) 
-                       >> 2U))));
-    vlSelf->main__DOT__scope3_ddr3i__DOT__r_data = 
-        ((1U & ((~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr)) 
-                | (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr))))
-          ? (((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr) 
-              << 0x1fU) | vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val)
-          : vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data);
-    vlSelf->main__DOT__scope1_ddr3i__DOT__record_ce 
-        = (1U & (((~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr)) 
-                  | (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr))) 
-                 & (~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe) 
-                       >> 2U))));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__r_data = 
-        ((1U & ((~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr)) 
-                | (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr))))
-          ? (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr) 
-              << 0x1fU) | vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val)
-          : vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data);
     vlSelf->main__DOT__i2cscopei__DOT__record_ce = 
         (1U & (((~ (IData)(vlSelf->main__DOT__i2cscopei__DOT__lst_adr)) 
                 | (~ (IData)(vlSelf->main__DOT__i2cscopei__DOT__imm_adr))) 
@@ -489,6 +467,17 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                    << 0x1fU) 
                                                   | vlSelf->main__DOT__i2cscopei__DOT__lst_val)
                                                   : vlSelf->main__DOT__i2cscopei__DOT__qd_data);
+    vlSelf->main__DOT__scope3_ddr3i__DOT__record_ce 
+        = (1U & (((~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr)) 
+                  | (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr))) 
+                 & (~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe) 
+                       >> 2U))));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__r_data = 
+        ((1U & ((~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr)) 
+                | (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr))))
+          ? (((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr) 
+              << 0x1fU) | vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val)
+          : vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data);
     vlSelf->main__DOT__scope2_ddr3i__DOT__record_ce 
         = (1U & (((~ (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__lst_adr)) 
                   | (~ (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__imm_adr))) 
@@ -500,6 +489,17 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
           ? (((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__lst_adr) 
               << 0x1fU) | vlSelf->main__DOT__scope2_ddr3i__DOT__lst_val)
           : vlSelf->main__DOT__scope2_ddr3i__DOT__qd_data);
+    vlSelf->main__DOT__scope1_ddr3i__DOT__record_ce 
+        = (1U & (((~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr)) 
+                  | (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr))) 
+                 & (~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe) 
+                       >> 2U))));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__r_data = 
+        ((1U & ((~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr)) 
+                | (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr))))
+          ? (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr) 
+              << 0x1fU) | vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val)
+          : vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data);
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__diff 
         = (0x1ffffffffULL & ((QData)((IData)((vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_dividend 
                                               >> 0x1fU))) 
@@ -838,6 +838,46 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT____VdfgTmp_h05977c6b__0 
         = vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data
         [(0xfU & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__rdaddr))];
+    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+         | (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_abort))) {
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_bytes = 0U;
+        vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last = 0U;
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last = 0U;
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid = 0U;
+    } else {
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full))))) {
+            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_bytes 
+                = ((0U != (3U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill) 
+                                 >> 6U))) ? 0x40U : 
+                   (0x3fU & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill)));
+        }
+        if ((((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_valid) 
+              & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_ready)) 
+             & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_last))) {
+            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last 
+                = (1U & (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_last)));
+            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last 
+                = vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_last;
+        } else if (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid) 
+                    & (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full)))) {
+            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last 
+                = (1U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last) 
+                         >> 1U));
+            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last 
+                = vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last;
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__rx_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full))))) {
+            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid 
+                = (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last) 
+                    | (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_valid) 
+                        & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_ready)) 
+                       & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_last))) 
+                   | (0U != (3U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill) 
+                                   >> 6U))));
+        }
+    }
     if (((IData)(vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT____Vcellinp__u_fetch__i_reset) 
          | (IData)(vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__cpu_new_pc))) {
         vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__cache_illegal = 0U;
@@ -1585,6 +1625,37 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_ubreak;
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ubus_err_flag 
         = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_USER_BUSERR__DOT__r_ubus_err_flag;
+    vlSelf->main__DOT__wb32_xbar__DOT__s_data[0U] = vlSelf->main__DOT__i2cscopei__DOT__o_bus_data;
+    vlSelf->main__DOT__i2cscopei__DOT__nxt_mem = vlSelf->main__DOT__i2cscopei__DOT__mem
+        [vlSelf->main__DOT__i2cscopei__DOT__this_addr];
+    vlSelf->main__DOT__i2cscopei__DOT__read_address 
+        = (1U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[0U]);
+    if (vlSelf->main__DOT__i2cscopei__DOT__write_to_control) {
+        if (((~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
+                 >> 0x1fU)) & ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
+                               >> 2U))) {
+            vlSelf->main__DOT__i2cscopei__DOT__br_holdoff 
+                = (0xfffffU & vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U]);
+        }
+        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
+            = ((4U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config)) 
+               | (3U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
+                        >> 0x1aU)));
+    }
+    if (vlSelf->main__DOT__i2cscopei__DOT__bw_reset_request) {
+        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
+            = (4U | (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
+    } else if ((4U & (IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config))) {
+        if (((IData)(vlSelf->main__DOT__i2cscopei__DOT__write_to_control) 
+             & (~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
+                   >> 0x1fU)))) {
+            vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
+                = (3U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
+        }
+    } else {
+        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
+            = (3U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
+    }
     vlSelf->main__DOT__wb32_xbar__DOT__s_data[3U] = vlSelf->main__DOT__scope3_ddr3i__DOT__o_bus_data;
     vlSelf->main__DOT__scope3_ddr3i__DOT__nxt_mem = 
         vlSelf->main__DOT__scope3_ddr3i__DOT__mem[vlSelf->main__DOT__scope3_ddr3i__DOT__this_addr];
@@ -1616,69 +1687,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     } else {
         vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__br_config 
             = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__br_config));
-    }
-    vlSelf->main__DOT__wb32_xbar__DOT__s_data[1U] = vlSelf->main__DOT__scope1_ddr3i__DOT__o_bus_data;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__nxt_mem = 
-        vlSelf->main__DOT__scope1_ddr3i__DOT__mem[vlSelf->main__DOT__scope1_ddr3i__DOT__this_addr];
-    vlSelf->main__DOT__scope1_ddr3i__DOT__read_address 
-        = (1U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[0U] 
-                 >> 0x19U));
-    if (vlSelf->main__DOT__scope1_ddr3i__DOT__write_to_control) {
-        if (((~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
-                 >> 0x1fU)) & ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
-                               >> 2U))) {
-            vlSelf->main__DOT__scope1_ddr3i__DOT__br_holdoff 
-                = (0xfffffU & vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U]);
-        }
-        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
-            = ((4U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config)) 
-               | (3U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
-                        >> 0x1aU)));
-    }
-    if (vlSelf->main__DOT__scope1_ddr3i__DOT__bw_reset_request) {
-        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
-            = (4U | (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
-    } else if ((4U & (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) {
-        if (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__write_to_control) 
-             & (~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
-                   >> 0x1fU)))) {
-            vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
-                = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
-        }
-    } else {
-        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
-            = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
-    }
-    vlSelf->main__DOT__wb32_xbar__DOT__s_data[0U] = vlSelf->main__DOT__i2cscopei__DOT__o_bus_data;
-    vlSelf->main__DOT__i2cscopei__DOT__nxt_mem = vlSelf->main__DOT__i2cscopei__DOT__mem
-        [vlSelf->main__DOT__i2cscopei__DOT__this_addr];
-    vlSelf->main__DOT__i2cscopei__DOT__read_address 
-        = (1U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[0U]);
-    if (vlSelf->main__DOT__i2cscopei__DOT__write_to_control) {
-        if (((~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
-                 >> 0x1fU)) & ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
-                               >> 2U))) {
-            vlSelf->main__DOT__i2cscopei__DOT__br_holdoff 
-                = (0xfffffU & vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U]);
-        }
-        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
-            = ((4U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config)) 
-               | (3U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
-                        >> 0x1aU)));
-    }
-    if (vlSelf->main__DOT__i2cscopei__DOT__bw_reset_request) {
-        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
-            = (4U | (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
-    } else if ((4U & (IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config))) {
-        if (((IData)(vlSelf->main__DOT__i2cscopei__DOT__write_to_control) 
-             & (~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[0U] 
-                   >> 0x1fU)))) {
-            vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
-                = (3U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
-        }
-    } else {
-        vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config 
-            = (3U & (IData)(vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config));
     }
     vlSelf->main__DOT__wb32_xbar__DOT__s_data[2U] = vlSelf->main__DOT__scope2_ddr3i__DOT__o_bus_data;
     vlSelf->main__DOT__scope2_ddr3i__DOT__nxt_mem = 
@@ -1712,6 +1720,38 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__br_config 
             = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__br_config));
     }
+    vlSelf->main__DOT__wb32_xbar__DOT__s_data[1U] = vlSelf->main__DOT__scope1_ddr3i__DOT__o_bus_data;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__nxt_mem = 
+        vlSelf->main__DOT__scope1_ddr3i__DOT__mem[vlSelf->main__DOT__scope1_ddr3i__DOT__this_addr];
+    vlSelf->main__DOT__scope1_ddr3i__DOT__read_address 
+        = (1U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[0U] 
+                 >> 0x19U));
+    if (vlSelf->main__DOT__scope1_ddr3i__DOT__write_to_control) {
+        if (((~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
+                 >> 0x1fU)) & ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
+                               >> 2U))) {
+            vlSelf->main__DOT__scope1_ddr3i__DOT__br_holdoff 
+                = (0xfffffU & vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U]);
+        }
+        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
+            = ((4U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config)) 
+               | (3U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
+                        >> 0x1aU)));
+    }
+    if (vlSelf->main__DOT__scope1_ddr3i__DOT__bw_reset_request) {
+        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
+            = (4U | (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
+    } else if ((4U & (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) {
+        if (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__write_to_control) 
+             & (~ (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[1U] 
+                   >> 0x1fU)))) {
+            vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
+                = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
+        }
+    } else {
+        vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config 
+            = (3U & (IData)(vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config));
+    }
     vlSelf->cpu_prof_stb = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_stb;
     vlSelf->main__DOT__clock_generator__DOT__r_delay 
         = vlSelf->main__DOT__r_sirefclk_data;
@@ -1742,58 +1782,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                      & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
                                                         <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__2__KET____DOT__brightness)))) 
                                                  << 2U));
-    if ((4U & (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config))) {
-        if (vlSelf->main__DOT__scope3_ddr3i__DOT__dw_trigger) {
-            vlSelf->main__DOT__scope3_ddr3i__DOT__dr_triggered = 1U;
-        }
-        vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val 
-            = vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val;
-        vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val 
-            = ((((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__new_data) 
-                 | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_write)) 
-                | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stopped))
-                ? vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data
-                : vlSelf->main__DOT__scope3_ddr3i__DOT__ck_addr);
-    } else {
-        vlSelf->main__DOT__scope3_ddr3i__DOT__dr_triggered = 0U;
-        vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val = 0U;
-        vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val = 0U;
-    }
-    vlSelf->main__DOT__spioi__DOT__bounced = ((0xf7U 
-                                               & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
-                                              | (((0x1fU 
-                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)) 
-                                                  | ((0U 
-                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)) 
-                                                     & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
-                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)))) 
-                                                 << 3U));
-    if ((4U & (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) {
-        if (vlSelf->main__DOT__scope1_ddr3i__DOT__dw_trigger) {
-            vlSelf->main__DOT__scope1_ddr3i__DOT__dr_triggered = 1U;
-        }
-        vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val 
-            = vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val;
-        vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val 
-            = ((((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__new_data) 
-                 | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write)) 
-                | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped))
-                ? vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data
-                : vlSelf->main__DOT__scope1_ddr3i__DOT__ck_addr);
-    } else {
-        vlSelf->main__DOT__scope1_ddr3i__DOT__dr_triggered = 0U;
-        vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val = 0U;
-        vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val = 0U;
-    }
-    vlSelf->main__DOT__spioi__DOT__bounced = ((0xefU 
-                                               & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
-                                              | (((0x1fU 
-                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)) 
-                                                  | ((0U 
-                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)) 
-                                                     & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
-                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)))) 
-                                                 << 4U));
     if ((4U & (IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config))) {
         if (vlSelf->main__DOT__i2cscopei__DOT__dw_trigger) {
             vlSelf->main__DOT__i2cscopei__DOT__dr_triggered = 1U;
@@ -1811,15 +1799,41 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__i2cscopei__DOT__lst_val = 0U;
         vlSelf->main__DOT__i2cscopei__DOT__imm_val = 0U;
     }
-    vlSelf->main__DOT__spioi__DOT__bounced = ((0xdfU 
+    vlSelf->main__DOT__spioi__DOT__bounced = ((0xf7U 
                                                & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
                                               | (((0x1fU 
-                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)) 
+                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)) 
                                                   | ((0U 
-                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)) 
+                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)) 
                                                      & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
-                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)))) 
-                                                 << 5U));
+                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__3__KET____DOT__brightness)))) 
+                                                 << 3U));
+    if ((4U & (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config))) {
+        if (vlSelf->main__DOT__scope3_ddr3i__DOT__dw_trigger) {
+            vlSelf->main__DOT__scope3_ddr3i__DOT__dr_triggered = 1U;
+        }
+        vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val 
+            = vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val;
+        vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val 
+            = ((((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__new_data) 
+                 | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_write)) 
+                | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stopped))
+                ? vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data
+                : vlSelf->main__DOT__scope3_ddr3i__DOT__ck_addr);
+    } else {
+        vlSelf->main__DOT__scope3_ddr3i__DOT__dr_triggered = 0U;
+        vlSelf->main__DOT__scope3_ddr3i__DOT__lst_val = 0U;
+        vlSelf->main__DOT__scope3_ddr3i__DOT__imm_val = 0U;
+    }
+    vlSelf->main__DOT__spioi__DOT__bounced = ((0xefU 
+                                               & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
+                                              | (((0x1fU 
+                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)) 
+                                                  | ((0U 
+                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)) 
+                                                     & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
+                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness)))) 
+                                                 << 4U));
     if ((4U & (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config))) {
         if (vlSelf->main__DOT__scope2_ddr3i__DOT__dw_trigger) {
             vlSelf->main__DOT__scope2_ddr3i__DOT__dr_triggered = 1U;
@@ -1836,6 +1850,32 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__scope2_ddr3i__DOT__dr_triggered = 0U;
         vlSelf->main__DOT__scope2_ddr3i__DOT__lst_val = 0U;
         vlSelf->main__DOT__scope2_ddr3i__DOT__imm_val = 0U;
+    }
+    vlSelf->main__DOT__spioi__DOT__bounced = ((0xdfU 
+                                               & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
+                                              | (((0x1fU 
+                                                   == (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)) 
+                                                  | ((0U 
+                                                      != (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)) 
+                                                     & ((IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__br_ctr) 
+                                                        <= (IData)(vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness)))) 
+                                                 << 5U));
+    if ((4U & (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) {
+        if (vlSelf->main__DOT__scope1_ddr3i__DOT__dw_trigger) {
+            vlSelf->main__DOT__scope1_ddr3i__DOT__dr_triggered = 1U;
+        }
+        vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val 
+            = vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val;
+        vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val 
+            = ((((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__new_data) 
+                 | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write)) 
+                | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped))
+                ? vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data
+                : vlSelf->main__DOT__scope1_ddr3i__DOT__ck_addr);
+    } else {
+        vlSelf->main__DOT__scope1_ddr3i__DOT__dr_triggered = 0U;
+        vlSelf->main__DOT__scope1_ddr3i__DOT__lst_val = 0U;
+        vlSelf->main__DOT__scope1_ddr3i__DOT__imm_val = 0U;
     }
     vlSelf->main__DOT__spioi__DOT__bounced = ((0xbfU 
                                                & (IData)(vlSelf->main__DOT__spioi__DOT__bounced)) 
@@ -2379,14 +2419,14 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__genbus__DOT__wbu_tx_stb = vlSelf->__Vdly__main__DOT__genbus__DOT__wbu_tx_stb;
     vlSelf->main__DOT__console__DOT__txfifo__DOT__will_underflow 
         = vlSelf->__Vdly__main__DOT__console__DOT__txfifo__DOT__will_underflow;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe 
-        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_stop_pipe;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_stop_pipe;
     vlSelf->main__DOT__i2cscopei__DOT__dr_stop_pipe 
         = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_stop_pipe;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe 
+        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_stop_pipe;
     vlSelf->main__DOT__scope2_ddr3i__DOT__dr_stop_pipe 
         = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_stop_pipe;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_stop_pipe;
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__w_addr 
         = (((- (IData)((1U & (vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__r_addr 
                               >> 0x18U)))) << 0x19U) 
@@ -2644,21 +2684,21 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                           >> 0x1dU)) | (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_c) 
                                          << 1U) | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_z)))
                 : 0U));
-    if (vlSelf->__Vdlyvset__main__DOT__scope3_ddr3i__DOT__mem__v0) {
-        vlSelf->main__DOT__scope3_ddr3i__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__scope3_ddr3i__DOT__mem__v0] 
-            = vlSelf->__Vdlyvval__main__DOT__scope3_ddr3i__DOT__mem__v0;
-    }
-    if (vlSelf->__Vdlyvset__main__DOT__scope1_ddr3i__DOT__mem__v0) {
-        vlSelf->main__DOT__scope1_ddr3i__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__scope1_ddr3i__DOT__mem__v0] 
-            = vlSelf->__Vdlyvval__main__DOT__scope1_ddr3i__DOT__mem__v0;
-    }
     if (vlSelf->__Vdlyvset__main__DOT__i2cscopei__DOT__mem__v0) {
         vlSelf->main__DOT__i2cscopei__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__i2cscopei__DOT__mem__v0] 
             = vlSelf->__Vdlyvval__main__DOT__i2cscopei__DOT__mem__v0;
     }
+    if (vlSelf->__Vdlyvset__main__DOT__scope3_ddr3i__DOT__mem__v0) {
+        vlSelf->main__DOT__scope3_ddr3i__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__scope3_ddr3i__DOT__mem__v0] 
+            = vlSelf->__Vdlyvval__main__DOT__scope3_ddr3i__DOT__mem__v0;
+    }
     if (vlSelf->__Vdlyvset__main__DOT__scope2_ddr3i__DOT__mem__v0) {
         vlSelf->main__DOT__scope2_ddr3i__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__scope2_ddr3i__DOT__mem__v0] 
             = vlSelf->__Vdlyvval__main__DOT__scope2_ddr3i__DOT__mem__v0;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__scope1_ddr3i__DOT__mem__v0) {
+        vlSelf->main__DOT__scope1_ddr3i__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__scope1_ddr3i__DOT__mem__v0] 
+            = vlSelf->__Vdlyvval__main__DOT__scope1_ddr3i__DOT__mem__v0;
     }
     vlSelf->main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__0__KET____DOT__brightness 
         = vlSelf->__Vdly__main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__0__KET____DOT__brightness;
@@ -2816,20 +2856,20 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             = vlSelf->main__DOT__genbus__DOT__wroutput__DOT__mkbytes__DOT__remap
             [vlSelf->main__DOT__genbus__DOT__wroutput__DOT__ln_bits];
     }
-    vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr = 
-        (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
-                   >> 2U)) | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr)));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr = 
-        (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
-                   >> 2U)) | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr)));
     vlSelf->main__DOT__i2cscopei__DOT__lst_adr = (1U 
                                                   & ((~ 
                                                       ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
                                                        >> 2U)) 
                                                      | (IData)(vlSelf->main__DOT__i2cscopei__DOT__imm_adr)));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__lst_adr = 
+        (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
+                   >> 2U)) | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr)));
     vlSelf->main__DOT__scope2_ddr3i__DOT__lst_adr = 
         (1U & ((~ ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config) 
                    >> 2U)) | (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__imm_adr)));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__lst_adr = 
+        (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
+                   >> 2U)) | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr)));
     vlSelf->main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__nxt_wrptr 
         = (0x7fU & ((IData)(1U) + (IData)(vlSelf->main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__r_wrptr)));
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__cword 
@@ -3396,30 +3436,30 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__1__KET____DOT__adcd__o_valid))
             ? (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__decoded)
             : 0U);
-    vlSelf->main__DOT__scope3_ddr3i__DOT__this_addr 
-        = (0x3ffU & ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__read_from_data)
-                      ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__raddr) 
-                                        + (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__waddr)))
-                      : ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__raddr) 
-                         + (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__waddr))));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__this_addr 
-        = (0x3ffU & ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__read_from_data)
-                      ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__raddr) 
-                                        + (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__waddr)))
-                      : ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__raddr) 
-                         + (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__waddr))));
     vlSelf->main__DOT__i2cscopei__DOT__this_addr = 
         (0x3ffU & ((IData)(vlSelf->main__DOT__i2cscopei__DOT__read_from_data)
                     ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__i2cscopei__DOT__raddr) 
                                       + (IData)(vlSelf->main__DOT__i2cscopei__DOT__waddr)))
                     : ((IData)(vlSelf->main__DOT__i2cscopei__DOT__raddr) 
                        + (IData)(vlSelf->main__DOT__i2cscopei__DOT__waddr))));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__this_addr 
+        = (0x3ffU & ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__read_from_data)
+                      ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__raddr) 
+                                        + (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__waddr)))
+                      : ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__raddr) 
+                         + (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__waddr))));
     vlSelf->main__DOT__scope2_ddr3i__DOT__this_addr 
         = (0x3ffU & ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__read_from_data)
                       ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__raddr) 
                                         + (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__waddr)))
                       : ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__raddr) 
                          + (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__waddr))));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__this_addr 
+        = (0x3ffU & ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__read_from_data)
+                      ? ((IData)(1U) + ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__raddr) 
+                                        + (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__waddr)))
+                      : ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__raddr) 
+                         + (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__waddr))));
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT____VdfgTmp_he857573c__0 
         = ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_OP_STALL__DOT__r_cc_invalid_for_dcd) 
            | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_wF));
@@ -4013,46 +4053,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = vlSelf->main__DOT__wbwide_i2cdma_data[6U];
     vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data[9U] 
         = vlSelf->main__DOT__wbwide_i2cdma_data[7U];
-    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
-         | (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_abort))) {
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_bytes = 0U;
-        vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last = 0U;
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last = 0U;
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid = 0U;
-    } else {
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full))))) {
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_bytes 
-                = ((0U != (3U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill) 
-                                 >> 6U))) ? 0x40U : 
-                   (0x3fU & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill)));
-        }
-        if ((((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_valid) 
-              & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_ready)) 
-             & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_last))) {
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last 
-                = (1U & (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_last)));
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last 
-                = vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_last;
-        } else if (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid) 
-                    & (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full)))) {
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last 
-                = (1U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last) 
-                         >> 1U));
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_last 
-                = vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last;
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__rx_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_full))))) {
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__m_valid 
-                = (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last) 
-                    | (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_valid) 
-                        & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_ready)) 
-                       & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__m_last))) 
-                   | (0U != (3U & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__next_fill) 
-                                   >> 6U))));
-        }
-    }
     vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data[0xaU] 
         = vlSelf->main__DOT__wbwide_i2cdma_data[8U];
     vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data[0xbU] 
@@ -4326,14 +4326,14 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__3__KET____DOT__adcd__o_addr;
     vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__tbl_addr 
         = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__tbl_addr;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__raddr = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__raddr;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__waddr = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__waddr;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__raddr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__raddr;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__waddr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__waddr;
     vlSelf->main__DOT__i2cscopei__DOT__raddr = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__raddr;
     vlSelf->main__DOT__i2cscopei__DOT__waddr = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__waddr;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__raddr = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__raddr;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__waddr = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__waddr;
     vlSelf->main__DOT__scope2_ddr3i__DOT__raddr = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__raddr;
     vlSelf->main__DOT__scope2_ddr3i__DOT__waddr = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__waddr;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__raddr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__raddr;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__waddr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__waddr;
     vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__prerequest 
         = ((2U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__prerequest)) 
            | (0U == (0x380000U & (0x80000U ^ (0x3fffffU 
@@ -4976,16 +4976,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     } else if ((1U & (~ (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__ln_busy)))) {
         vlSelf->main__DOT__genbus__DOT__wroutput__DOT__ln_bits = 0x40U;
     }
-    vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr = 
-        (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
-                   >> 2U)) | (~ (((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__new_data) 
-                                  | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_write)) 
-                                 | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stopped)))));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr = 
-        (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
-                   >> 2U)) | (~ (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__new_data) 
-                                  | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write)) 
-                                 | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped)))));
     vlSelf->main__DOT__i2cscopei__DOT__imm_adr = (1U 
                                                   & ((~ 
                                                       ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
@@ -4994,11 +4984,21 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                         (((IData)(vlSelf->main__DOT__i2cscopei__DOT__new_data) 
                                                           | (IData)(vlSelf->main__DOT__i2cscopei__DOT__dr_force_write)) 
                                                          | (IData)(vlSelf->main__DOT__i2cscopei__DOT__dr_stopped)))));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__imm_adr = 
+        (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
+                   >> 2U)) | (~ (((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__new_data) 
+                                  | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_write)) 
+                                 | (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stopped)))));
     vlSelf->main__DOT__scope2_ddr3i__DOT__imm_adr = 
         (1U & ((~ ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config) 
                    >> 2U)) | (~ (((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__new_data) 
                                   | (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__dr_force_write)) 
                                  | (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__dr_stopped)))));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__imm_adr = 
+        (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
+                   >> 2U)) | (~ (((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__new_data) 
+                                  | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write)) 
+                                 | (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped)))));
     vlSelf->main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data 
         = (0xfULL | (((QData)((IData)(vlSelf->main__DOT__wbu_we)) 
                       << 0x3fU) | (((QData)((IData)(
@@ -6016,25 +6016,25 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             : 0U);
     vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_bits 
         = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__dw_bits;
+    vlSelf->main__DOT__i2cscopei__DOT__ck_addr = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__ck_addr;
+    vlSelf->main__DOT__i2cscopei__DOT__dr_force_write 
+        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_force_write;
+    vlSelf->main__DOT__i2cscopei__DOT__dr_stopped = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_stopped;
     vlSelf->main__DOT__scope3_ddr3i__DOT__ck_addr = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__ck_addr;
     vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_write 
         = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_force_write;
     vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stopped 
         = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_stopped;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__ck_addr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__ck_addr;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_force_write;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_stopped;
-    vlSelf->main__DOT__i2cscopei__DOT__ck_addr = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__ck_addr;
-    vlSelf->main__DOT__i2cscopei__DOT__dr_force_write 
-        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_force_write;
-    vlSelf->main__DOT__i2cscopei__DOT__dr_stopped = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_stopped;
     vlSelf->main__DOT__scope2_ddr3i__DOT__ck_addr = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__ck_addr;
     vlSelf->main__DOT__scope2_ddr3i__DOT__dr_force_write 
         = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_force_write;
     vlSelf->main__DOT__scope2_ddr3i__DOT__dr_stopped 
         = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_stopped;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__ck_addr = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__ck_addr;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_write 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_force_write;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stopped 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_stopped;
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__wr_addr 
         = vlSelf->__Vdly__main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__wr_addr;
     vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__dffaddr 
@@ -6192,24 +6192,26 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_reset)) 
            & ((IData)(vlSelf->main__DOT__wbwide_i2cdma_stb) 
               | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__iskid__DOT__LOGIC__DOT__r_valid)));
-    vlSelf->main__DOT__scope3_ddr3i__DOT__new_data 
-        = (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
-                     >> 2U)) | (vlSelf->main__DOT____Vcellinp__scope3_ddr3i____pinNumber4 
-                                != vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data)));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__new_data 
-        = (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
-                     >> 2U)) | (vlSelf->main__DOT____Vcellinp__scope1_ddr3i____pinNumber4 
-                                != vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data)));
     vlSelf->main__DOT__i2cscopei__DOT__new_data = (1U 
                                                    & ((~ 
                                                        ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
                                                         >> 2U)) 
                                                       | (vlSelf->main__DOT____Vcellinp__i2cscopei____pinNumber4 
                                                          != vlSelf->main__DOT__i2cscopei__DOT__qd_data)));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__new_data 
+        = (1U & ((~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
+                     >> 2U)) | ((0x7fffffffU & (IData)(vlSelf->i_ddr3_controller_iserdes_data)) 
+                                != vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data)));
     vlSelf->main__DOT__scope2_ddr3i__DOT__new_data 
         = (1U & ((~ ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config) 
-                     >> 2U)) | (vlSelf->main__DOT____Vcellinp__scope2_ddr3i____pinNumber4 
+                     >> 2U)) | ((0x7fffffffU & (IData)(
+                                                       (vlSelf->i_ddr3_controller_iserdes_data 
+                                                        >> 0x20U))) 
                                 != vlSelf->main__DOT__scope2_ddr3i__DOT__qd_data)));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__new_data 
+        = (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
+                     >> 2U)) | (vlSelf->main__DOT____Vcellinp__scope1_ddr3i____pinNumber4 
+                                != vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data)));
     if ((1U & ((~ (IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__cw_stb)) 
                | (~ (IData)((0U != (IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__r_stb))))))) {
         vlSelf->main__DOT__genbus__DOT__getinput__DOT__cw_word 
@@ -7308,13 +7310,13 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
            | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__ln_stb));
     vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cp_stb 
         = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__cp_stb;
+    vlSelf->main__DOT__i2cscopei__DOT__br_config = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config;
     vlSelf->main__DOT__scope3_ddr3i__DOT__br_config 
         = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__br_config;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__br_config 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config;
-    vlSelf->main__DOT__i2cscopei__DOT__br_config = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__br_config;
     vlSelf->main__DOT__scope2_ddr3i__DOT__br_config 
         = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__br_config;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__br_config 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__br_config;
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__formcw__DOT__lastcw 
         = vlSelf->__Vdly__main__DOT__genbus__DOT__getinput__DOT__formcw__DOT__lastcw;
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__cw_stb 
@@ -7377,24 +7379,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__tbl_busy 
         = ((IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cp_stb) 
            & (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_stb));
-    vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data = vlSelf->main__DOT____Vcellinp__scope3_ddr3i____pinNumber4;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__bw_reset_request 
-        = (1U & (~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
-                    >> 2U)));
-    vlSelf->main__DOT__scope3_ddr3_int = (IData)(((
-                                                   ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe) 
-                                                    >> 4U) 
-                                                   & (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config))) 
-                                                  & (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_level_interrupt))));
-    vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data = vlSelf->main__DOT____Vcellinp__scope1_ddr3i____pinNumber4;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__bw_reset_request 
-        = (1U & (~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
-                    >> 2U)));
-    vlSelf->main__DOT__scope1_ddr3_int = (IData)(((
-                                                   ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe) 
-                                                    >> 4U) 
-                                                   & (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) 
-                                                  & (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_level_interrupt))));
     vlSelf->main__DOT__i2cscopei__DOT__qd_data = vlSelf->main__DOT____Vcellinp__i2cscopei____pinNumber4;
     vlSelf->main__DOT__i2cscopei__DOT__bw_reset_request 
         = (1U & (~ ((IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config) 
@@ -7409,7 +7393,19 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                  >> 4U) 
                                                 & (~ (IData)(vlSelf->main__DOT__i2cscopei__DOT__br_config))) 
                                                & (~ (IData)(vlSelf->main__DOT__i2cscopei__DOT__br_level_interrupt))));
-    vlSelf->main__DOT__scope2_ddr3i__DOT__qd_data = vlSelf->main__DOT____Vcellinp__scope2_ddr3i____pinNumber4;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__qd_data = 
+        (0x7fffffffU & (IData)(vlSelf->i_ddr3_controller_iserdes_data));
+    vlSelf->main__DOT__scope3_ddr3i__DOT__bw_reset_request 
+        = (1U & (~ ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config) 
+                    >> 2U)));
+    vlSelf->main__DOT__scope3_ddr3_int = (IData)(((
+                                                   ((IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__dr_stop_pipe) 
+                                                    >> 4U) 
+                                                   & (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_config))) 
+                                                  & (~ (IData)(vlSelf->main__DOT__scope3_ddr3i__DOT__br_level_interrupt))));
+    vlSelf->main__DOT__scope2_ddr3i__DOT__qd_data = 
+        (0x7fffffffU & (IData)((vlSelf->i_ddr3_controller_iserdes_data 
+                                >> 0x20U)));
     vlSelf->main__DOT__scope2_ddr3i__DOT__bw_reset_request 
         = (1U & (~ ((IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config) 
                     >> 2U)));
@@ -7418,6 +7414,15 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                     >> 4U) 
                                                    & (~ (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_config))) 
                                                   & (~ (IData)(vlSelf->main__DOT__scope2_ddr3i__DOT__br_level_interrupt))));
+    vlSelf->main__DOT__scope1_ddr3i__DOT__qd_data = vlSelf->main__DOT____Vcellinp__scope1_ddr3i____pinNumber4;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__bw_reset_request 
+        = (1U & (~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
+                    >> 2U)));
+    vlSelf->main__DOT__scope1_ddr3_int = (IData)(((
+                                                   ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__dr_stop_pipe) 
+                                                    >> 4U) 
+                                                   & (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config))) 
+                                                  & (~ (IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_level_interrupt))));
     vlSelf->main__DOT__genbus__DOT__getinput__DOT__cod_busy 
         = (0U != (IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__r_stb));
     if (((IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__hx_stb) 
@@ -8317,69 +8322,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
              & (~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_s2mm__DOT__r_last)))) {
             vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_s2mm__DOT__r_last 
                 = vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last;
-        }
-    }
-    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
-         | (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_abort))) {
-        vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last = 0U;
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last = 0U;
-    } else if (((~ (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__r_empty)) 
-                & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__tx_ready))) {
-        if ((2U & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size))) {
-            if ((1U & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size))) {
-                vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                    = (1U < (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-                vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                    = (1U == (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-            } else {
-                vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                    = (2U < (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-                vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                    = (2U >= (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-            }
-        } else if ((1U & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size))) {
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                = (4U < (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                = (4U >= (0x7fU & vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U]));
-        } else {
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last = 0U;
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                = (1U & (vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U] 
-                         >> 7U));
-        }
-        if ((1U & (~ (vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellout__u_sfifo__o_data[0x10U] 
-                      >> 7U)))) {
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last = 0U;
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last = 0U;
-        }
-    } else if (((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_valid) 
-                & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_ready))) {
-        if ((2U & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size))) {
-            if ((1U & (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size))) {
-                vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                    = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                       & (2U >= (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill)));
-                vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                    = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                       & (2U < (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill)));
-            } else {
-                vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                    = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                       & (4U >= (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill)));
-                vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                    = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                       & (4U < (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill)));
-            }
-        } else {
-            vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last 
-                = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size) 
-                   & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                      & (8U >= (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill))));
-            vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last 
-                = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_size) 
-                   & ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last) 
-                      & (8U < (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill))));
         }
     }
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_pc 

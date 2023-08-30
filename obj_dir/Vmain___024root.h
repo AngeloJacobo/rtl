@@ -19,19 +19,22 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         VL_IN8(i_clk,0,0);
         CData/*0:0*/ main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n;
         VL_IN8(i_reset,0,0);
+        VL_IN8(i_ddr3_controller_iserdes_dqs,7,0);
+        VL_IN8(i_ddr3_controller_iserdes_bitslip_reference,7,0);
         VL_IN8(i_ddr3_controller_idelayctrl_rdy,0,0);
         VL_OUT8(o_ddr3_controller_dqs_tri_control,0,0);
         VL_OUT8(o_ddr3_controller_dq_tri_control,0,0);
         VL_OUT8(o_ddr3_controller_toggle_dqs,0,0);
+        VL_OUT8(o_ddr3_controller_dm,7,0);
         VL_OUT8(o_ddr3_controller_odelay_data_cntvaluein,4,0);
         VL_OUT8(o_ddr3_controller_odelay_dqs_cntvaluein,4,0);
         VL_OUT8(o_ddr3_controller_idelay_data_cntvaluein,4,0);
         VL_OUT8(o_ddr3_controller_idelay_dqs_cntvaluein,4,0);
-        VL_OUT8(o_ddr3_controller_odelay_data_ld,3,0);
-        VL_OUT8(o_ddr3_controller_odelay_dqs_ld,3,0);
-        VL_OUT8(o_ddr3_controller_idelay_data_ld,3,0);
-        VL_OUT8(o_ddr3_controller_idelay_dqs_ld,3,0);
-        VL_OUT8(o_ddr3_controller_bitslip,3,0);
+        VL_OUT8(o_ddr3_controller_odelay_data_ld,0,0);
+        VL_OUT8(o_ddr3_controller_odelay_dqs_ld,0,0);
+        VL_OUT8(o_ddr3_controller_idelay_data_ld,0,0);
+        VL_OUT8(o_ddr3_controller_idelay_dqs_ld,0,0);
+        VL_OUT8(o_ddr3_controller_bitslip,0,0);
         VL_OUT8(o_sirefclk_word,7,0);
         VL_OUT8(o_sirefclk_ce,0,0);
         VL_IN8(i_fan_sda,0,0);
@@ -77,11 +80,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*7:0*/ main__DOT__i2c_data;
         CData/*0:0*/ main__DOT__w_console_rx_stb;
         CData/*0:0*/ main__DOT__w_console_busy;
+    };
+    struct {
         CData/*6:0*/ main__DOT__w_console_rx_data;
         CData/*6:0*/ main__DOT__w_console_tx_data;
         CData/*0:0*/ main__DOT__raw_cpu_dbg_stall;
-    };
-    struct {
         CData/*0:0*/ main__DOT__raw_cpu_dbg_ack;
         CData/*0:0*/ main__DOT__zip_cpu_int;
         CData/*7:0*/ main__DOT__wbu_rx_data;
@@ -143,11 +146,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__mnearfull;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__mempty;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__m_stb;
+    };
+    struct {
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__m_we;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__m_stall;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__s_stall;
-    };
-    struct {
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__s_ack;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__s_err;
         CData/*0:0*/ main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__skd_stb;
@@ -209,11 +212,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*1:0*/ main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__0__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__reindex;
         CData/*1:0*/ main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__1__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__r_sindex;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__1__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__regrant;
+    };
+    struct {
         CData/*1:0*/ main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__1__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__reindex;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack;
         CData/*3:0*/ main__DOT__wbwide_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_merr;
-    };
-    struct {
         CData/*5:0*/ main__DOT__wbwide_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending;
         CData/*5:0*/ main__DOT__wbwide_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__1__KET____DOT__lclpending;
         CData/*5:0*/ main__DOT__wbwide_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__2__KET____DOT__lclpending;
@@ -275,11 +278,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__mnearfull;
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__mempty;
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__m_stb;
+    };
+    struct {
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__m_stall;
         CData/*3:0*/ main__DOT__wbu_xbar__DOT__s_stall;
         CData/*3:0*/ main__DOT__wbu_xbar__DOT__s_err;
-    };
-    struct {
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__dcd_stb;
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__skd_stb;
         CData/*0:0*/ main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__skd_stall;
@@ -341,11 +344,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__scope2_ddr3i__DOT__lst_adr;
         CData/*0:0*/ main__DOT__scope2_ddr3i__DOT__record_ce;
         CData/*0:0*/ main__DOT__scope2_ddr3i__DOT__br_wb_ack;
+    };
+    struct {
         CData/*0:0*/ main__DOT__scope2_ddr3i__DOT__br_pre_wb_ack;
         CData/*0:0*/ main__DOT__scope2_ddr3i__DOT__br_level_interrupt;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__instruction_address;
-    };
-    struct {
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__delay_counter_is_zero;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__reset_done;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__pause_counter;
@@ -357,11 +360,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_pending;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_aux;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_we;
+        CData/*7:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_dm;
         CData/*2:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_bank;
         CData/*2:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_next_bank;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_pending;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_aux;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_we;
+        CData/*7:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned;
+        CData/*7:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned_temp;
         CData/*2:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_bank;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__cmd_odt_q;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__cmd_odt;
@@ -391,8 +397,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__delay_before_read_data;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__delay_before_write_level_feedback;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__initial_dqs;
-        CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__lane;
-        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__lane_times_8;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__lane;
+        CData/*2:0*/ main__DOT__ddr3_controller_inst__DOT__lane_times_8;
         CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__added_read_pipe_max;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__index_read_pipe;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__index_wb_data;
@@ -404,30 +410,52 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__write_calib_dq;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__prev_write_level_feedback;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev;
+    };
+    struct {
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_stb;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_update;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_we;
         CData/*6:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_addr;
         CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_sel;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_data_cntvaluein;
-    };
-    struct {
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_dqs_cntvaluein;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_data_cntvaluein;
         CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_dqs_cntvaluein;
-        CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_data_ld;
-        CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_dqs_ld;
-        CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_data_ld;
-        CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_dqs_ld;
-        CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_write_lane;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_data_ld;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_odelay_dqs_ld;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_data_ld;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_phy_idelay_dqs_ld;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_write_lane;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__get_slot__Vstatic__slot_number;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__get_slot__Vstatic__read_slot;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__get_slot__Vstatic__write_slot;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__get_slot__Vstatic__anticipate_activate_slot;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT__get_slot__Vstatic__anticipate_precharge_slot;
+        CData/*7:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h26ab86ee__0;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h133f9401__0;
         CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hddcbe2f8__0;
         CData/*1:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha8bc7f27__1;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h6ae87c1f__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h23068462__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hf8f3b873__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hb9125af6__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha32579e4__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h1b2f8325__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h30c4ab1e__0;
+        CData/*4:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h80415d99__0;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h0aaecb26__0;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha9e19381__0;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha1e87f9f__0;
+        CData/*3:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hcbac20e2__0;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha9e19381__1;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha1e87f9f__1;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h0aaecb26__1;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h157c436b__0;
+        CData/*0:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hb2a29e0b__0;
+        CData/*6:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h36bae610__0;
+        CData/*6:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_hd9bf9093__0;
+        CData/*6:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h36bae610__1;
+        CData/*6:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h36bae610__2;
         CData/*0:0*/ main__DOT__bkrami__DOT__EXTRA_MEM_CLOCK_CYCLE__DOT__last_wstb;
         CData/*0:0*/ main__DOT__bkrami__DOT__EXTRA_MEM_CLOCK_CYCLE__DOT__last_stb;
         CData/*5:0*/ main__DOT__u_i2cdma__DOT__subaddr;
@@ -448,6 +476,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__u_fan__DOT__mem_stb;
         CData/*4:0*/ main__DOT__u_fan__DOT__mem_addr;
         CData/*7:0*/ main__DOT__u_fan__DOT__mem_data;
+    };
+    struct {
         CData/*0:0*/ main__DOT__u_fan__DOT__mem_ack;
         CData/*0:0*/ main__DOT__u_fan__DOT__i2cd_valid;
         CData/*0:0*/ main__DOT__u_fan__DOT__i2cd_last;
@@ -476,8 +506,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*4:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__abort_address;
         CData/*4:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__jump_target;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__r_wait;
-    };
-    struct {
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__soft_halt_request;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__r_halted;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__r_err;
@@ -514,6 +542,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__ck_scl;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__ck_sda;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__lst_scl;
+    };
+    struct {
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__lst_sda;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__stop_bit;
         CData/*0:0*/ main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__channel_busy;
@@ -542,8 +572,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__i2ci__DOT__w_scl;
         CData/*0:0*/ main__DOT__i2ci__DOT__bus_write;
         CData/*0:0*/ main__DOT__i2ci__DOT__bus_override;
-    };
-    struct {
         CData/*0:0*/ main__DOT__i2ci__DOT__bus_manual;
         CData/*0:0*/ main__DOT__i2ci__DOT__ovw_ready;
         CData/*0:0*/ main__DOT__i2ci__DOT__bus_jump;
@@ -580,6 +608,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__i2ci__DOT__u_axisi2c__DOT__lst_scl;
         CData/*0:0*/ main__DOT__i2ci__DOT__u_axisi2c__DOT__lst_sda;
         CData/*0:0*/ main__DOT__i2ci__DOT__u_axisi2c__DOT__stop_bit;
+    };
+    struct {
         CData/*0:0*/ main__DOT__i2ci__DOT__u_axisi2c__DOT__channel_busy;
         CData/*0:0*/ main__DOT__i2ci__DOT__u_axisi2c__DOT____VdfgTmp_h17d9fffe__0;
         CData/*0:0*/ main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_cyc;
@@ -608,8 +638,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__console__DOT__rx_uart_reset;
         CData/*6:0*/ main__DOT__console__DOT__rxf_wb_data;
         CData/*0:0*/ main__DOT__console__DOT__rxf_wb_read;
-    };
-    struct {
         CData/*0:0*/ main__DOT__console__DOT__txf_wb_write;
         CData/*0:0*/ main__DOT__console__DOT__tx_uart_reset;
         CData/*6:0*/ main__DOT__console__DOT__txf_wb_data;
@@ -646,6 +674,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__tmb_int;
         CData/*0:0*/ main__DOT__swic__DOT__tmc_int;
         CData/*0:0*/ main__DOT__swic__DOT__jif_int;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__dmac_int;
         CData/*0:0*/ main__DOT__swic__DOT__mtc_int;
         CData/*0:0*/ main__DOT__swic__DOT__moc_int;
@@ -674,8 +704,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__dbg_ack;
         CData/*0:0*/ main__DOT__swic__DOT__dbg_stall;
         CData/*3:0*/ main__DOT__swic__DOT__dbg_sel;
-    };
-    struct {
         CData/*0:0*/ main__DOT__swic__DOT__no_dbg_err;
         CData/*0:0*/ main__DOT__swic__DOT__cpu_break;
         CData/*0:0*/ main__DOT__swic__DOT__dbg_cmd_write;
@@ -712,6 +740,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__tmb_ack;
         CData/*0:0*/ main__DOT__swic__DOT__tmc_ack;
         CData/*0:0*/ main__DOT__swic__DOT__jif_ack;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__cpu_lcl_cyc;
         CData/*0:0*/ main__DOT__swic__DOT__cpu_we;
         CData/*0:0*/ main__DOT__swic__DOT__cpu_stall;
@@ -740,8 +770,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__mpc_ack;
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__mic_ack;
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__utc_ack;
-    };
-    struct {
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__uoc_ack;
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__upc_ack;
         CData/*0:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__uic_ack;
@@ -778,6 +806,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_illegal;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_cyc;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_stb;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_stall;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_ack;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__pf_err;
@@ -806,8 +836,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__ubreak;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__pending_interrupt;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__step;
-    };
-    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_u;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_i;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__ibus_err_flag;
@@ -844,6 +872,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_wF;
         CData/*6:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__r_op_F;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_ce;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__r_op_break;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__w_op_valid;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_illegal;
@@ -872,8 +902,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_flags_ce;
         CData/*3:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_flags;
         CData/*2:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index;
-    };
-    struct {
         CData/*4:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_reg_id;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__w_switch_to_interrupt;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__w_release_from_interrupt;
@@ -910,6 +938,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*4:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__ALU_SIM__DOT__regid;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PENDING_BREAK__DOT__r_break_pending;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PENDING_INTERRUPT__DOT__r_pending_interrupt;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PENDING_INTERRUPT__DOT__r_user_stepped;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_GIE__DOT__r_gie;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_trap;
@@ -938,8 +968,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_dcdR_cc;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_mem;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_sto;
-    };
-    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_div;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_fpu;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_rB;
@@ -976,6 +1004,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__last_bit;
         CData/*4:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_bit;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__zero_divisor;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_v;
         CData/*7:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_v_from_pc;
@@ -1004,8 +1034,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*4:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__npending;
         CData/*7:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__c_v;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__set_vflag;
-    };
-    struct {
         CData/*1:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__state;
         CData/*5:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__wr_addr;
         CData/*0:0*/ main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__lock_gbl;
@@ -1042,6 +1070,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_busy;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_err;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_trigger;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_request;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_request;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_busy;
@@ -1070,8 +1100,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_wr_err;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT____Vcellinp__u_sfifo__i_reset;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_controller__DOT__int_trigger;
-    };
-    struct {
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_controller__DOT__r_err;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_controller__DOT__r_zero_len;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_controller__DOT__r_busy;
@@ -1108,6 +1136,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_valid;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_last;
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last;
+    };
+    struct {
         CData/*0:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_next;
         CData/*6:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__m_bytes;
         CData/*6:0*/ main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill;
@@ -1136,8 +1166,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__i2cscopei__DOT__dr_triggered;
         CData/*0:0*/ main__DOT__i2cscopei__DOT__dr_primed;
         CData/*0:0*/ main__DOT__i2cscopei__DOT__dw_trigger;
-    };
-    struct {
         CData/*0:0*/ main__DOT__i2cscopei__DOT__dr_stopped;
         CData/*4:0*/ main__DOT__i2cscopei__DOT__dr_stop_pipe;
         CData/*0:0*/ main__DOT__i2cscopei__DOT__dr_force_write;
@@ -1174,6 +1202,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*7:0*/ main__DOT__genbus__DOT__wbu_tx_data;
         CData/*0:0*/ main__DOT__genbus__DOT__exec_stb;
         CData/*0:0*/ main__DOT__genbus__DOT__ofifo_rd;
+    };
+    struct {
         CData/*0:0*/ main__DOT__genbus__DOT__ofifo_empty_n;
         CData/*0:0*/ main__DOT__genbus__DOT__w_bus_busy;
         CData/*0:0*/ main__DOT__genbus__DOT____Vcellinp__wroutput__i_bus_busy;
@@ -1202,8 +1232,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__genbus__DOT__runwb__DOT__r_busy;
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__dw_busy;
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__cw_stb;
-    };
-    struct {
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__cp_stb;
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__dw_stb;
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__ln_stb;
@@ -1240,6 +1268,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__w_match;
         CData/*6:0*/ main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__r_wrptr;
         CData/*6:0*/ main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__r_rdptr;
+    };
+    struct {
         CData/*6:0*/ main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__nxt_wrptr;
         CData/*0:0*/ main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_overflow;
         CData/*0:0*/ main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_underflow;
@@ -1268,8 +1298,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ main__DOT__scope3_ddr3i__DOT__record_ce;
         CData/*0:0*/ main__DOT__scope3_ddr3i__DOT__br_wb_ack;
         CData/*0:0*/ main__DOT__scope3_ddr3i__DOT__br_pre_wb_ack;
-    };
-    struct {
         CData/*0:0*/ main__DOT__scope3_ddr3i__DOT__br_level_interrupt;
         CData/*0:0*/ main__DOT__spioi__DOT__led_demo;
         CData/*7:0*/ main__DOT__spioi__DOT__r_led;
@@ -1306,6 +1334,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*5:0*/ main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__wr_addr;
         CData/*5:0*/ main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__rd_addr;
         CData/*0:0*/ main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__w_wr;
+    };
+    struct {
         CData/*0:0*/ main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__w_rd;
         CData/*2:0*/ __VdfgTmp_h503d14d1__0;
         CData/*1:0*/ __VdfgTmp_ha46ae6a3__0;
@@ -1334,8 +1364,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*5:0*/ __Vdly__main__DOT__wbwide_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__3__KET____DOT__lclpending;
         CData/*0:0*/ __Vdlyvset__main__DOT__wb32_xbar__DOT__grant__v0;
         CData/*0:0*/ __Vdlyvset__main__DOT__wb32_xbar__DOT__grant__v1;
-    };
-    struct {
         CData/*0:0*/ __Vdlyvset__main__DOT__wb32_xbar__DOT__grant__v2;
         CData/*0:0*/ __Vdly__main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_merr;
         CData/*5:0*/ __Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending;
@@ -1372,6 +1400,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v6;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v7;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v7;
+    };
+    struct {
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v8;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v8;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v9;
@@ -1400,8 +1430,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v20;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v21;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v21;
-    };
-    struct {
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v22;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v22;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v23;
@@ -1438,6 +1466,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v38;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v39;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v39;
+    };
+    struct {
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v40;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v40;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v41;
@@ -1466,8 +1496,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v52;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v53;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v53;
-    };
-    struct {
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v54;
         CData/*0:0*/ __Vdlyvset__main__DOT__bkrami__DOT__mem__v54;
         CData/*7:0*/ __Vdlyvval__main__DOT__bkrami__DOT__mem__v55;
@@ -1504,6 +1532,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*4:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_insn_addr;
         CData/*0:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_illegal;
         CData/*0:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__cache_valid;
+    };
+    struct {
         CData/*0:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__w_sda;
         CData/*3:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__state;
         CData/*7:0*/ __Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_axisi2c__DOT__sreg;
@@ -1532,8 +1562,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdly__main__DOT__console__DOT__rxfifo__DOT__will_underflow;
         CData/*5:0*/ __Vdly__main__DOT__console__DOT__rxfifo__DOT__rd_addr;
         CData/*0:0*/ __Vdly__main__DOT__console__DOT__txfifo__DOT__will_overflow;
-    };
-    struct {
         CData/*5:0*/ __Vdlyvdim0__main__DOT__console__DOT__txfifo__DOT__fifo__v0;
         CData/*6:0*/ __Vdlyvval__main__DOT__console__DOT__txfifo__DOT__fifo__v0;
         CData/*0:0*/ __Vdlyvset__main__DOT__console__DOT__txfifo__DOT__fifo__v0;
@@ -1570,6 +1598,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*5:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__pre_shift;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__r_last;
         CData/*4:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__ign_sfifo_fill;
+    };
+    struct {
         CData/*6:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__fill;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__r_last;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__s2mm_wr_cyc;
@@ -1598,8 +1628,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*7:0*/ __Vdlyvdim0__main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__compression_tbl__v0;
         CData/*0:0*/ __Vdlyvset__main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__compression_tbl__v0;
         CData/*2:0*/ __Vdly__main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__r_stb;
-    };
-    struct {
         CData/*1:0*/ __Vdly__main__DOT__genbus__DOT__runwb__DOT__wb_state;
         CData/*0:0*/ __Vdly__main__DOT__wbu_stb;
         CData/*0:0*/ __Vdly__main__DOT__genbus__DOT__runwb__DOT__last_ack;
@@ -1636,6 +1664,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*4:0*/ __Vdly__main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__4__KET____DOT__brightness;
         CData/*4:0*/ __Vdly__main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__5__KET____DOT__brightness;
         CData/*4:0*/ __Vdly__main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__6__KET____DOT__brightness;
+    };
+    struct {
         CData/*4:0*/ __Vdly__main__DOT__spioi__DOT__knightrider__DOT__GEN_BRIGHTNESS__BRA__7__KET____DOT__brightness;
         CData/*0:0*/ __Vdly__main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__r_cyc;
         CData/*4:0*/ __Vdlyvdim0__main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__mem__v0;
@@ -1664,8 +1694,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__mem_stb_gbl;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__last_line_stb;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__end_of_line;
-    };
-    struct {
         CData/*1:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__state;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__cyc;
         CData/*0:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__stb;
@@ -1680,17 +1708,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v1;
         CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v1;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v2;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v2;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v3;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v3;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v4;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v4;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v5;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v5;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v6;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v6;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v7;
-        CData/*0:0*/ __Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v7;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v8;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v9;
         CData/*1:0*/ __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v10;
@@ -1708,6 +1730,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         CData/*2:0*/ __Vtrigprevexpr___TOP__main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__2__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0;
         CData/*2:0*/ __Vtrigprevexpr___TOP__main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0;
         CData/*2:0*/ __Vtrigprevexpr___TOP__main__DOT__wbu_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0;
+    };
+    struct {
         CData/*0:0*/ __Vtrigprevexpr___TOP__main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n__0;
         CData/*0:0*/ __VactDidInit;
         CData/*0:0*/ __VactContinue;
@@ -1730,8 +1754,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*9:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_col;
         SData/*13:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_row;
         SData/*13:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_next_row;
-    };
-    struct {
         SData/*9:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_col;
         SData/*13:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_row;
         SData/*15:0*/ main__DOT__ddr3_controller_inst__DOT__dqs_bitslip_arrangement;
@@ -1774,6 +1796,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*14:0*/ main__DOT__swic__DOT__PIC_WITH_ACCOUNTING__DOT__ALT_PIC__DOT__ctri__DOT__r_int_enable;
         SData/*14:0*/ main__DOT__swic__DOT__MAIN_PIC__DOT__pic__DOT__r_int_state;
         SData/*14:0*/ main__DOT__swic__DOT__MAIN_PIC__DOT__pic__DOT__r_int_enable;
+    };
+    struct {
         SData/*9:0*/ main__DOT__i2cscopei__DOT__raddr;
         SData/*9:0*/ main__DOT__i2cscopei__DOT__waddr;
         SData/*9:0*/ main__DOT__i2cscopei__DOT__this_addr;
@@ -1796,8 +1820,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*15:0*/ main__DOT__gpioi__DOT__q_gpio;
         SData/*9:0*/ main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe;
         SData/*15:0*/ main__DOT__spioi__DOT__GEN_SWITCHES__DOT__sw_pipe;
-    };
-    struct {
         SData/*11:0*/ __Vdly__main__DOT__wb32_xbar__DOT__sgrant;
         SData/*12:0*/ __Vdlyvval__main__DOT__wb32_xbar__DOT__grant__v1;
         SData/*11:0*/ __Vdly__main__DOT____Vcellout__wb32_xbar__o_sstb;
@@ -1840,6 +1862,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v16;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v16;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v17;
+    };
+    struct {
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v17;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v18;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v18;
@@ -1862,8 +1886,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v27;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v27;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v28;
-    };
-    struct {
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v28;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v29;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v29;
@@ -1906,6 +1928,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v48;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v48;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v49;
+    };
+    struct {
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v49;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v50;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v50;
@@ -1928,8 +1952,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v59;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v59;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v60;
-    };
-    struct {
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v60;
         SData/*13:0*/ __Vdlyvdim0__main__DOT__bkrami__DOT__mem__v61;
         SData/*8:0*/ __Vdlyvlsb__main__DOT__bkrami__DOT__mem__v61;
@@ -1963,12 +1985,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         SData/*9:0*/ __Vdly__main__DOT__i2cscopei__DOT__raddr;
         SData/*9:0*/ __Vdly__main__DOT__scope3_ddr3i__DOT__raddr;
         SData/*12:0*/ __Vtrigprevexpr___TOP__main__DOT__wb32_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0;
-        VL_INW(i_ddr3_controller_iserdes_data,255,0,8);
-        VL_IN(i_ddr3_controller_iserdes_dqs,31,0);
-        VL_IN(i_ddr3_controller_iserdes_bitslip_reference,31,0);
         VL_OUTW(o_ddr3_controller_cmd,95,0,3);
-        VL_OUTW(o_ddr3_controller_data,255,0,8);
-        VL_OUT(o_ddr3_controller_dm,31,0);
         VL_IN(cpu_sim_data,31,0);
         VL_OUT(cpu_sim_idata,31,0);
         VL_OUT(cpu_prof_addr,27,0);
@@ -1977,6 +1994,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__uart_debug;
         IData/*21:0*/ main__DOT__wbwide_i2cdma_addr;
         VlWide<16>/*511:0*/ main__DOT__wbwide_i2cdma_data;
+    };
+    struct {
         IData/*21:0*/ main__DOT__wbwide_i2cm_addr;
         IData/*21:0*/ main__DOT__wbwide_zip_addr;
         VlWide<16>/*511:0*/ main__DOT__wbwide_bkram_idata;
@@ -1994,19 +2013,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__wbu_idata;
         IData/*31:0*/ main__DOT__wbu_zip_idata;
         VlWide<4>/*127:0*/ main__DOT____Vcellout__wbwide_xbar__o_ssel;
-    };
-    struct {
         VlWide<32>/*1023:0*/ main__DOT____Vcellout__wbwide_xbar__o_sdata;
         VlWide<64>/*2047:0*/ main__DOT____Vcellout__wbwide_xbar__o_mdata;
         IData/*31:0*/ main__DOT__r_wb32_sio_data;
         VlWide<12>/*383:0*/ main__DOT____Vcellout__wb32_xbar__o_sdata;
         VlWide<10>/*299:0*/ main__DOT____Vcellout__wb32_xbar__o_saddr;
         IData/*30:0*/ main__DOT____Vcellinp__scope1_ddr3i____pinNumber4;
-        IData/*30:0*/ main__DOT____Vcellinp__scope2_ddr3i____pinNumber4;
-        VlWide<8>/*255:0*/ main__DOT____Vcellout__ddr3_controller_inst__o_wb_data;
         IData/*31:0*/ main__DOT____Vcellinp__swic__i_dbg_data;
         IData/*30:0*/ main__DOT____Vcellinp__i2cscopei____pinNumber4;
-        IData/*30:0*/ main__DOT____Vcellinp__scope3_ddr3i____pinNumber4;
         IData/*31:0*/ main__DOT__wbwide_xbar__DOT__iN;
         IData/*31:0*/ main__DOT__wbwide_xbar__DOT__iM;
         VlWide<19>/*598:0*/ main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__iskid__o_data;
@@ -2046,6 +2060,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*30:0*/ main__DOT__scope1_ddr3i__DOT__ck_addr;
         IData/*30:0*/ main__DOT__scope1_ddr3i__DOT__qd_data;
         IData/*30:0*/ main__DOT__scope1_ddr3i__DOT__lst_val;
+    };
+    struct {
         IData/*30:0*/ main__DOT__scope1_ddr3i__DOT__imm_val;
         IData/*31:0*/ main__DOT__scope1_ddr3i__DOT__r_data;
         IData/*31:0*/ main__DOT__scope1_ddr3i__DOT__nxt_mem;
@@ -2060,17 +2076,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__scope2_ddr3i__DOT__nxt_mem;
         IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__index;
         IData/*27:0*/ main__DOT__ddr3_controller_inst__DOT__instruction;
-    };
-    struct {
         IData/*17:0*/ main__DOT__ddr3_controller_inst__DOT__delay_counter;
-        VlWide<8>/*255:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_data;
-        IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_dm;
-        IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned;
-        IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned_temp;
-        VlWide<8>/*255:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned;
-        VlWide<8>/*255:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp;
-        VlWide<8>/*255:0*/ main__DOT__ddr3_controller_inst__DOT__write_calib_data;
-        VlWide<8>/*255:0*/ main__DOT__ddr3_controller_inst__DOT__read_data_store;
         VlWide<4>/*127:0*/ main__DOT__ddr3_controller_inst__DOT__write_pattern;
         IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__wb2_data;
         IData/*31:0*/ main__DOT__ddr3_controller_inst__DOT__wb_data_to_wb2;
@@ -2120,14 +2126,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__swic__DOT__dmac_data;
         IData/*31:0*/ main__DOT__swic__DOT__ctri_data;
         VlWide<16>/*511:0*/ main__DOT__swic__DOT__cpu_idata;
+    };
+    struct {
         IData/*31:0*/ main__DOT__swic__DOT__dbg_cpu_status;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__mtc_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__moc_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__mpc_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__mic_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__utc_data;
-    };
-    struct {
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__uoc_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__upc_data;
         IData/*31:0*/ main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__uic_data;
@@ -2186,14 +2192,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__doalu__DOT__thempy__DOT__IMPY__DOT__MPN1__DOT__MPN2__DOT__MPY3CK__DOT__r_mpy_a_input;
         IData/*31:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__doalu__DOT__thempy__DOT__IMPY__DOT__MPN1__DOT__MPN2__DOT__MPY3CK__DOT__r_mpy_b_input;
         IData/*31:0*/ main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_divisor;
+    };
+    struct {
         IData/*27:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__lastpc;
         IData/*18:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__pc_tag_lookup;
         IData/*18:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__last_tag_lookup;
         IData/*18:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__tag_lookup;
         IData/*18:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__illegal_cache;
         VlWide<16>/*511:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_pc_cache;
-    };
-    struct {
         VlWide<16>/*511:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_last_cache;
         IData/*27:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_pc;
         VlWide<16>/*511:0*/ main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__SHIFT_INSN__DOT__shifted;
@@ -2252,14 +2258,14 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__w_addr;
         IData/*31:0*/ main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__cword;
         IData/*31:0*/ main__DOT__genbus__DOT__runwb__DOT__wide_addr;
+    };
+    struct {
         IData/*29:0*/ main__DOT__genbus__DOT__wroutput__DOT__deword__DOT__r_word;
         IData/*31:0*/ main__DOT__genbus__DOT__wroutput__DOT__mkbytes__DOT__k;
         IData/*21:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_IDLES__DOT__buildcw__DOT__idle_counter;
         IData/*31:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__cword;
         IData/*31:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__k;
         IData/*31:0*/ main__DOT__scope3_ddr3i__DOT__o_bus_data;
-    };
-    struct {
         IData/*19:0*/ main__DOT__scope3_ddr3i__DOT__br_holdoff;
         IData/*19:0*/ main__DOT__scope3_ddr3i__DOT__holdoff_counter;
         IData/*30:0*/ main__DOT__scope3_ddr3i__DOT__ck_addr;
@@ -2318,25 +2324,28 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         IData/*31:0*/ __Vdlyvval__main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__compression_tbl__v0;
         IData/*31:0*/ __Vdly__main__DOT__genbus__DOT__runwb__DOT__wide_addr;
         IData/*21:0*/ __Vdly__main__DOT__genbus__DOT__wroutput__DOT__GEN_IDLES__DOT__buildcw__DOT__idle_counter;
+    };
+    struct {
         IData/*31:0*/ __Vdlyvval__main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__compression_tbl__v0;
         IData/*30:0*/ __Vdly__main__DOT__scope3_ddr3i__DOT__ck_addr;
         IData/*31:0*/ __Vdlyvval__main__DOT__scope3_ddr3i__DOT__mem__v0;
         IData/*31:0*/ __Vdlyvval__main__DOT__swic__DOT__thecpu__DOT__core__DOT__regset__v0;
         IData/*27:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_pc;
         IData/*21:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_addr;
-    };
-    struct {
         IData/*18:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__last_tag;
         IData/*21:0*/ __Vdly__main__DOT__swic__DOT__thecpu__DOT__mem_bus_addr;
         IData/*18:0*/ __Vdlyvval__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__c_vtags__v0;
         IData/*31:0*/ __VstlIterCount;
         IData/*31:0*/ __VicoIterCount;
         IData/*31:0*/ __VactIterCount;
+        VL_IN64(i_ddr3_controller_iserdes_data,63,0);
+        VL_OUT64(o_ddr3_controller_data,63,0);
         QData/*63:0*/ main__DOT__wbwide_i2cdma_sel;
         QData/*43:0*/ main__DOT____Vcellout__wbwide_xbar__o_saddr;
         QData/*47:0*/ main__DOT____Vcellout__wb32_xbar__o_ssel;
         QData/*63:0*/ main__DOT____Vcellout__wbu_xbar__o_sdata;
         QData/*53:0*/ main__DOT____Vcellout__wbu_xbar__o_saddr;
+        QData/*63:0*/ main__DOT____Vcellout__ddr3_controller_inst__o_wb_data;
         QData/*61:0*/ main__DOT__wb32_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__iskid__o_data;
         QData/*61:0*/ main__DOT__wb32_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data;
         QData/*36:0*/ main__DOT__wb32_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_data;
@@ -2345,7 +2354,13 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         QData/*63:0*/ main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data;
         QData/*36:0*/ main__DOT__wbu_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_data;
         QData/*63:0*/ main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__iskid__DOT__LOGIC__DOT__r_data;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT__stage1_data;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp;
         QData/*39:0*/ main__DOT__ddr3_controller_inst__DOT__dqs_store;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT__write_calib_data;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT__read_data_store;
+        QData/*63:0*/ main__DOT__ddr3_controller_inst__DOT____Vlvbound_h41e111b3__0;
         QData/*63:0*/ main__DOT__bkrami__DOT__EXTRA_MEM_CLOCK_CYCLE__DOT__last_sel;
         QData/*63:0*/ main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__s_sel;
         QData/*63:0*/ main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__nxt_sel;
@@ -2375,6 +2390,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         QData/*35:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__a_addrword;
         QData/*35:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__r_word;
         QData/*35:0*/ main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__r_cword;
+    };
+    struct {
         QData/*63:0*/ main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__r_sel;
         QData/*35:0*/ __Vdlyvval__main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__fifo__v0;
         QData/*35:0*/ __Vdlyvval__main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__fifo__v0;
@@ -2390,8 +2407,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         VlUnpacked<VlWide<16>/*511:0*/, 4> main__DOT__wbwide_xbar__DOT__s_data;
         VlUnpacked<SData/*12:0*/, 1> main__DOT__wb32_xbar__DOT__request;
         VlUnpacked<SData/*11:0*/, 1> main__DOT__wb32_xbar__DOT__requested;
-    };
-    struct {
         VlUnpacked<SData/*12:0*/, 1> main__DOT__wb32_xbar__DOT__grant;
         VlUnpacked<CData/*5:0*/, 1> main__DOT__wb32_xbar__DOT__w_mpending;
         VlUnpacked<CData/*3:0*/, 1> main__DOT__wb32_xbar__DOT__mindex;
@@ -2414,10 +2429,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         VlUnpacked<IData/*31:0*/, 1024> main__DOT__scope2_ddr3i__DOT__mem;
         VlUnpacked<SData/*13:0*/, 8> main__DOT__ddr3_controller_inst__DOT__bank_active_row_q;
         VlUnpacked<SData/*13:0*/, 8> main__DOT__ddr3_controller_inst__DOT__bank_active_row_d;
-        VlUnpacked<IData/*31:0*/, 2> main__DOT__ddr3_controller_inst__DOT__stage2_dm;
-        VlUnpacked<VlWide<8>/*255:0*/, 2> main__DOT__ddr3_controller_inst__DOT__stage2_data;
-        VlUnpacked<QData/*63:0*/, 4> main__DOT__ddr3_controller_inst__DOT__unaligned_data;
-        VlUnpacked<CData/*7:0*/, 4> main__DOT__ddr3_controller_inst__DOT__unaligned_dm;
+        VlUnpacked<CData/*7:0*/, 2> main__DOT__ddr3_controller_inst__DOT__stage2_dm;
+        VlUnpacked<QData/*63:0*/, 2> main__DOT__ddr3_controller_inst__DOT__stage2_data;
+        VlUnpacked<QData/*63:0*/, 1> main__DOT__ddr3_controller_inst__DOT__unaligned_data;
+        VlUnpacked<CData/*7:0*/, 1> main__DOT__ddr3_controller_inst__DOT__unaligned_dm;
         VlUnpacked<CData/*3:0*/, 8> main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q;
         VlUnpacked<CData/*3:0*/, 8> main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_d;
         VlUnpacked<CData/*3:0*/, 8> main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q;
@@ -2427,20 +2442,22 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         VlUnpacked<CData/*3:0*/, 8> main__DOT__ddr3_controller_inst__DOT__delay_before_read_counter_q;
         VlUnpacked<CData/*3:0*/, 8> main__DOT__ddr3_controller_inst__DOT__delay_before_read_counter_d;
         VlUnpacked<IData/*23:0*/, 4> main__DOT__ddr3_controller_inst__DOT__cmd_d;
-        VlUnpacked<CData/*3:0*/, 4> main__DOT__ddr3_controller_inst__DOT__added_read_pipe;
+        VlUnpacked<CData/*3:0*/, 1> main__DOT__ddr3_controller_inst__DOT__added_read_pipe;
         VlUnpacked<CData/*1:0*/, 5> main__DOT__ddr3_controller_inst__DOT__shift_reg_read_pipe_q;
         VlUnpacked<CData/*1:0*/, 5> main__DOT__ddr3_controller_inst__DOT__shift_reg_read_pipe_d;
         VlUnpacked<SData/*15:0*/, 2> main__DOT__ddr3_controller_inst__DOT__delay_read_pipe;
-        VlUnpacked<VlWide<8>/*255:0*/, 2> main__DOT__ddr3_controller_inst__DOT__o_wb_data_q;
+        VlUnpacked<QData/*63:0*/, 2> main__DOT__ddr3_controller_inst__DOT__o_wb_data_q;
         VlUnpacked<CData/*1:0*/, 16> main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q;
-        VlUnpacked<CData/*6:0*/, 4> main__DOT__ddr3_controller_inst__DOT__data_start_index;
-        VlUnpacked<CData/*4:0*/, 4> main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein;
-        VlUnpacked<CData/*4:0*/, 4> main__DOT__ddr3_controller_inst__DOT__odelay_dqs_cntvaluein;
-        VlUnpacked<CData/*4:0*/, 4> main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein;
-        VlUnpacked<CData/*4:0*/, 4> main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein;
+        VlUnpacked<CData/*6:0*/, 1> main__DOT__ddr3_controller_inst__DOT__data_start_index;
+        VlUnpacked<CData/*4:0*/, 1> main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein;
+        VlUnpacked<CData/*4:0*/, 1> main__DOT__ddr3_controller_inst__DOT__odelay_dqs_cntvaluein;
+        VlUnpacked<CData/*4:0*/, 1> main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein;
+        VlUnpacked<CData/*4:0*/, 1> main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein;
         VlUnpacked<VlWide<16>/*511:0*/, 16384> main__DOT__bkrami__DOT__mem;
         VlUnpacked<IData/*31:0*/, 8> main__DOT__clock_generator__DOT__counter;
         VlUnpacked<CData/*4:0*/, 32> main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem;
+    };
+    struct {
         VlUnpacked<CData/*6:0*/, 64> main__DOT__console__DOT__rxfifo__DOT__fifo;
         VlUnpacked<CData/*6:0*/, 64> main__DOT__console__DOT__txfifo__DOT__fifo;
         VlUnpacked<IData/*31:0*/, 32> main__DOT__swic__DOT__thecpu__DOT__core__DOT__regset;
@@ -2456,8 +2473,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain___024root final : public VerilatedModul
         VlUnpacked<CData/*6:0*/, 128> main__DOT__genbus__DOT__wroutput__DOT__mkbytes__DOT__remap;
         VlUnpacked<IData/*31:0*/, 1024> main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__compression_tbl;
         VlUnpacked<QData/*35:0*/, 64> main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__fifo;
-    };
-    struct {
         VlUnpacked<QData/*35:0*/, 1024> main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__fifo;
         VlUnpacked<IData/*31:0*/, 1024> main__DOT__scope3_ddr3i__DOT__mem;
         VlUnpacked<CData/*3:0*/, 32> main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__mem;
