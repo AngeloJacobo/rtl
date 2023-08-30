@@ -56,13 +56,13 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , i_sw{vlSymsp->TOP.i_sw}
     , i_btn{vlSymsp->TOP.i_btn}
     , o_led{vlSymsp->TOP.o_led}
-    , i_ddr3_controller_iserdes_dqs{vlSymsp->TOP.i_ddr3_controller_iserdes_dqs}
-    , i_ddr3_controller_iserdes_bitslip_reference{vlSymsp->TOP.i_ddr3_controller_iserdes_bitslip_reference}
-    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , i_gpio{vlSymsp->TOP.i_gpio}
     , i_ddr3_controller_iserdes_data{vlSymsp->TOP.i_ddr3_controller_iserdes_data}
+    , i_ddr3_controller_iserdes_dqs{vlSymsp->TOP.i_ddr3_controller_iserdes_dqs}
+    , i_ddr3_controller_iserdes_bitslip_reference{vlSymsp->TOP.i_ddr3_controller_iserdes_bitslip_reference}
     , o_ddr3_controller_cmd{vlSymsp->TOP.o_ddr3_controller_cmd}
     , o_ddr3_controller_data{vlSymsp->TOP.o_ddr3_controller_data}
+    , o_ddr3_controller_dm{vlSymsp->TOP.o_ddr3_controller_dm}
     , cpu_sim_data{vlSymsp->TOP.cpu_sim_data}
     , cpu_sim_idata{vlSymsp->TOP.cpu_sim_idata}
     , cpu_prof_addr{vlSymsp->TOP.cpu_prof_addr}

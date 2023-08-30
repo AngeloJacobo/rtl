@@ -1690,8 +1690,11 @@ module ddr3_controller #(
                             o_wb2_data <= stage2_data_unaligned[31:0]; //first 32 bit of the patern written on the first write just for checking (128'h80dbcfd275f12c3d_9177298cd0ad51c1)
                         end   
                     12: if(!wb2_we) begin //0x30
-                            o_wb2_data <= {stage1_we,stage1_col[6:0],stage1_data[7:0],stage1_dm[15:0]}; //check if proper request is received
+                            o_wb2_data <= {stage1_we,stage1_col[6:0],stage1_data[7:0],{8'b0,stage1_dm[7:0]}}; //check if proper request is received
                         end   
+                    13: if(!wb2_we) begin //0x30
+                            o_wb2_data <= 32'hf7; //lane 1
+                        end
               default: if(!wb2_we) begin //read 
                            o_wb2_data <= {(WB2_DATA_BITS/2){2'b10}}; //return alternating 1s and 0s when address to be read is invalid 
                        end
@@ -1710,14 +1713,14 @@ module ddr3_controller #(
     //            o_phy_idelay_dqs_ld[lane], state_calibrate[4:0], dqs_store[11:0]};
     //assign o_debug1 = {debug_trigger, 2'b00, delay_before_read_data[3:0] ,i_phy_idelayctrl_rdy, 2'b00, lane, dqs_start_index_stored[4:0], 
     //    dqs_target_index[4:0], instruction_address[4:0], state_calibrate[4:0], o_wb2_stall};       
-    assign o_debug1 = {debug_trigger,stage1_we,stage1_col[5:0],stage1_data[7:0],stage1_dm[15:0]};
-    assign o_debug2 = {debug_trigger, idelay_dqs_cntvaluein[lane][4:0], idelay_data_cntvaluein[lane][4:0], i_phy_iserdes_dqs[15:0], 
+    assign o_debug1 = {debug_trigger,stage1_we,stage1_col[5:0],stage1_data[7:0],{8'b0,stage1_dm[7:0]}};
+    assign o_debug2 = {debug_trigger, idelay_dqs_cntvaluein[lane][4:0], idelay_data_cntvaluein[lane][4:0],{i_phy_iserdes_dqs[15:0]}, 
                 o_phy_dqs_tri_control, o_phy_dq_tri_control,
                 (i_phy_iserdes_data == 0), (i_phy_iserdes_data == {(DQ_BITS*LANES*8){1'b1}}), (i_phy_iserdes_data < { {(DQ_BITS*LANES*4){1'b0}}, {(DQ_BITS*LANES*4){1'b1}} } )
                 }; 
     /*assign o_debug3 = {debug_trigger, delay_before_write_level_feedback[4:0], odelay_data_cntvaluein[lane][4:0], odelay_dqs_cntvaluein[lane][4:0], 
             state_calibrate[4:0], prev_write_level_feedback, i_phy_iserdes_data[48], i_phy_iserdes_data[40], i_phy_iserdes_data[32], i_phy_iserdes_data[24]
-            , i_phy_iserdes_data[16], i_phy_iserdes_data[8], i_phy_iserdes_data[0], lane[2:0] };
+            , i_phy_iserdes_data[16], i_phy_iserdes_data[8], i_phy_iserdes_data[0], {2'b0,lane} };
     */
     
     /*assign o_debug3 = {debug_trigger, lane[2:0], delay_before_read_data[3:0], i_phy_iserdes_data[448 +: 3], i_phy_iserdes_data[384 +: 3], i_phy_iserdes_data[320 +: 3], 

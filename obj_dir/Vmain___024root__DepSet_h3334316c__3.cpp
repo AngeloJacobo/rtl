@@ -2703,6 +2703,18 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__11(Vmain___024root* vlSel
     vlSelf->main__DOT____Vcellout__ddr3_controller_inst__o_wb_data[3U] 
         = vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
         [vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data][3U];
+    vlSelf->main__DOT____Vcellout__ddr3_controller_inst__o_wb_data[4U] 
+        = vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
+        [vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data][4U];
+    vlSelf->main__DOT____Vcellout__ddr3_controller_inst__o_wb_data[5U] 
+        = vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
+        [vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data][5U];
+    vlSelf->main__DOT____Vcellout__ddr3_controller_inst__o_wb_data[6U] 
+        = vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
+        [vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data][6U];
+    vlSelf->main__DOT____Vcellout__ddr3_controller_inst__o_wb_data[7U] 
+        = vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
+        [vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data][7U];
     if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_read_pipe__v1) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[0U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v0;
@@ -2718,12 +2730,20 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__11(Vmain___024root* vlSel
     if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v3) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[3U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v3;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v4) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[4U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v4;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v5) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[5U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v5;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v6) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[6U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v6;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v7) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[7U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q__v7;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q[8U] 

@@ -8,6 +8,10 @@
 #include "Vmain__Syms.h"
 #include "Vmain___024root.h"
 
+extern const VlWide<8>/*255:0*/ Vmain__ConstPool__CONST_h9e67c271_0;
+extern const VlWide<8>/*255:0*/ Vmain__ConstPool__CONST_h5b979007_0;
+extern const VlWide<8>/*255:0*/ Vmain__ConstPool__CONST_h5b8bf83d_0;
+
 VL_INLINE_OPT void Vmain___024root___ico_sequent__TOP__0(Vmain___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vmain__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
@@ -15,7 +19,6 @@ VL_INLINE_OPT void Vmain___024root___ico_sequent__TOP__0(Vmain___024root* vlSelf
     // Init
     CData/*0:0*/ main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT____Vlvbound_h97024913__0;
     main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT____Vlvbound_h97024913__0 = 0;
-    VlWide<4>/*127:0*/ __Vtemp_hd0986443__0;
     // Body
     vlSelf->main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n 
         = (1U & (~ (IData)(vlSelf->i_reset)));
@@ -93,39 +96,73 @@ VL_INLINE_OPT void Vmain___024root___ico_sequent__TOP__0(Vmain___024root* vlSelf
                : ((0xffffffcU & vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_USER_PC__DOT__r_upc) 
                   | ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_UHALT_PHASE__DOT__r_uhalt_phase) 
                      << 1U))));
-    __Vtemp_hd0986443__0[0U] = 0xffffffffU;
-    __Vtemp_hd0986443__0[1U] = 0xffffffffU;
-    __Vtemp_hd0986443__0[2U] = 0U;
-    __Vtemp_hd0986443__0[3U] = 0U;
     vlSelf->main__DOT____Vcellinp__scope2_ddr3i____pinNumber4 
         = (((IData)(vlSelf->o_ddr3_controller_idelay_dqs_cntvaluein) 
             << 0x1aU) | (((IData)(vlSelf->o_ddr3_controller_idelay_data_cntvaluein) 
-                          << 0x15U) | (((IData)(vlSelf->i_ddr3_controller_iserdes_dqs) 
-                                        << 5U) | (((IData)(vlSelf->o_ddr3_controller_dqs_tri_control) 
-                                                   << 4U) 
-                                                  | (((IData)(vlSelf->o_ddr3_controller_dq_tri_control) 
-                                                      << 3U) 
-                                                     | (((IData)(
-                                                                 (0U 
-                                                                  == 
-                                                                  (((vlSelf->i_ddr3_controller_iserdes_data[0U] 
-                                                                     | vlSelf->i_ddr3_controller_iserdes_data[1U]) 
-                                                                    | vlSelf->i_ddr3_controller_iserdes_data[2U]) 
-                                                                   | vlSelf->i_ddr3_controller_iserdes_data[3U]))) 
-                                                         << 2U) 
-                                                        | (((IData)(
-                                                                    (0U 
-                                                                     == 
-                                                                     ((((~ 
-                                                                         vlSelf->i_ddr3_controller_iserdes_data[0U]) 
-                                                                        | (~ 
-                                                                           vlSelf->i_ddr3_controller_iserdes_data[1U])) 
-                                                                       | (~ 
-                                                                          vlSelf->i_ddr3_controller_iserdes_data[2U])) 
-                                                                      | (~ 
-                                                                         vlSelf->i_ddr3_controller_iserdes_data[3U])))) 
-                                                            << 1U) 
-                                                           | VL_GT_W(4, __Vtemp_hd0986443__0, vlSelf->i_ddr3_controller_iserdes_data))))))));
+                          << 0x15U) | ((0x1fffe0U & 
+                                        (vlSelf->i_ddr3_controller_iserdes_dqs 
+                                         << 5U)) | 
+                                       (((IData)(vlSelf->o_ddr3_controller_dqs_tri_control) 
+                                         << 4U) | (
+                                                   ((IData)(vlSelf->o_ddr3_controller_dq_tri_control) 
+                                                    << 3U) 
+                                                   | (((IData)(
+                                                               (0U 
+                                                                == 
+                                                                ((((((((Vmain__ConstPool__CONST_h9e67c271_0[0U] 
+                                                                        ^ 
+                                                                        vlSelf->i_ddr3_controller_iserdes_data[0U]) 
+                                                                       | (Vmain__ConstPool__CONST_h9e67c271_0[1U] 
+                                                                          ^ 
+                                                                          vlSelf->i_ddr3_controller_iserdes_data[1U])) 
+                                                                      | (Vmain__ConstPool__CONST_h9e67c271_0[2U] 
+                                                                         ^ 
+                                                                         vlSelf->i_ddr3_controller_iserdes_data[2U])) 
+                                                                     | (Vmain__ConstPool__CONST_h9e67c271_0[3U] 
+                                                                        ^ 
+                                                                        vlSelf->i_ddr3_controller_iserdes_data[3U])) 
+                                                                    | (Vmain__ConstPool__CONST_h9e67c271_0[4U] 
+                                                                       ^ 
+                                                                       vlSelf->i_ddr3_controller_iserdes_data[4U])) 
+                                                                   | (Vmain__ConstPool__CONST_h9e67c271_0[5U] 
+                                                                      ^ 
+                                                                      vlSelf->i_ddr3_controller_iserdes_data[5U])) 
+                                                                  | (Vmain__ConstPool__CONST_h9e67c271_0[6U] 
+                                                                     ^ 
+                                                                     vlSelf->i_ddr3_controller_iserdes_data[6U])) 
+                                                                 | (Vmain__ConstPool__CONST_h9e67c271_0[7U] 
+                                                                    ^ 
+                                                                    vlSelf->i_ddr3_controller_iserdes_data[7U])))) 
+                                                       << 2U) 
+                                                      | (((IData)(
+                                                                  (0U 
+                                                                   == 
+                                                                   ((((((((Vmain__ConstPool__CONST_h5b979007_0[0U] 
+                                                                           ^ 
+                                                                           vlSelf->i_ddr3_controller_iserdes_data[0U]) 
+                                                                          | (Vmain__ConstPool__CONST_h5b979007_0[1U] 
+                                                                             ^ 
+                                                                             vlSelf->i_ddr3_controller_iserdes_data[1U])) 
+                                                                         | (Vmain__ConstPool__CONST_h5b979007_0[2U] 
+                                                                            ^ 
+                                                                            vlSelf->i_ddr3_controller_iserdes_data[2U])) 
+                                                                        | (Vmain__ConstPool__CONST_h5b979007_0[3U] 
+                                                                           ^ 
+                                                                           vlSelf->i_ddr3_controller_iserdes_data[3U])) 
+                                                                       | (Vmain__ConstPool__CONST_h5b979007_0[4U] 
+                                                                          ^ 
+                                                                          vlSelf->i_ddr3_controller_iserdes_data[4U])) 
+                                                                      | (Vmain__ConstPool__CONST_h5b979007_0[5U] 
+                                                                         ^ 
+                                                                         vlSelf->i_ddr3_controller_iserdes_data[5U])) 
+                                                                     | (Vmain__ConstPool__CONST_h5b979007_0[6U] 
+                                                                        ^ 
+                                                                        vlSelf->i_ddr3_controller_iserdes_data[6U])) 
+                                                                    | (Vmain__ConstPool__CONST_h5b979007_0[7U] 
+                                                                       ^ 
+                                                                       vlSelf->i_ddr3_controller_iserdes_data[7U])))) 
+                                                          << 1U) 
+                                                         | VL_GT_W(8, Vmain__ConstPool__CONST_h5b8bf83d_0, vlSelf->i_ddr3_controller_iserdes_data))))))));
     vlSelf->main__DOT__wbwide_xbar__DOT__SLAVE_GRANT__BRA__0__KET____DOT__drop_sgrant 
         = (1U & (~ ((IData)(vlSelf->main__DOT____Vcellinp__wbwide_xbar__i_mcyc) 
                     >> vlSelf->main__DOT__wbwide_xbar__DOT__sindex
@@ -10900,7 +10937,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__0(Vmain___024root* vlSelf
     }
     vlSelf->main__DOT__r_wb32_sio_data = ((0x400U & 
                                            vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[6U])
-                                           ? 0x20230827U
+                                           ? 0x20230830U
                                            : ((0x200U 
                                                & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[6U])
                                                ? ((0x100U 
@@ -10923,7 +10960,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__0(Vmain___024root* vlSelf
                                                   (((IData)(vlSelf->main__DOT__gpioi__DOT__r_gpio) 
                                                     << 0x10U) 
                                                    | (IData)(vlSelf->o_gpio))
-                                                   : 0x102339U)));
+                                                   : 0x173842U)));
     if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_pipe_stalled)) 
                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_rd_pending))))) {
         vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_addr 

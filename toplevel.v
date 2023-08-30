@@ -88,7 +88,7 @@ module	toplevel(
                     DDR3_CONTROLLERCOL_BITS = 10,  // width of column address
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
-                    DDR3_CONTROLLERLANES = 2, //0, //8 lanes of DQ
+                    DDR3_CONTROLLERLANES = 4, //0, //8 lanes of DQ
                     DDR3_CONTROLLERAUX_WIDTH = 1,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
@@ -218,6 +218,8 @@ module	toplevel(
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_odelay_data_ld, ddr3_controller_odelay_dqs_ld;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_idelay_data_ld, ddr3_controller_idelay_dqs_ld;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_bitslip;
+	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_debug_read_dqs_p, ddr3_controller_debug_read_dqs_n;
+	wire    ddr3_controller_debug_clk_p, ddr3_controller_debug_clk_n;
 	// }}}
 	// Definitions for the clock generation circuit
 	wire		s_sirefclk_clk, w_sirefclk_pll_locked,
@@ -380,9 +382,12 @@ module	toplevel(
             .io_ddr3_dqs(io_ddr3_dqs_p),
             .io_ddr3_dqs_n(io_ddr3_dqs_n),
             .o_ddr3_dm(o_ddr3_dm),
-            .o_ddr3_odt(o_ddr3_odt[0]) // on-die termination
+            .o_ddr3_odt(o_ddr3_odt[0]), // on-die termination
+            // DEBUG PHY
+            .o_ddr3_debug_read_dqs_p(ddr3_controller_debug_read_dqs_p),
+            .o_ddr3_debug_read_dqs_n(ddr3_controller_debug_read_dqs_n)
         );
-
+        //assign	o_tp = {ddr3_controller_debug_read_dqs_n[1:0],ddr3_controller_debug_read_dqs_p[1:0]};
         assign o_ddr3_s_n[1] = 1; // set to 1 (disabled) since controller only supports single rank
         assign o_ddr3_cke[1] = 0; // set to 0 (disabled) since controller only supports single rank
         assign o_ddr3_odt[1] = 0; // set to 0 (disabled) since controller only supports single rank

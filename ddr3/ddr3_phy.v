@@ -1,5 +1,6 @@
 `default_nettype none
 `timescale 1ps / 1ps
+//`define DEBUG_DQS
 
 module ddr3_phy #(
    parameter real CONTROLLER_CLK_PERIOD = 12, //ns, period of clock input to this DDR3 controller module
@@ -8,7 +9,7 @@ module ddr3_phy #(
                   BA_BITS = 3,
                   DQ_BITS = 8,
                   LANES = 8,
-    parameter[0:0] ODELAY_SUPPORTED = 1, //set to 1 when ODELAYE2 is supported
+    parameter[0:0] ODELAY_SUPPORTED = 1, //set to 1 when ODELAYE2 is supported 
               // The next parameters act more like a localparam (since user does not have to set this manually) but was added here to simplify port declaration
     parameter serdes_ratio = $rtoi(CONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
               wb_data_bits = DQ_BITS*LANES*serdes_ratio*2,
@@ -47,7 +48,10 @@ module ddr3_phy #(
         inout wire[(DQ_BITS*LANES)-1:0] io_ddr3_dq,
         inout wire[(DQ_BITS*LANES)/8-1:0] io_ddr3_dqs, io_ddr3_dqs_n,
         output wire[LANES-1:0] o_ddr3_dm,
-        output wire o_ddr3_odt // on-die termination
+        output wire o_ddr3_odt, // on-die termination
+        // DEBUG PHY
+        output wire[(DQ_BITS*LANES)/8-1:0] o_ddr3_debug_read_dqs_p,
+        output wire[(DQ_BITS*LANES)/8-1:0] o_ddr3_debug_read_dqs_n
     );
 
     // cmd bit assignment
@@ -100,6 +104,14 @@ module ddr3_phy #(
     reg toggle_dqs_q; //past value of i_controller_toggle_dqs
     wire ddr3_clk_delayed;
     
+`ifdef DEBUG_DQS
+    assign o_ddr3_debug_read_dqs_p = io_ddr3_dqs;
+    assign o_ddr3_debug_read_dqs_n = io_ddr3_dqs_n;
+`else
+    assign o_ddr3_debug_read_dqs_p = 0;
+    assign o_ddr3_debug_read_dqs_n = 0;
+`endif
+
     //synchronous reset
     always @(posedge i_controller_clk, negedge i_rst_n) begin
         if(!i_rst_n) begin
@@ -691,8 +703,7 @@ module ddr3_phy #(
 
         // dqs: odelay -> iobuf
         for(gen_index = 0; gen_index < LANES; gen_index = gen_index + 1) begin
-
-            
+`ifndef DEBUG_DQS  //remove the logic for dqs if needs to be debugged (directed to output instead)  
             if(ODELAY_SUPPORTED) begin 
                 // OSERDESE2: Output SERial/DESerializer with bitslip
                 //7 Series
@@ -947,7 +958,7 @@ module ddr3_phy #(
                 .SHIFTIN2()
             );
             // End of ISERDESE2_inst instantiation
-            
+`endif
                       
             //ISERDES train
             // End of IOBUF_inst instantiation                 
