@@ -5159,7 +5159,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = ((IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant) 
            & (((0xfffff800U & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
                                & ((vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q
-                                   [0U] & (0xeU == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate))) 
+                                   [0U] & (0x10U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate))) 
                                   << 0xbU))) | ((0xfffffc00U 
                                                  & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
                                                     & ((IData)(vlSelf->main__DOT__wb32_ddr3_phy_ack) 

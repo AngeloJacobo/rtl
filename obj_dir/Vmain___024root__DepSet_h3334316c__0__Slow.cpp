@@ -67,7 +67,6 @@ VL_ATTR_COLD void Vmain___024root___eval_static__TOP(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_start_index_stored = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index_orig = 0U;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__dq_target_index = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_start_index_repeat = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_read_data = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_write_level_feedback = 0U;
@@ -90,6 +89,10 @@ VL_ATTR_COLD void Vmain___024root___eval_static__TOP(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT__write_pattern[1U] = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__write_pattern[2U] = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__write_pattern[3U] = 0U;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__sample_clk_repeat = 0U;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__stored_write_level_feedback = 0U;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__start_index_check = 0U;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__read_lane_data = 0ULL;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_stb = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_update = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we = 0U;
@@ -809,6 +812,7 @@ VL_ATTR_COLD void Vmain___024root___eval_initial__TOP(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_dqs_cntvaluein[0U] = 8U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein[0U] = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein[0U] = 8U;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__dq_target_index[0U] = 0U;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__index = 1U;
     VL_WRITEF("TEST FUNCTIONS\n-----------------------------\n\nTest ns_to_cycles() function:\n");
     VL_WRITEF("\tns_to_cycles(15) = 2 [exact]\n");
@@ -827,7 +831,7 @@ VL_ATTR_COLD void Vmain___024root___eval_initial__TOP(Vmain___024root* vlSelf) {
     VL_WRITEF("\tns_to_cycles(14.875) = 8.000000 [round-off]\n");
     VL_WRITEF("\tns_to_cycles(13.875) = 13.000000 [round-up]\n\n");
     VL_WRITEF("Test $floor() function:\n\t$floor(5/2) = 2.000000\n\t$floor(9/4) = 2.000000\n\t$floor(9/4) = 2.000000\n\t$floor(9/5) = 1.000000\n\n\nDISPLAY CONTROLLER PARAMETERS\n-----------------------------\n\nMICRON_SIM = 0\nODELAY_SUPPORTED = 1\nCONTROLLER_CLK_PERIOD = 10.00\nDDR3_CLK_PERIOD = 2.50\nROW_BITS = 14\nCOL_BITS = 10\nBA_BITS = 3\nDQ_BITS = 8\nLANES = 1\nAUX_WIDTH = 1\nWB2_ADDR_BITS = 7\nWB2_DATA_BITS = 32\nserdes_ratio = 4\nwb_addr_bits = 24\nwb_data_bits = 64\nwb_sel_bits  = 8\nwb2_sel_bits = 4\ncmd_len = 24\n");
-    VL_WRITEF("DELAY_COUNTER_WIDTH = 18\nDELAY_SLOT_WIDTH = 19\nserdes_ratio = 4\nwb_addr_bits = 24\nwb_data_bits = 64\nwb_sel_bits = 8\n\n\nREAD_SLOT = 2\nWRITE_SLOT = 3\nACTIVATE_SLOT = 0\nPRECHARGE_SLOT = 1\n\n\nDELAYS:\n");
+    VL_WRITEF("DELAY_COUNTER_WIDTH = 16\nDELAY_SLOT_WIDTH = 19\nserdes_ratio = 4\nwb_addr_bits = 24\nwb_data_bits = 64\nwb_sel_bits = 8\n\n\nREAD_SLOT = 2\nWRITE_SLOT = 3\nACTIVATE_SLOT = 0\nPRECHARGE_SLOT = 1\n\n\nDELAYS:\n");
     VL_WRITEF("\tns_to_nCK(tRCD): 6\n");
     VL_WRITEF("\tns_to_nCK(tRP): 6\n");
     VL_WRITEF("\tns_to_nCK(tRTP): 4\n\ttCCD: 4\n\t(CL_nCK + tCCD + 2 - CWL_nCK): 7\n");

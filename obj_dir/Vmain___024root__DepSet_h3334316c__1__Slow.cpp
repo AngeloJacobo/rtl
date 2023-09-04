@@ -657,7 +657,7 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT__index = VL_RAND_RESET_I(32);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction_address = VL_RAND_RESET_I(5);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction = VL_RAND_RESET_I(28);
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_counter = VL_RAND_RESET_I(18);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_counter = VL_RAND_RESET_I(16);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_counter_is_zero = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__reset_done = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__pause_counter = VL_RAND_RESET_I(1);
@@ -753,9 +753,11 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_start_index_stored = VL_RAND_RESET_I(6);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index = VL_RAND_RESET_I(6);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index_orig = VL_RAND_RESET_I(6);
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__dq_target_index = VL_RAND_RESET_I(6);
+    for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__dq_target_index[__Vi0] = VL_RAND_RESET_I(6);
+    }
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index_value = VL_RAND_RESET_I(6);
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_start_index_repeat = VL_RAND_RESET_I(3);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_start_index_repeat = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__train_delay = VL_RAND_RESET_I(2);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_read_data = VL_RAND_RESET_I(4);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_write_level_feedback = VL_RAND_RESET_I(5);
@@ -811,6 +813,10 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein[__Vi0] = VL_RAND_RESET_I(5);
     }
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__sample_clk_repeat = VL_RAND_RESET_I(6);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__stored_write_level_feedback = VL_RAND_RESET_I(1);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__start_index_check = VL_RAND_RESET_I(6);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__read_lane_data = VL_RAND_RESET_Q(64);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_stb = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_update = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we = VL_RAND_RESET_I(1);
@@ -847,6 +853,8 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h1b2f8325__0 = VL_RAND_RESET_I(5);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h30c4ab1e__0 = VL_RAND_RESET_I(5);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h80415d99__0 = VL_RAND_RESET_I(5);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h02bca03b__0 = VL_RAND_RESET_I(6);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h02bca03b__1 = VL_RAND_RESET_I(6);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h0aaecb26__0 = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha9e19381__0 = VL_RAND_RESET_I(1);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_ha1e87f9f__0 = VL_RAND_RESET_I(1);
@@ -860,6 +868,9 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_hd9bf9093__0 = VL_RAND_RESET_I(7);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h36bae610__1 = VL_RAND_RESET_I(7);
     vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h36bae610__2 = VL_RAND_RESET_I(7);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_hcbac20e2__1 = VL_RAND_RESET_I(4);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h02bca03b__2 = VL_RAND_RESET_I(6);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h0aaecb26__2 = VL_RAND_RESET_I(1);
     for (int __Vi0 = 0; __Vi0 < 16384; ++__Vi0) {
         VL_RAND_RESET_W(512, vlSelf->main__DOT__bkrami__DOT__mem[__Vi0]);
     }
