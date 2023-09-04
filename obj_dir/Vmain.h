@@ -28,22 +28,19 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain VL_NOT_FINAL : public VerilatedModel {
     // propagate new values into/out from the Verilated model.
     VL_IN8(&i_clk,0,0);
     VL_IN8(&i_reset,0,0);
-    VL_IN8(&i_ddr3_controller_iserdes_dqs,7,0);
-    VL_IN8(&i_ddr3_controller_iserdes_bitslip_reference,7,0);
     VL_IN8(&i_ddr3_controller_idelayctrl_rdy,0,0);
     VL_OUT8(&o_ddr3_controller_dqs_tri_control,0,0);
     VL_OUT8(&o_ddr3_controller_dq_tri_control,0,0);
     VL_OUT8(&o_ddr3_controller_toggle_dqs,0,0);
-    VL_OUT8(&o_ddr3_controller_dm,7,0);
     VL_OUT8(&o_ddr3_controller_odelay_data_cntvaluein,4,0);
     VL_OUT8(&o_ddr3_controller_odelay_dqs_cntvaluein,4,0);
     VL_OUT8(&o_ddr3_controller_idelay_data_cntvaluein,4,0);
     VL_OUT8(&o_ddr3_controller_idelay_dqs_cntvaluein,4,0);
-    VL_OUT8(&o_ddr3_controller_odelay_data_ld,0,0);
-    VL_OUT8(&o_ddr3_controller_odelay_dqs_ld,0,0);
-    VL_OUT8(&o_ddr3_controller_idelay_data_ld,0,0);
-    VL_OUT8(&o_ddr3_controller_idelay_dqs_ld,0,0);
-    VL_OUT8(&o_ddr3_controller_bitslip,0,0);
+    VL_OUT8(&o_ddr3_controller_odelay_data_ld,7,0);
+    VL_OUT8(&o_ddr3_controller_odelay_dqs_ld,7,0);
+    VL_OUT8(&o_ddr3_controller_idelay_data_ld,7,0);
+    VL_OUT8(&o_ddr3_controller_idelay_dqs_ld,7,0);
+    VL_OUT8(&o_ddr3_controller_bitslip,7,0);
     VL_OUT8(&o_sirefclk_word,7,0);
     VL_OUT8(&o_sirefclk_ce,0,0);
     VL_IN8(&i_fan_sda,0,0);
@@ -74,13 +71,16 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain VL_NOT_FINAL : public VerilatedModel {
     VL_IN8(&i_btn,4,0);
     VL_OUT8(&o_led,7,0);
     VL_IN16(&i_gpio,15,0);
+    VL_INW(&i_ddr3_controller_iserdes_data,511,0,16);
     VL_OUTW(&o_ddr3_controller_cmd,95,0,3);
+    VL_OUTW(&o_ddr3_controller_data,511,0,16);
     VL_IN(&cpu_sim_data,31,0);
     VL_OUT(&cpu_sim_idata,31,0);
-    VL_OUT(&cpu_prof_addr,27,0);
+    VL_OUT(&cpu_prof_addr,30,0);
     VL_OUT(&cpu_prof_ticks,31,0);
-    VL_IN64(&i_ddr3_controller_iserdes_data,63,0);
-    VL_OUT64(&o_ddr3_controller_data,63,0);
+    VL_IN64(&i_ddr3_controller_iserdes_dqs,63,0);
+    VL_IN64(&i_ddr3_controller_iserdes_bitslip_reference,63,0);
+    VL_OUT64(&o_ddr3_controller_dm,63,0);
 
     // CELLS
     // Public to allow access to /* verilator public */ items.

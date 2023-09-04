@@ -314,7 +314,7 @@ module ddr3_controller #(
     localparam[0:0] WL_EN = 1'b1; //Write Leveling Enable: Disabled
     localparam[0:0] WL_DIS = 1'b0; //Write Leveling Enable: Disabled
     localparam[1:0] AL = 2'b00; //Additive Latency: Disabled
-    localparam[0:0] TDQS = 1'b0; //Termination Data Strobe: Disabled (provides additional termination resistance outputs. 
+    localparam[0:0] TDQS = 1'b1; //Termination Data Strobe: Disabled (provides additional termination resistance outputs. 
                                  //When the TDQS function is disabled, the DM function is provided (vice-versa).TDQS function is only 
                                  //available for X8 DRAM and must be disabled for X4 and X16. 
     localparam[0:0]  QOFF = 1'b0; //Output Buffer Control: Enabled
@@ -1781,8 +1781,8 @@ BITSLIP_DQS_TRAIN_3: if(train_delay == 0) begin //train again the ISERDES to cap
                         i_phy_iserdes_data[256 +: 3], i_phy_iserdes_data[192 +: 3], i_phy_iserdes_data[128 +: 3], i_phy_iserdes_data[64 +: 3], i_phy_iserdes_data[0 +: 3]};*/
     //assign o_debug3 = {debug_trigger, i_phy_iserdes_data[192 +: 7], i_phy_iserdes_data[128 +: 8], i_phy_iserdes_data[64 +: 8], i_phy_iserdes_data[0 +: 8]};
     //assign o_debug3 = {debug_trigger,  i_phy_iserdes_data[48 +: 7], i_phy_iserdes_data[32 +: 8], i_phy_iserdes_data[16 +: 8], i_phy_iserdes_data[0 +: 8]};
-    assign o_debug1 = {debug_trigger,i_phy_iserdes_dqs[7:0],state_calibrate[4:0], instruction_address[4:0],o_phy_idelay_dqs_ld,o_phy_idelay_data_ld,o_phy_odelay_data_ld,o_phy_odelay_dqs_ld,
-             delay_before_read_data[2:0],delay_before_write_level_feedback[4:0],lane};
+    assign o_debug1 = {debug_trigger,i_phy_iserdes_dqs[7:0],state_calibrate[4:0], instruction_address[4:0],o_phy_idelay_dqs_ld[lane],o_phy_idelay_data_ld[lane],
+                        o_phy_odelay_data_ld[lane],o_phy_odelay_dqs_ld[lane], delay_before_read_data[2:0], delay_before_write_level_feedback[2:0],lane[2:0]};
     assign o_debug2 = {debug_trigger,i_phy_iserdes_data[62:32]};
     assign o_debug3 = {debug_trigger,i_phy_iserdes_data[30:0]};
     assign debug_trigger = o_wb_ack_read_q[0][0];
