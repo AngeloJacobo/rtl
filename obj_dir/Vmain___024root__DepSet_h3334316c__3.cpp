@@ -8,6 +8,27 @@
 #include "Vmain__Syms.h"
 #include "Vmain___024root.h"
 
+VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__9(Vmain___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Vmain__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    Vmain___024root___nba_sequent__TOP__9\n"); );
+    // Body
+    vlSelf->main__DOT__wbwide_xbar__DOT__iM = 3U;
+    vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex = 0U;
+    if ((2U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
+        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
+            = (1U | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex));
+    }
+    if ((4U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
+        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
+            = (2U | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex));
+    }
+    if ((0U == (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
+        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
+            = vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_mindex;
+    }
+}
+
 VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__10(Vmain___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vmain__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
@@ -3157,7 +3178,6 @@ void Vmain___024root___nba_sequent__TOP__5(Vmain___024root* vlSelf);
 void Vmain___024root___nba_sequent__TOP__6(Vmain___024root* vlSelf);
 void Vmain___024root___nba_sequent__TOP__7(Vmain___024root* vlSelf);
 void Vmain___024root___nba_sequent__TOP__8(Vmain___024root* vlSelf);
-void Vmain___024root___nba_sequent__TOP__9(Vmain___024root* vlSelf);
 
 void Vmain___024root___eval_nba(Vmain___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused

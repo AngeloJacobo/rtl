@@ -810,6 +810,7 @@ VL_ATTR_COLD void Vmain___024root___ctor_var_reset(Vmain___024root* vlSelf) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein[__Vi0] = VL_RAND_RESET_I(5);
     }
     vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev = VL_RAND_RESET_I(5);
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev = VL_RAND_RESET_I(5);
     for (int __Vi0 = 0; __Vi0 < 1; ++__Vi0) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein[__Vi0] = VL_RAND_RESET_I(5);
     }

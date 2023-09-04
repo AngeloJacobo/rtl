@@ -446,7 +446,7 @@ module ddr3_controller #(
     reg[4:0] odelay_data_cntvaluein[LANES-1:0]; 
     reg[4:0] odelay_dqs_cntvaluein[LANES-1:0];
     reg[4:0] idelay_data_cntvaluein[LANES-1:0];
-    reg[4:0] idelay_data_cntvaluein_prev;
+    reg[4:0] idelay_data_cntvaluein_prev, odelay_data_cntvaluein_prev;
     reg[4:0] idelay_dqs_cntvaluein[LANES-1:0];
     reg[$clog2(REPEAT_CLK_SAMPLING):0] sample_clk_repeat = 0;
     reg stored_write_level_feedback = 0;
@@ -1245,6 +1245,7 @@ module ddr3_controller #(
             o_phy_idelay_dqs_ld <= 0;
             lane_times_8 <= 0;
             idelay_data_cntvaluein_prev <= 0;
+            odelay_data_cntvaluein_prev <= 0;
             initial_dqs <= 1;
             lane <= 0;
             dqs_bitslip_arrangement <= 0;
@@ -1296,7 +1297,8 @@ module ddr3_controller #(
             lane_times_8 <= lane << 3;
             /* verilator lint_on WIDTH */
             idelay_data_cntvaluein_prev <= idelay_data_cntvaluein[lane];
-
+            odelay_data_cntvaluein_prev <= odelay_data_cntvaluein[lane];
+            
             if(wb2_update) begin
                 odelay_data_cntvaluein[wb2_write_lane] <=  wb2_phy_odelay_data_ld[wb2_write_lane]? wb2_phy_odelay_data_cntvaluein : odelay_data_cntvaluein[wb2_write_lane];
                 odelay_dqs_cntvaluein[wb2_write_lane] <= wb2_phy_odelay_dqs_ld[wb2_write_lane]? wb2_phy_odelay_dqs_cntvaluein : odelay_dqs_cntvaluein[wb2_write_lane];
@@ -1463,7 +1465,7 @@ module ddr3_controller #(
                             if(sample_clk_repeat == REPEAT_CLK_SAMPLING) begin
                                 sample_clk_repeat <= 0;
                                 prev_write_level_feedback <= stored_write_level_feedback;
-                                if({prev_write_level_feedback, stored_write_level_feedback} == 2'b01) begin
+                                if({prev_write_level_feedback, stored_write_level_feedback} == 2'b01 || (odelay_data_cntvaluein[lane] == 0 && odelay_data_cntvaluein_prev == 31)) begin
                                     /* verilator lint_on WIDTH */
                                     /* verilator lint_off WIDTH */
                                     if(lane == LANES - 1) begin

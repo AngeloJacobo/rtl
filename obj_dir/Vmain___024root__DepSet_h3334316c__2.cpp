@@ -3830,6 +3830,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
     __Vdly__o_ddr3_controller_idelay_dqs_ld = 0;
     CData/*4:0*/ __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev;
     __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev = 0;
+    CData/*4:0*/ __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev;
+    __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev = 0;
     CData/*0:0*/ __Vdly__main__DOT__ddr3_controller_inst__DOT__lane;
     __Vdly__main__DOT__ddr3_controller_inst__DOT__lane = 0;
     CData/*0:0*/ __Vdlyvdim0__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein__v0;
@@ -4058,6 +4060,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
         = vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index_orig;
     __Vdly__main__DOT__ddr3_controller_inst__DOT__dqs_target_index 
         = vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index;
+    __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev 
+        = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev;
     __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev 
         = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev;
     __Vdly__main__DOT__ddr3_controller_inst__DOT__train_delay 
@@ -5052,11 +5056,17 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
         __Vdly__o_ddr3_controller_odelay_dqs_ld = 0U;
         __Vdly__o_ddr3_controller_idelay_data_ld = 0U;
         __Vdly__o_ddr3_controller_idelay_dqs_ld = 0U;
-        __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev 
-            = ((0U >= (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__lane))
-                ? vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein
-               [vlSelf->main__DOT__ddr3_controller_inst__DOT__lane]
-                : 0U);
+        if ((0U >= (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__lane))) {
+            __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev 
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein
+                [vlSelf->main__DOT__ddr3_controller_inst__DOT__lane];
+            __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev 
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein
+                [vlSelf->main__DOT__ddr3_controller_inst__DOT__lane];
+        } else {
+            __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev = 0U;
+            __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev = 0U;
+        }
         if (vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_update) {
             vlSelf->main__DOT__ddr3_controller_inst__DOT____Vlvbound_h6ae87c1f__0 
                 = (((0U >= (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_write_lane)) 
@@ -5470,8 +5480,13 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
                         __Vdly__main__DOT__ddr3_controller_inst__DOT__sample_clk_repeat = 0U;
                         __Vdly__main__DOT__ddr3_controller_inst__DOT__prev_write_level_feedback 
                             = vlSelf->main__DOT__ddr3_controller_inst__DOT__stored_write_level_feedback;
-                        if ((1U == (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__prev_write_level_feedback) 
-                                     << 1U) | (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stored_write_level_feedback)))) {
+                        if (((1U == (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__prev_write_level_feedback) 
+                                      << 1U) | (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stored_write_level_feedback))) 
+                             | ((0U == ((0U >= (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__lane))
+                                         ? vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein
+                                        [vlSelf->main__DOT__ddr3_controller_inst__DOT__lane]
+                                         : 0U)) & (0x1fU 
+                                                   == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev))))) {
                             if (vlSelf->main__DOT__ddr3_controller_inst__DOT__lane) {
                                 __Vdly__main__DOT__ddr3_controller_inst__DOT__lane 
                                     = (1U & ((IData)(1U) 
@@ -6075,6 +6090,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
         __Vdly__main__DOT__ddr3_controller_inst__DOT__dqs_target_index_orig = 0U;
         vlSelf->o_ddr3_controller_bitslip = 0U;
         __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev = 0U;
+        __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__initial_dqs = 1U;
         __Vdly__main__DOT__ddr3_controller_inst__DOT__lane = 0U;
         __Vdly__main__DOT__ddr3_controller_inst__DOT__dqs_bitslip_arrangement = 0U;
@@ -6529,6 +6545,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__3(Vmain___024root* vlSelf
         = __Vdly__main__DOT__ddr3_controller_inst__DOT__train_delay;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev 
         = __Vdly__main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein_prev;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev 
+        = __Vdly__main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein_prev;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index 
         = __Vdly__main__DOT__ddr3_controller_inst__DOT__dqs_target_index;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_target_index_orig 
@@ -6911,26 +6929,5 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__8(Vmain___024root* vlSelf
     if ((0U == (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__2__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
         vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__2__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
             = vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__2__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_mindex;
-    }
-}
-
-VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__9(Vmain___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vmain__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vmain___024root___nba_sequent__TOP__9\n"); );
-    // Body
-    vlSelf->main__DOT__wbwide_xbar__DOT__iM = 3U;
-    vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex = 0U;
-    if ((2U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
-        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
-            = (1U | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex));
-    }
-    if ((4U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
-        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
-            = (2U | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex));
-    }
-    if ((0U == (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant))) {
-        vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_reindex 
-            = vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__3__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_mindex;
     }
 }
