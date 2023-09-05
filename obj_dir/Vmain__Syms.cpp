@@ -31,7 +31,7 @@ Vmain__Syms::Vmain__Syms(VerilatedContext* contextp, const char* namep, Vmain* m
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"alu_ce", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_ce), false, VLVT_UINT8,VLVD_NODIR|VLVF_PUB_RW,0);
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"alu_sim", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_sim), false, VLVT_UINT8,VLVD_NODIR|VLVF_PUB_RW,0);
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"alu_sim_immv", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_sim_immv), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,22,0);
-        __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"dcd_pc", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_pc), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,30,0);
+        __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"dcd_pc", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_pc), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,27,0);
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"op_sim", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_sim), false, VLVT_UINT8,VLVD_NODIR|VLVF_PUB_RW,0);
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"op_sim_immv", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_sim_immv), false, VLVT_UINT32,VLVD_NODIR|VLVF_PUB_RW,1 ,22,0);
         __Vscope_main__swic__thecpu__core.varInsert(__Vfinal,"op_valid", &(TOP.main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid), false, VLVT_UINT8,VLVD_NODIR|VLVF_PUB_RW,0);

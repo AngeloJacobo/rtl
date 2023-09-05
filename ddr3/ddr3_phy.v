@@ -32,6 +32,7 @@ module ddr3_phy #(
         input wire[LANES-1:0] i_controller_odelay_data_ld, i_controller_odelay_dqs_ld,
         input wire[LANES-1:0] i_controller_idelay_data_ld, i_controller_idelay_dqs_ld,
         input wire[LANES-1:0] i_controller_bitslip,
+        input wire i_controller_write_leveling_calib,
         output wire[DQ_BITS*LANES*8-1:0] o_controller_iserdes_data,
         output wire[LANES*8-1:0] o_controller_iserdes_dqs,
         output wire[LANES*8-1:0] o_controller_iserdes_bitslip_reference,
@@ -752,11 +753,11 @@ module ddr3_phy #(
                     // D1 - D8: 1-bit (each) input: Parallel data inputs (1-bit each)
                     .D1(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q)), //the last part will still have half dqs series
                     .D2(1'b0 && (i_controller_toggle_dqs || toggle_dqs_q)),
-                    .D3(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q)),
+                    .D3(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q) && !i_controller_write_leveling_calib),
                     .D4(1'b0 && (i_controller_toggle_dqs || toggle_dqs_q)),
-                    .D5(1'b1 && i_controller_toggle_dqs),
+                    .D5(1'b1 && i_controller_toggle_dqs && !i_controller_write_leveling_calib),
                     .D6(1'b0 && i_controller_toggle_dqs),
-                    .D7(1'b1 && i_controller_toggle_dqs),
+                    .D7(1'b1 && i_controller_toggle_dqs && !i_controller_write_leveling_calib),
                     .D8(1'b0 && i_controller_toggle_dqs),
                     .T1(i_controller_dqs_tri_control),
                     .TCE(1'b1),
@@ -871,11 +872,11 @@ module ddr3_phy #(
                     // D1 - D8: 1-bit (each) input: Parallel data inputs (1-bit each)
                     .D1(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q)), //the last part will still have half dqs series
                     .D2(1'b0 && (i_controller_toggle_dqs || toggle_dqs_q)),
-                    .D3(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q)),
+                    .D3(1'b1 && (i_controller_toggle_dqs || toggle_dqs_q) && !i_controller_write_leveling_calib),
                     .D4(1'b0 && (i_controller_toggle_dqs || toggle_dqs_q)),
-                    .D5(1'b1 && i_controller_toggle_dqs),
+                    .D5(1'b1 && i_controller_toggle_dqs && !i_controller_write_leveling_calib),
                     .D6(1'b0 && i_controller_toggle_dqs),
-                    .D7(1'b1 && i_controller_toggle_dqs),
+                    .D7(1'b1 && i_controller_toggle_dqs && !i_controller_write_leveling_calib),
                     .D8(1'b0 && i_controller_toggle_dqs),
                     .T1(i_controller_dqs_tri_control),
                     .TCE(1'b1),

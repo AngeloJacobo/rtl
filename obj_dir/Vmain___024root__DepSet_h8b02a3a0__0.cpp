@@ -49,10 +49,6 @@ void Vmain___024root___eval_triggers__act(Vmain___024root* vlSelf) {
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__main__DOT__wb32_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0)));
     vlSelf->__VactTriggered.set(6U, ((IData)(vlSelf->main__DOT__wbu_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant) 
                                      != (IData)(vlSelf->__Vtrigprevexpr___TOP__main__DOT__wbu_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0)));
-    vlSelf->__VactTriggered.set(7U, (((IData)(vlSelf->i_clk) 
-                                      & (~ (IData)(vlSelf->__Vtrigprevexpr___TOP__i_clk__0))) 
-                                     | ((~ (IData)(vlSelf->main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n)) 
-                                        & (IData)(vlSelf->__Vtrigprevexpr___TOP__main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n__0))));
     vlSelf->__Vtrigprevexpr___TOP__i_clk__0 = vlSelf->i_clk;
     vlSelf->__Vtrigprevexpr___TOP__main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0 
         = vlSelf->main__DOT__wbwide_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant;
@@ -66,8 +62,6 @@ void Vmain___024root___eval_triggers__act(Vmain___024root* vlSelf) {
         = vlSelf->main__DOT__wb32_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant;
     vlSelf->__Vtrigprevexpr___TOP__main__DOT__wbu_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant__0 
         = vlSelf->main__DOT__wbu_xbar__DOT__ARBITRATE_REQUESTS__BRA__0__KET____DOT__MINDEX_MULTIPLE_SLAVES__DOT__r_regrant;
-    vlSelf->__Vtrigprevexpr___TOP__main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n__0 
-        = vlSelf->main__DOT____Vcellinp__ddr3_controller_inst__i_rst_n;
     if (VL_UNLIKELY((1U & (~ (IData)(vlSelf->__VactDidInit))))) {
         vlSelf->__VactDidInit = 1U;
         vlSelf->__VactTriggered.set(1U, 1U);

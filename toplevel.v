@@ -88,7 +88,7 @@ module	toplevel(
                     DDR3_CONTROLLERCOL_BITS = 10,  // width of column address
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
-                    DDR3_CONTROLLERLANES = 8, //8, //8 lanes of DQ
+                    DDR3_CONTROLLERLANES = 1, //0, //8 lanes of DQ
                     DDR3_CONTROLLERAUX_WIDTH = 1,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
@@ -108,12 +108,12 @@ module	toplevel(
 `ifdef	FLASH_ACCESS
 	localparam	RESET_ADDRESS = @$RESET_ADDRESS;
 `else
-	localparam	RESET_ADDRESS = 67108864;
+	localparam	RESET_ADDRESS = 33554432;
 `endif	// FLASH_ACCESS
 `endif	// BKROM_ACCESS
 	//
 	// The number of valid bits on the bus
-	localparam	ZIP_ADDRESS_WIDTH = 25; // Zip-CPU address width
+	localparam	ZIP_ADDRESS_WIDTH = 22; // Zip-CPU address width
 	//
 	// Number of ZipCPU interrupts
 	localparam	ZIP_INTS = 16;
@@ -218,6 +218,7 @@ module	toplevel(
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_odelay_data_ld, ddr3_controller_odelay_dqs_ld;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_idelay_data_ld, ddr3_controller_idelay_dqs_ld;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_bitslip;
+	wire    ddr3_controller_write_leveling_calib;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_debug_read_dqs_p, ddr3_controller_debug_read_dqs_n;
 	wire    ddr3_controller_debug_clk_p, ddr3_controller_debug_clk_n;
 	// }}}
@@ -286,6 +287,7 @@ module	toplevel(
         	ddr3_controller_odelay_data_ld, ddr3_controller_odelay_dqs_ld,
         	ddr3_controller_idelay_data_ld, ddr3_controller_idelay_dqs_ld,
         	ddr3_controller_bitslip,
+        	ddr3_controller_write_leveling_calib,
 		// Clock Generator ports
 		w_sirefclk_word, w_sirefclk_ce,
 		// FAN/fan
@@ -363,6 +365,7 @@ module	toplevel(
             .i_controller_idelay_data_ld(ddr3_controller_idelay_data_ld), 
             .i_controller_idelay_dqs_ld(ddr3_controller_idelay_dqs_ld),
             .i_controller_bitslip(ddr3_controller_bitslip),
+            .i_controller_write_leveling_calib(ddr3_controller_write_leveling_calib),
             .o_controller_iserdes_data(ddr3_controller_iserdes_data),
             .o_controller_iserdes_dqs(ddr3_controller_iserdes_dqs),
             .o_controller_iserdes_bitslip_reference(ddr3_controller_iserdes_bitslip_reference),
