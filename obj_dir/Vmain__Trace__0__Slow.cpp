@@ -9544,7 +9544,7 @@ VL_ATTR_COLD void Vmain___024root__trace_full_sub_0(Vmain___024root* vlSelf, Ver
     bufp->fullQData(oldp+4288,(0xffffffffffffffffULL),64);
     bufp->fullIData(oldp+4290,(vlSelf->main__DOT__wb32_buildtime_addr),25);
     bufp->fullBit(oldp+4291,(vlSelf->main__DOT__wb32_buildtime_err));
-    bufp->fullIData(oldp+4292,(0x200925U),32);
+    bufp->fullIData(oldp+4292,(0x224208U),32);
     bufp->fullIData(oldp+4293,(vlSelf->main__DOT__wb32_gpio_addr),25);
     bufp->fullBit(oldp+4294,(vlSelf->main__DOT__wb32_gpio_err));
     bufp->fullIData(oldp+4295,(vlSelf->main__DOT__wb32_sirefclk_addr),25);
