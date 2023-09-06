@@ -9544,7 +9544,7 @@ VL_ATTR_COLD void Vmain___024root__trace_full_sub_0(Vmain___024root* vlSelf, Ver
     bufp->fullQData(oldp+4288,(0xffffffffffffffffULL),64);
     bufp->fullIData(oldp+4290,(vlSelf->main__DOT__wb32_buildtime_addr),25);
     bufp->fullBit(oldp+4291,(vlSelf->main__DOT__wb32_buildtime_err));
-    bufp->fullIData(oldp+4292,(0x224208U),32);
+    bufp->fullIData(oldp+4292,(0x175104U),32);
     bufp->fullIData(oldp+4293,(vlSelf->main__DOT__wb32_gpio_addr),25);
     bufp->fullBit(oldp+4294,(vlSelf->main__DOT__wb32_gpio_err));
     bufp->fullIData(oldp+4295,(vlSelf->main__DOT__wb32_sirefclk_addr),25);
@@ -9553,7 +9553,7 @@ VL_ATTR_COLD void Vmain___024root__trace_full_sub_0(Vmain___024root* vlSelf, Ver
     bufp->fullBit(oldp+4298,(vlSelf->main__DOT__wb32_spio_err));
     bufp->fullIData(oldp+4299,(vlSelf->main__DOT__wb32_version_addr),25);
     bufp->fullBit(oldp+4300,(vlSelf->main__DOT__wb32_version_err));
-    bufp->fullIData(oldp+4301,(0x20230905U),32);
+    bufp->fullIData(oldp+4301,(0x20230906U),32);
     bufp->fullCData(oldp+4302,(0xfU),4);
     bufp->fullCData(oldp+4303,(0x20U),8);
     bufp->fullIData(oldp+4304,(0x14U),32);

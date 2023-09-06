@@ -11399,7 +11399,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__0(Vmain___024root* vlSelf
     }
     vlSelf->main__DOT__r_wb32_sio_data = ((0x400U & 
                                            vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[6U])
-                                           ? 0x20230905U
+                                           ? 0x20230906U
                                            : ((0x200U 
                                                & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[6U])
                                                ? ((0x100U 
@@ -11422,7 +11422,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__0(Vmain___024root* vlSelf
                                                   (((IData)(vlSelf->main__DOT__gpioi__DOT__r_gpio) 
                                                     << 0x10U) 
                                                    | (IData)(vlSelf->o_gpio))
-                                                   : 0x224208U)));
+                                                   : 0x175104U)));
     if ((1U & ((~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_pipe_stalled)) 
                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_rd_pending))))) {
         vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_addr 
