@@ -127,8 +127,8 @@
 #endif	// SPIO_ACCESS
 
 #ifndef	DATESTAMP
-#define DATESTAMP 0x20230906
-#define BUILDTIME 0x00175104
+#define DATESTAMP 0x20230907
+#define BUILDTIME 0x00191825
 #endif
 
 #endif // DESIGN_H
