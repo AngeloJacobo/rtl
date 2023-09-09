@@ -1397,7 +1397,7 @@ module	main(i_clk, i_reset,
             .i_controller_clk(i_clk), //i_controller_clk has period of CONTROLLER_CLK_PERIOD 
             .i_rst_n(!i_reset), //200MHz input clock
             // Wishbone 1 (Controller)
-            .i_wb_cyc(wbwide_ddr3_controller_cyc), .i_wb_stb(wbwide_ddr3_controller_stb), .i_wb_we(wbwide_ddr3_controller_we),
+            .i_wb_cyc(1), .i_wb_stb(wbwide_ddr3_controller_stb), .i_wb_we(wbwide_ddr3_controller_we),
 			.i_wb_addr(wbwide_ddr3_controller_addr[24-1:0]),
 			.i_wb_data(wbwide_ddr3_controller_data), // 512 bits wide
 			.i_wb_sel(wbwide_ddr3_controller_sel),  // 512/8 bits wide
