@@ -89,7 +89,7 @@ module	toplevel(
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
                     DDR3_CONTROLLERLANES = 8, //8, //8 lanes of DQ
-                    DDR3_CONTROLLERAUX_WIDTH = 1,
+                    DDR3_CONTROLLERAUX_WIDTH = 8,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
                     DDR3_CONTROLLERCMD_LEN = 4 + 3 + DDR3_CONTROLLERBA_BITS + DDR3_CONTROLLERROW_BITS;
@@ -219,6 +219,7 @@ module	toplevel(
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_idelay_data_ld, ddr3_controller_idelay_dqs_ld;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_bitslip;
 	wire    ddr3_controller_write_leveling_calib;
+	wire    ddr3_controller_reset;
 	wire    [DDR3_CONTROLLERLANES-1:0] ddr3_controller_debug_read_dqs_p, ddr3_controller_debug_read_dqs_n;
 	wire    ddr3_controller_debug_clk_p, ddr3_controller_debug_clk_n;
 	// }}}
@@ -288,6 +289,7 @@ module	toplevel(
         	ddr3_controller_idelay_data_ld, ddr3_controller_idelay_dqs_ld,
         	ddr3_controller_bitslip,
         	ddr3_controller_write_leveling_calib,
+        	ddr3_controller_reset,
 		// Clock Generator ports
 		w_sirefclk_word, w_sirefclk_ce,
 		// FAN/fan
@@ -350,6 +352,7 @@ module	toplevel(
             .i_ddr3_clk_90(0), //required only when ODELAY_SUPPORTED is zero
             .i_rst_n(!s_reset),
             // Controller Interface
+            .i_controller_reset(ddr3_controller_reset),
             .i_controller_cmd(ddr3_controller_cmd),
             .i_controller_dqs_tri_control(ddr3_controller_dqs_tri_control), 
             .i_controller_dq_tri_control(ddr3_controller_dq_tri_control),

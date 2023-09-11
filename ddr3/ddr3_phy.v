@@ -22,6 +22,7 @@ module ddr3_phy #(
         input wire i_ddr3_clk_90, //required only when ODELAY_SUPPORTED is zero
         input wire i_rst_n,
         // Controller Interface
+        input wire i_controller_reset,
         input wire[cmd_len*serdes_ratio-1:0] i_controller_cmd,
         input wire i_controller_dqs_tri_control, i_controller_dq_tri_control,
         input wire i_controller_toggle_dqs,
@@ -66,7 +67,7 @@ module ddr3_phy #(
                CMD_RESET_N = cmd_len - 7,
                CMD_BANK_START = BA_BITS + ROW_BITS - 1,
                CMD_ADDRESS_START = ROW_BITS - 1;
-    localparam SYNC_RESET_DELAY = $rtoi($ceil(100/CONTROLLER_CLK_PERIOD)); //52 ns of reset pulse width required for IDELAYCTRL 
+    localparam SYNC_RESET_DELAY = $rtoi($ceil(1000/CONTROLLER_CLK_PERIOD)); //52 ns of reset pulse width required for IDELAYCTRL 
     //cmd needs to be center-aligned to the positive edge of the 
     //ddr3_clk. This means cmd needs to be delayed by half the ddr3
     //clk period. Subtract by 600ps to include the IODELAY insertion
@@ -119,9 +120,9 @@ module ddr3_phy #(
 `endif
 
     //synchronous reset
-    always @(posedge i_controller_clk, negedge i_rst_n) begin
-        if(!i_rst_n) begin
-            sync_rst <= 1'b0;
+    always @(posedge i_controller_clk) begin
+        if(!i_rst_n || i_controller_reset) begin
+            sync_rst <= 1'b1;
             delay_before_release_reset <= SYNC_RESET_DELAY[$clog2(SYNC_RESET_DELAY):0];
             toggle_dqs_q <= 0;
         end
@@ -156,7 +157,7 @@ module ddr3_phy #(
                 .D3(i_controller_cmd[cmd_len*2 + gen_index]),
                 .D4(i_controller_cmd[cmd_len*3 + gen_index]),
                 .OCE(1'b1), // 1-bit input: Output data clock enable
-                .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                .RST(sync_rst), // 1-bit input: Reset
                 // unused signals but were added here to make vivado happy
                 .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                 .SHIFTOUT2(),
@@ -221,7 +222,7 @@ module ddr3_phy #(
             .D7(1'b1),
             .D8(1'b0),
             .OCE(1'b1), // 1-bit input: Output data clock enable
-            .RST(!idelayctrl_rdy), // 1-bit input: Reset
+            .RST(sync_rst), // 1-bit input: Reset
              // unused signals but were added here to make vivado happy
             .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
             .SHIFTOUT2(),
@@ -326,7 +327,7 @@ module ddr3_phy #(
                     .T1(i_controller_dq_tri_control),
                     .TCE(1'b1),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                     // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -442,7 +443,7 @@ module ddr3_phy #(
                     .T1(i_controller_dq_tri_control),
                     .TCE(1'b1),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                     // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -565,7 +566,7 @@ module ddr3_phy #(
                 .DDLY(idelay_data[gen_index]), // 1-bit input: Serial data from IDELAYE2
                 .OFB(), // 1-bit input: Data feedback from OSERDESE2
                 .OCLKB(), // 1-bit input: High speed negative edge output clock
-                .RST(!idelayctrl_rdy), // 1-bit input: Active high asynchronous reset
+                .RST(sync_rst), // 1-bit input: Active high asynchronous reset
                 // SHIFTIN1-SHIFTIN2: 1-bit (each) input: Data width expansion input ports
                 .SHIFTIN1(),
                 .SHIFTIN2()
@@ -605,7 +606,7 @@ module ddr3_phy #(
                     .D8(i_controller_dm[gen_index + LANES*7]), 
                     .TCE(1'b0),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                      // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -695,7 +696,7 @@ module ddr3_phy #(
                     .D8(i_controller_dm[gen_index + LANES*7]), 
                     .TCE(1'b0),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                      // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -762,7 +763,7 @@ module ddr3_phy #(
                     .T1(i_controller_dqs_tri_control),
                     .TCE(1'b1),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                      // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -881,7 +882,7 @@ module ddr3_phy #(
                     .T1(i_controller_dqs_tri_control),
                     .TCE(1'b1),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                      // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),
@@ -1006,7 +1007,7 @@ module ddr3_phy #(
                 .DDLY(idelay_dqs[gen_index]), // 1-bit input: Serial data from IDELAYE2
                 .OFB(), // 1-bit input: Data feedback from OSERDESE2
                 .OCLKB(), // 1-bit input: High speed negative edge output clock
-                .RST(!idelayctrl_rdy), // 1-bit input: Active high asynchronous reset
+                .RST(sync_rst), // 1-bit input: Active high asynchronous reset
                 // SHIFTIN1-SHIFTIN2: 1-bit (each) input: Data width expansion input ports
                 .SHIFTIN1(),
                 .SHIFTIN2()
@@ -1075,7 +1076,7 @@ module ddr3_phy #(
                 .DDLY(), // 1-bit input: Serial data from IDELAYE2
                 .OFB(oserdes_bitslip_reference[gen_index]), // 1-bit input: Data feedback from OSERDESE2
                 .OCLKB(), // 1-bit input: High speed negative edge output clock
-                .RST(!idelayctrl_rdy), // 1-bit input: Active high asynchronous reset
+                .RST(sync_rst), // 1-bit input: Active high asynchronous reset
                 // SHIFTIN1-SHIFTIN2: 1-bit (each) input: Data width expansion input ports
                 .SHIFTIN1(),
                 .SHIFTIN2()
@@ -1107,7 +1108,7 @@ module ddr3_phy #(
                     .D7(1'b1),
                     .D8(1'b1),
                     .OCE(1'b1), // 1-bit input: Output data clock enable
-                    .RST(!idelayctrl_rdy), // 1-bit input: Reset
+                    .RST(sync_rst), // 1-bit input: Reset
                      // unused signals but were added here to make vivado happy
                     .SHIFTOUT1(), // SHIFTOUT1 / SHIFTOUT2: 1-bit (each) output: Data output expansion (1-bit each)
                     .SHIFTOUT2(),

@@ -309,149 +309,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     VlWide<16>/*511:0*/ __Vtemp_hc1851150__0;
     VlWide<16>/*511:0*/ __Vtemp_hfebc76e7__0;
     // Body
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7feU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (1U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & (vlSelf->main__DOT__wb32_xbar__DOT__request
-               [0U] & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                       | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (1U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__0__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7feU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7fdU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (2U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 1U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (2U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__1__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7fdU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7fbU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (4U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 2U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (4U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__2__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7fbU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7f7U & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (8U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 3U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (8U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__3__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7f7U & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7efU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x10U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 4U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x10U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__4__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7efU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7dfU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x20U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 5U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x20U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__5__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7dfU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x7bfU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x40U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 6U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x40U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__6__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x7bfU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x77fU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x80U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 7U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x80U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__7__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x77fU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x6ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x100U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 8U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x100U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__8__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x6ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x5ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x200U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 9U) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x200U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__9__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x5ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-        = ((0x3ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant)) 
-           | (0x400U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__sgrant)));
-    if ((1U & ((vlSelf->main__DOT__wb32_xbar__DOT__request
-                [0U] >> 0xaU) & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mgrant)) 
-                                 | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__mempty))))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x400U | (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
-    if (vlSelf->main__DOT__wb32_xbar__DOT__SLAVE_GRANT__BRA__10__KET____DOT__drop_sgrant) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant 
-            = (0x3ffU & (IData)(vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__sgrant));
-    }
     vlSelf->main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__uic_ack 
         = vlSelf->main__DOT__swic__DOT____Vcellinp__ACCOUNTING_COUNTERS__DOT__uins_ctr____pinNumber5;
     vlSelf->main__DOT__swic__DOT__ACCOUNTING_COUNTERS__DOT__upc_ack 
@@ -514,16 +371,16 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                         << 1U) | (IData)(vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__w_rd)))) {
         vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__r_empty = 0U;
     }
+    if ((1U & vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q
+         [0U])) {
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__wb_data_to_wb2 
+            = vlSelf->main__DOT__wbwide_ddr3_controller_idata[0U];
+    }
     if (((IData)(vlSelf->main__DOT__genbus__DOT__ps_full) 
          & (~ (IData)(vlSelf->main__DOT__txv__DOT__r_busy)))) {
         vlSelf->o_wbu_uart_tx = 0U;
     } else if (vlSelf->main__DOT__txv__DOT__zero_baud_counter) {
         vlSelf->o_wbu_uart_tx = (1U & (IData)(vlSelf->main__DOT__txv__DOT__lcl_data));
-    }
-    if ((1U & vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_ack_read_q
-         [0U])) {
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__wb_data_to_wb2 
-            = vlSelf->main__DOT__wbwide_ddr3_controller_idata[0U];
     }
     vlSelf->main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__2__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__r_sindex 
         = vlSelf->main__DOT__wbwide_xbar__DOT__GEN_SINDEX__BRA__2__KET____DOT__SINDEX_MORE_THAN_ONE_MASTER__DOT__reindex;
@@ -873,12 +730,12 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                    >> 0x18U)
                                                    : 
                                                   vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__pre_shifted[0xfU]));
-    vlSelf->main__DOT__r_sirefclk_ack = ((~ (IData)(vlSelf->i_reset)) 
-                                         & (IData)(vlSelf->main__DOT__wb32_sirefclk_stb));
     vlSelf->main__DOT__swic__DOT__wdbus_ack = ((~ ((IData)(vlSelf->main__DOT____Vcellinp__swic__i_reset) 
                                                    | (~ (IData)(vlSelf->main__DOT__swic__DOT__sys_cyc)))) 
                                                & ((IData)(vlSelf->main__DOT__swic__DOT__sys_stb) 
                                                   & (IData)(vlSelf->main__DOT__swic__DOT__sel_bus_watchdog)));
+    vlSelf->main__DOT__r_sirefclk_ack = ((~ (IData)(vlSelf->i_reset)) 
+                                         & (IData)(vlSelf->main__DOT__wb32_sirefclk_stb));
     vlSelf->main__DOT__wb32_spio_ack = ((~ (IData)(vlSelf->i_reset)) 
                                         & (IData)(vlSelf->main__DOT__wb32_spio_stb));
     if ((1U & (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__iskid__DOT__LOGIC__DOT__r_valid)))) {
@@ -2411,14 +2268,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                    >> 9U))))) 
             & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__w_invalidate_result))) 
            & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__pf_illegal)));
-    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
-         | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__new_pc))) {
-        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_addr = 0x4000000U;
-    } else if (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_pc_valid) 
-                | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__mem_pc_valid))) {
-        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_addr 
-            = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_ALU_PC__DOT__r_alu_pc;
-    }
     if (((IData)(vlSelf->main__DOT__w_console_rx_stb) 
          & ((IData)(vlSelf->main__DOT__console__DOT__rxfifo__DOT__will_underflow) 
             | ((IData)(vlSelf->main__DOT__console__DOT__rxfifo__DOT__w_read) 
@@ -2444,7 +2293,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index 
         = (3U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index));
     vlSelf->main__DOT__r_wb32_sio_data = ((4U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[2U])
-                                           ? 0x20230907U
+                                           ? 0x20230911U
                                            : ((2U & 
                                                vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[2U])
                                                ? ((1U 
@@ -2467,7 +2316,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                                   (((IData)(vlSelf->main__DOT__gpioi__DOT__r_gpio) 
                                                     << 0x10U) 
                                                    | (IData)(vlSelf->o_gpio))
-                                                   : 0x191825U)));
+                                                   : 0x63401U)));
     if ((8U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack))) {
         __Vtemp_hc1851150__0[0U] = vlSelf->main__DOT____Vcellout__wbwide_xbar__o_mdata[0x30U];
         __Vtemp_hc1851150__0[1U] = vlSelf->main__DOT____Vcellout__wbwide_xbar__o_mdata[0x31U];
@@ -2691,123 +2540,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             = vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data[0x11U];
         vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__iskid__DOT__LOGIC__DOT__r_data[0x12U] 
             = vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__iskid__i_data[0x12U];
-    }
-    if (vlSelf->i_reset) {
-        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__s_btn = 0U;
-        vlSelf->__Vdly__main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe = 0U;
-        vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 0U;
-        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
-        vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
-        vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
-        vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid = 0U;
-    } else {
-        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__s_btn 
-            = (0x1fU & ((IData)(vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe) 
-                        >> 5U));
-        vlSelf->__Vdly__main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe 
-            = ((0x3e0U & ((IData)(vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe) 
-                          << 5U)) | (IData)(vlSelf->i_btn));
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbu_xbar__DOT__dcd_stb)) 
-                   | (~ (IData)(vlSelf->main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 2U) | ((- (IData)((IData)(vlSelf->main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_valid))) 
-                              & (IData)(vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__prerequest)));
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__dcd_stb)) 
-                   | (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 0xbU) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
-        }
-        if (((((((IData)(vlSelf->main__DOT__genbus__DOT__ofifo_rd) 
-                 | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cp_stb)) 
-                | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_stb)) 
-               | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cw_stb)) 
-              | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__aword_valid)) 
-             | ((IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_stb) 
-                | ((IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__byte_busy) 
-                   & ((~ (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__linepacker__DOT__last_out_nl)) 
-                      & (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__linepacker__DOT__last_in_nl)))))) {
-            vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 1U;
-        } else if ((1U & (~ (IData)(vlSelf->main__DOT__genbus__DOT__ps_full)))) {
-            vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 0U;
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__3__KET____DOT__adcd__o_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__3__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__2__KET____DOT__adcd__o_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__2__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__1__KET____DOT__adcd__o_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__1__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_valid)) 
-                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
-            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
-                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
-                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
-        }
-        if ((((IData)(vlSelf->main__DOT__i2ci__DOT__pf_valid) 
-              & (IData)(vlSelf->main__DOT__i2ci__DOT__pf_ready)) 
-             & (IData)(vlSelf->main__DOT__i2ci__DOT__pf_illegal))) {
-            vlSelf->main__DOT__i2ci__DOT__r_err = 1U;
-        }
-        if (vlSelf->main__DOT__i2ci__DOT__bus_write) {
-            if ((((0U == (3U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])) 
-                  & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[4U] 
-                     >> 0x14U)) & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
-                                           >> 0x12U)))) {
-                vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
-            }
-            if (((IData)(vlSelf->main__DOT__i2ci__DOT__bus_jump) 
-                 & (IData)(vlSelf->main__DOT__i2ci__DOT__r_halted))) {
-                vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
-            }
-        }
-        if (vlSelf->main__DOT__i2ci__DOT__r_halted) {
-            vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
-        } else {
-            if (((IData)(vlSelf->main__DOT__i2ci__DOT__insn_valid) 
-                 & (0x800U == (0xf00U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn))))) {
-                vlSelf->main__DOT__i2ci__DOT__r_wait = 1U;
-            }
-            if (vlSelf->main__DOT__i2ci__DOT__bus_jump) {
-                vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
-            }
-        }
-        if ((1U & ((~ (IData)(vlSelf->main__DOT__i2c_valid)) 
-                   | (IData)(vlSelf->main__DOT__i2c_ready)))) {
-            if (((((IData)(vlSelf->main__DOT__i2ci__DOT__insn_valid) 
-                   & (0xd00U == (0xf00U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn)))) 
-                  & (IData)(vlSelf->main__DOT__i2ci__DOT__half_ready)) 
-                 & (~ (IData)(vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt)))) {
-                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
-                    = (3U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn));
-            } else if ((((IData)(vlSelf->main__DOT__i2c_valid) 
-                         & (IData)(vlSelf->main__DOT__i2c_ready)) 
-                        & (IData)(vlSelf->main__DOT__i2c_last))) {
-                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
-                    = vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__r_channel;
-            } else if ((1U & (~ (IData)(vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt)))) {
-                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
-                    = vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__r_channel;
-            }
-        }
     }
     if (vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_busy) {
         if (vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_rd_ack) {
@@ -3228,9 +2960,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_OP_STALL__DOT__r_pending_sreg_write = 0U;
         }
     }
-    if (vlSelf->main__DOT__ddr3_controller_inst__DOT__sync_rst) {
+    if (vlSelf->main__DOT__ddr3_controller_inst__DOT__sync_rst_controller) {
         vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v0 = 1U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned_temp = 0ULL;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[0U] = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[1U] = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[2U] = 0U;
@@ -3247,3712 +2978,3363 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[0xdU] = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[0xeU] = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data_unaligned_temp[0xfU] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned_temp = 0ULL;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt_q = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_q = 0U;
-        vlSelf->main__DOT__wb32_ddr3_phy_idata = 0U;
-    } else {
-        if (vlSelf->main__DOT__ddr3_controller_inst__DOT__reset_done) {
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v8 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x30U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x28U)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x20U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x18U)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x10U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 8U)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [0U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [0U]) >> 8U));
-            vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v8 = 1U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v2 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v2 = 0x38U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v3 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v3 = 0x30U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v4 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v4 = 0x28U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v5 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v5 = 0x20U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v6 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v6 = 0x18U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v7 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v7 = 0x10U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v8 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [0U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x38U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x30U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x28U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x20U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x18U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x10U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 8U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [0U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [0U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v8 = 8U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v9 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+    } else if (vlSelf->main__DOT__ddr3_controller_inst__DOT__reset_done) {
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v8 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
                                              [0U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x38U)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x30U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x28U)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x20U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x18U)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x10U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 8U)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [0U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [0U]) >> 8U));
+        vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v8 = 1U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v2 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
                                            ((IData)(
                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x38U)) 
-                                            << 7U)) 
-                                          | ((0x40U 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
                                               & ((IData)(
                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x30U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
                                                  & ((IData)(
                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x28U)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
                                                     & ((IData)(
                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x20U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
                                                        & ((IData)(
                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x18U)) 
-                                                          << 3U)) 
-                                                      | ((4U 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
                                                           & ((IData)(
                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x10U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 8U)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [0U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [0U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v9 = 0U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v9 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v2 = 0x38U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v3 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v3 = 0x30U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v4 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v4 = 0x28U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v5 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v5 = 0x20U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v6 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v6 = 0x18U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v7 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v7 = 0x10U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v8 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [0U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x38U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x30U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x28U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x20U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x18U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x10U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 8U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [0U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [0U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v8 = 8U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v9 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [0U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x31U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
+                                                         >> 0x38U)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x29U)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
+                                                            >> 0x30U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
                                              & ((IData)(
                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x21U)) 
-                                                << 4U)) 
-                                            | ((8U 
+                                                         >> 0x28U)) 
+                                                << 5U)) 
+                                            | ((0x10U 
                                                 & ((IData)(
                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x19U)) 
-                                                   << 3U)) 
-                                               | ((4U 
+                                                            >> 0x20U)) 
+                                                   << 4U)) 
+                                               | ((8U 
                                                    & ((IData)(
                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x11U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
+                                                               >> 0x18U)) 
+                                                      << 3U)) 
+                                                  | ((4U 
                                                       & ((IData)(
                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 9U)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 1U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [1U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [1U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v10 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v10 = 0x39U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v11 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v11 = 0x31U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v12 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v12 = 0x29U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v13 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v13 = 0x21U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v14 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v14 = 0x19U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v15 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v15 = 0x11U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v16 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [1U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x39U)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x31U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x29U)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x21U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x19U)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x11U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 9U)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 1U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [1U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [1U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v16 = 9U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v17 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                                  >> 0x10U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 8U)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [0U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [0U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v9 = 0U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v9 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
                                              [1U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x39U)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x31U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x29U)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x21U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x19U)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x11U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 9U)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 1U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [1U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [1U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v10 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
                                            ((IData)(
                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x39U)) 
-                                            << 7U)) 
-                                          | ((0x40U 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
                                               & ((IData)(
                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x31U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
                                                  & ((IData)(
                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x29U)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
                                                     & ((IData)(
                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x21U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
                                                        & ((IData)(
                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x19U)) 
-                                                          << 3U)) 
-                                                      | ((4U 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
                                                           & ((IData)(
                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x11U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 9U)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 1U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [1U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [1U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v17 = 1U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v10 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x32U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2aU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x22U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1aU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x12U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xaU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 2U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [2U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [2U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v18 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
                                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v18 = 0x3aU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v19 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v19 = 0x32U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v20 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v20 = 0x2aU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v21 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v21 = 0x22U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v22 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v22 = 0x1aU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v23 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v23 = 0x12U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v24 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [2U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3aU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x32U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2aU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x22U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1aU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x12U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xaU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 2U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [2U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [2U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v24 = 0xaU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v25 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [2U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3aU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x32U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2aU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x22U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1aU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x12U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xaU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 2U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [2U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [2U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v25 = 2U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v11 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x33U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2bU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x23U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1bU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x13U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xbU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 3U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [3U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [3U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v26 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v26 = 0x3bU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v27 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v27 = 0x33U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v28 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v28 = 0x2bU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v29 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v29 = 0x23U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v30 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v30 = 0x1bU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v31 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v31 = 0x13U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v32 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [3U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3bU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x33U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2bU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x23U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1bU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x13U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xbU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 3U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [3U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [3U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v32 = 0xbU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v33 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [3U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3bU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x33U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2bU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x23U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1bU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x13U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xbU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 3U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [3U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [3U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v33 = 3U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v12 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x34U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2cU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x24U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1cU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x14U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xcU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 4U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [4U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [4U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v34 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v34 = 0x3cU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v35 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v35 = 0x34U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v36 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v36 = 0x2cU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v37 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v37 = 0x24U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v38 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v38 = 0x1cU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v39 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v39 = 0x14U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v40 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [4U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3cU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x34U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2cU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x24U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1cU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x14U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xcU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 4U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [4U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [4U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v40 = 0xcU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v41 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [4U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3cU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x34U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2cU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x24U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1cU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x14U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xcU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 4U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [4U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [4U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v41 = 4U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v13 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x35U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2dU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x25U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1dU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x15U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xdU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 5U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [5U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [5U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v42 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v42 = 0x3dU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v43 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v43 = 0x35U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v44 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v44 = 0x2dU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v45 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v45 = 0x25U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v46 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v46 = 0x1dU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v47 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v47 = 0x15U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v48 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [5U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3dU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x35U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2dU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x25U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1dU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x15U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xdU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 5U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [5U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [5U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v48 = 0xdU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v49 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [5U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3dU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x35U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2dU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x25U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1dU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x15U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xdU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 5U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [5U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [5U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v49 = 5U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v14 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x36U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2eU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x26U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1eU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x16U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xeU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 6U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [6U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [6U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v50 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v50 = 0x3eU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v51 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v51 = 0x36U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v52 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v52 = 0x2eU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v53 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v53 = 0x26U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v54 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v54 = 0x1eU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v55 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v55 = 0x16U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v56 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [6U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3eU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x36U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2eU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x26U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1eU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x16U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xeU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 6U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [6U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [6U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v56 = 0xeU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v57 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [6U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3eU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x36U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2eU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x26U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1eU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x16U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xeU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 6U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [6U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [6U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v57 = 6U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v15 
-                = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U)))
-                               ? (((0x80U & ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                   | ((0x40U & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x37U)) 
-                                                << 6U)) 
-                                      | ((0x20U & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x2fU)) 
-                                                   << 5U)) 
-                                         | ((0x10U 
-                                             & ((IData)(
-                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                         >> 0x27U)) 
-                                                << 4U)) 
-                                            | ((8U 
-                                                & ((IData)(
-                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                            >> 0x1fU)) 
-                                                   << 3U)) 
-                                               | ((4U 
-                                                   & ((IData)(
-                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                               >> 0x17U)) 
-                                                      << 2U)) 
-                                                  | ((2U 
-                                                      & ((IData)(
-                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                  >> 0xfU)) 
-                                                         << 1U)) 
-                                                     | (1U 
-                                                        & (IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 7U)))))))))) 
-                                  << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                               [7U] 
-                                               >> 3U)))
-                               : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                             [7U]) >> 8U));
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v58 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 7U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v58 = 0x3fU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v59 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 6U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v59 = 0x37U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v60 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 5U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v60 = 0x2fU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v61 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 4U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v61 = 0x27U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v62 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 3U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v62 = 0x1fU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v63 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 2U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v63 = 0x17U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v64 
-                = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                              [7U] 
-                                              >> 3U)))
-                            ? (0xffffU & (((0x80U & 
-                                            ((IData)(
-                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                      >> 0x3fU)) 
-                                             << 7U)) 
-                                           | ((0x40U 
-                                               & ((IData)(
-                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                           >> 0x37U)) 
-                                                  << 6U)) 
-                                              | ((0x20U 
-                                                  & ((IData)(
-                                                             (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                              >> 0x2fU)) 
-                                                     << 5U)) 
-                                                 | ((0x10U 
-                                                     & ((IData)(
-                                                                (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                 >> 0x27U)) 
-                                                        << 4U)) 
-                                                    | ((8U 
-                                                        & ((IData)(
-                                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                    >> 0x1fU)) 
-                                                           << 3U)) 
-                                                       | ((4U 
-                                                           & ((IData)(
-                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                       >> 0x17U)) 
-                                                              << 2U)) 
-                                                          | ((2U 
-                                                              & ((IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 0xfU)) 
-                                                                 << 1U)) 
-                                                             | (1U 
-                                                                & (IData)(
-                                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                           >> 7U)))))))))) 
-                                          << (0x7fU 
-                                              & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                 [7U] 
-                                                 >> 3U))))
-                            : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                          [7U]) >> 1U));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v64 = 0xfU;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v65 
-                = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                             [7U] >> 3U)))
-                           ? (0xffffU & (((0x80U & 
-                                           ((IData)(
-                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                     >> 0x3fU)) 
-                                            << 7U)) 
-                                          | ((0x40U 
-                                              & ((IData)(
-                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                          >> 0x37U)) 
-                                                 << 6U)) 
-                                             | ((0x20U 
-                                                 & ((IData)(
-                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                             >> 0x2fU)) 
-                                                    << 5U)) 
-                                                | ((0x10U 
-                                                    & ((IData)(
-                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                >> 0x27U)) 
-                                                       << 4U)) 
-                                                   | ((8U 
-                                                       & ((IData)(
-                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                   >> 0x1fU)) 
-                                                          << 3U)) 
-                                                      | ((4U 
-                                                          & ((IData)(
-                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                      >> 0x17U)) 
-                                                             << 2U)) 
-                                                         | ((2U 
-                                                             & ((IData)(
-                                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                         >> 0xfU)) 
-                                                                << 1U)) 
-                                                            | (1U 
-                                                               & (IData)(
-                                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
-                                                                          >> 7U)))))))))) 
-                                         << (0x7fU 
-                                             & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
-                                                [7U] 
-                                                >> 3U))))
-                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
-                         [7U]));
-            __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v65 = 7U;
-            __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v66 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
-                [0U];
-            vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt_q 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt;
-            vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_q 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_d;
-            if ((0x14U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction_address))) {
-                vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt_q = 0U;
-                vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_q = 0U;
-            }
-        }
-        if (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_stb) 
-             & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
-                >> 0xaU))) {
-            if (((((((((0U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))) 
-                       | (1U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                      | (2U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                     | (3U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                    | (4U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                   | (5U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                  | (6U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                 | (7U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))))) {
-                if ((0U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein
-                            [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
-                                    >> 4U))];
-                    }
-                } else if ((1U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_dqs_cntvaluein
-                            [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
-                                    >> 4U))];
-                    }
-                } else if ((2U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein
-                            [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
-                                    >> 4U))];
-                    }
-                } else if ((3U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein
-                            [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
-                                    >> 4U))];
-                    }
-                } else if ((4U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = ((0xffff8000U & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
-                               | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe_max) 
-                                   << 0xbU) | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction_address) 
-                                                << 6U) 
-                                               | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate) 
-                                                   << 1U) 
-                                                  | (IData)(vlSelf->i_ddr3_controller_idelayctrl_rdy)))));
-                    }
-                } else if ((5U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = ((0xfffff000U & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
-                               | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                   [2U] << 8U) | ((
-                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
                                                    [1U] 
-                                                   << 4U) 
-                                                  | vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                                  [0U])));
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = ((0xff000fffU & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
-                               | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                   [5U] << 0x14U) | 
-                                  ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                    [4U] << 0x10U) 
-                                   | (vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                      [3U] << 0xcU))));
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = ((0xffffffU & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
-                               | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                   [7U] << 0x1cU) | 
-                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
-                                   [6U] << 0x18U)));
-                    }
-                } else if ((6U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_store);
-                    }
-                } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[0U];
-                }
-            } else if (((((((((8U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))) 
-                              | (9U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                             | (0xaU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                            | (0xbU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                           | (0xcU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                          | (0xdU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                         | (0xeU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
-                        | (0xfU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))))) {
-                if ((8U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[1U];
-                    }
-                } else if ((9U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[2U];
-                    }
-                } else if ((0xaU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[3U];
-                    }
-                } else if ((0xbU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[4U];
-                    }
-                } else if ((0xcU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[5U];
-                    }
-                } else if ((0xdU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[6U];
-                    }
-                } else if ((0xeU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                    if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                        vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                            = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_data_store[7U];
-                    }
-                } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__read_counter;
-                }
-            } else if ((0x10U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_counter;
-                }
-            } else if ((0x11U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__correct_read_data;
-                }
-            } else if ((0x12U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
-                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_read_data;
-                }
-            } else if ((0x13U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
-                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                    vlSelf->main__DOT__wb32_ddr3_phy_idata = 0x21U;
-                }
-            } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
-                vlSelf->main__DOT__wb32_ddr3_phy_idata = 0xaaaaaaaaU;
-            }
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v10 = 0x39U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v11 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v11 = 0x31U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v12 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v12 = 0x29U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v13 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v13 = 0x21U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v14 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v14 = 0x19U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v15 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v15 = 0x11U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v16 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [1U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x39U)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x31U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x29U)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x21U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x19U)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x11U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 9U)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 1U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [1U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [1U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v16 = 9U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v17 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [1U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x39U)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x31U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x29U)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x21U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x19U)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x11U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 9U)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 1U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [1U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [1U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v17 = 1U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v10 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [2U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3aU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x32U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2aU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x22U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1aU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x12U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xaU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 2U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [2U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [2U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v18 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v18 = 0x3aU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v19 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v19 = 0x32U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v20 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v20 = 0x2aU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v21 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v21 = 0x22U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v22 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v22 = 0x1aU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v23 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v23 = 0x12U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v24 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [2U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3aU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x32U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2aU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x22U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1aU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x12U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xaU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 2U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [2U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [2U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v24 = 0xaU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v25 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [2U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3aU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x32U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2aU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x22U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1aU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x12U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xaU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 2U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [2U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [2U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v25 = 2U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v11 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [3U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3bU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x33U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2bU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x23U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1bU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x13U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xbU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 3U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [3U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [3U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v26 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v26 = 0x3bU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v27 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v27 = 0x33U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v28 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v28 = 0x2bU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v29 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v29 = 0x23U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v30 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v30 = 0x1bU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v31 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v31 = 0x13U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v32 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [3U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3bU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x33U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2bU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x23U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1bU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x13U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xbU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 3U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [3U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [3U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v32 = 0xbU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v33 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [3U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3bU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x33U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2bU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x23U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1bU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x13U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xbU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 3U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [3U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [3U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v33 = 3U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v12 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [4U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3cU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x34U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2cU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x24U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1cU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x14U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xcU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 4U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [4U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [4U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v34 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v34 = 0x3cU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v35 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v35 = 0x34U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v36 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v36 = 0x2cU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v37 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v37 = 0x24U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v38 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v38 = 0x1cU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v39 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v39 = 0x14U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v40 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [4U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3cU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x34U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2cU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x24U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1cU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x14U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xcU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 4U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [4U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [4U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v40 = 0xcU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v41 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [4U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3cU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x34U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2cU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x24U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1cU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x14U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xcU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 4U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [4U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [4U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v41 = 4U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v13 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [5U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3dU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x35U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2dU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x25U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1dU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x15U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xdU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 5U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [5U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [5U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v42 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v42 = 0x3dU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v43 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v43 = 0x35U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v44 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v44 = 0x2dU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v45 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v45 = 0x25U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v46 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v46 = 0x1dU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v47 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v47 = 0x15U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v48 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [5U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3dU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x35U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2dU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x25U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1dU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x15U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xdU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 5U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [5U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [5U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v48 = 0xdU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v49 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [5U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3dU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x35U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2dU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x25U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1dU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x15U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xdU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 5U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [5U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [5U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v49 = 5U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v14 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [6U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3eU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x36U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2eU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x26U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1eU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x16U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xeU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 6U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [6U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [6U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v50 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v50 = 0x3eU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v51 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v51 = 0x36U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v52 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v52 = 0x2eU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v53 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v53 = 0x26U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v54 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v54 = 0x1eU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v55 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v55 = 0x16U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v56 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [6U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3eU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x36U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2eU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x26U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1eU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x16U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xeU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 6U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [6U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [6U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v56 = 0xeU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v57 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [6U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3eU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x36U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2eU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x26U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1eU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x16U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xeU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 6U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [6U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [6U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v57 = 6U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__unaligned_dm__v15 
+            = (0xffU & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                             [7U] >> 3U)))
+                           ? (((0x80U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                  >> 0x3fU)) 
+                                         << 7U)) | 
+                               ((0x40U & ((IData)((vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                   >> 0x37U)) 
+                                          << 6U)) | 
+                                ((0x20U & ((IData)(
+                                                   (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                    >> 0x2fU)) 
+                                           << 5U)) 
+                                 | ((0x10U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x27U)) 
+                                              << 4U)) 
+                                    | ((8U & ((IData)(
+                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                       >> 0x1fU)) 
+                                              << 3U)) 
+                                       | ((4U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x17U)) 
+                                                 << 2U)) 
+                                          | ((2U & 
+                                              ((IData)(
+                                                       (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                        >> 0xfU)) 
+                                               << 1U)) 
+                                             | (1U 
+                                                & (IData)(
+                                                          (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                           >> 7U)))))))))) 
+                              << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                           [7U] >> 3U)))
+                           : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                         [7U]) >> 8U));
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v58 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 7U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v58 = 0x3fU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v59 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 6U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v59 = 0x37U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v60 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 5U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v60 = 0x2fU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v61 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 4U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v61 = 0x27U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v62 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 3U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v62 = 0x1fU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v63 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 2U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v63 = 0x17U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v64 
+            = (1U & ((((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                          [7U] >> 3U)))
+                        ? (0xffffU & (((0x80U & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x3fU)) 
+                                                 << 7U)) 
+                                       | ((0x40U & 
+                                           ((IData)(
+                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                     >> 0x37U)) 
+                                            << 6U)) 
+                                          | ((0x20U 
+                                              & ((IData)(
+                                                         (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                          >> 0x2fU)) 
+                                                 << 5U)) 
+                                             | ((0x10U 
+                                                 & ((IData)(
+                                                            (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                             >> 0x27U)) 
+                                                    << 4U)) 
+                                                | ((8U 
+                                                    & ((IData)(
+                                                               (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                >> 0x1fU)) 
+                                                       << 3U)) 
+                                                   | ((4U 
+                                                       & ((IData)(
+                                                                  (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                   >> 0x17U)) 
+                                                          << 2U)) 
+                                                      | ((2U 
+                                                          & ((IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 0xfU)) 
+                                                             << 1U)) 
+                                                         | (1U 
+                                                            & (IData)(
+                                                                      (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                       >> 7U)))))))))) 
+                                      << (0x7fU & (
+                                                   vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                   [7U] 
+                                                   >> 3U))))
+                        : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                      [7U]) >> 1U));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v64 = 0xfU;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v65 
+            = (1U & (((0xfU >= (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                         [7U] >> 3U)))
+                       ? (0xffffU & (((0x80U & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x3fU)) 
+                                                << 7U)) 
+                                      | ((0x40U & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x37U)) 
+                                                   << 6U)) 
+                                         | ((0x20U 
+                                             & ((IData)(
+                                                        (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                         >> 0x2fU)) 
+                                                << 5U)) 
+                                            | ((0x10U 
+                                                & ((IData)(
+                                                           (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                            >> 0x27U)) 
+                                                   << 4U)) 
+                                               | ((8U 
+                                                   & ((IData)(
+                                                              (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                               >> 0x1fU)) 
+                                                      << 3U)) 
+                                                  | ((4U 
+                                                      & ((IData)(
+                                                                 (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                  >> 0x17U)) 
+                                                         << 2U)) 
+                                                     | ((2U 
+                                                         & ((IData)(
+                                                                    (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                     >> 0xfU)) 
+                                                            << 1U)) 
+                                                        | (1U 
+                                                           & (IData)(
+                                                                     (vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm_unaligned 
+                                                                      >> 7U)))))))))) 
+                                     << (0x7fU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__data_start_index
+                                                  [7U] 
+                                                  >> 3U))))
+                       : 0U) | vlSelf->main__DOT__ddr3_controller_inst__DOT__unaligned_dm
+                     [7U]));
+        __Vdlyvlsb__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v65 = 7U;
+        __Vdlyvval__main__DOT__ddr3_controller_inst__DOT__stage2_dm__v66 
+            = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
+            [0U];
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt_q 
+            = vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_q 
+            = vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_d;
+        if ((0x14U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction_address))) {
+            vlSelf->main__DOT__ddr3_controller_inst__DOT__cmd_odt_q = 0U;
+            vlSelf->main__DOT__ddr3_controller_inst__DOT__bank_status_q = 0U;
         }
     }
     if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_ce) {
@@ -6978,6 +6360,131 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                  >> 6U) & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wR)) 
                & ((1U & ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_R) 
                          >> 4U)) == (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_GIE__DOT__r_gie)));
+    }
+    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+         | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__new_pc))) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_addr = 0x4000000U;
+    } else if (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_pc_valid) 
+                | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__mem_pc_valid))) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_addr 
+            = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_ALU_PC__DOT__r_alu_pc;
+    }
+    if (vlSelf->i_reset) {
+        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__s_btn = 0U;
+        vlSelf->__Vdly__main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe = 0U;
+        vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 0U;
+        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded = 0U;
+        vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
+        vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
+        vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid = 0U;
+    } else {
+        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__s_btn 
+            = (0x1fU & ((IData)(vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe) 
+                        >> 5U));
+        vlSelf->__Vdly__main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe 
+            = ((0x3e0U & ((IData)(vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__btn_pipe) 
+                          << 5U)) | (IData)(vlSelf->i_btn));
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbu_xbar__DOT__dcd_stb)) 
+                   | (~ (IData)(vlSelf->main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 2U) | ((- (IData)((IData)(vlSelf->main__DOT__wbu_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_valid))) 
+                              & (IData)(vlSelf->main__DOT__wbu_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__prerequest)));
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__dcd_stb)) 
+                   | (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 0xbU) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
+        }
+        if (((((((IData)(vlSelf->main__DOT__genbus__DOT__ofifo_rd) 
+                 | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cp_stb)) 
+                | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_stb)) 
+               | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__cw_stb)) 
+              | (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__aword_valid)) 
+             | ((IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__dw_stb) 
+                | ((IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__byte_busy) 
+                   & ((~ (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__linepacker__DOT__last_out_nl)) 
+                      & (IData)(vlSelf->main__DOT__genbus__DOT__wroutput__DOT__linepacker__DOT__last_in_nl)))))) {
+            vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 1U;
+        } else if ((1U & (~ (IData)(vlSelf->main__DOT__genbus__DOT__ps_full)))) {
+            vlSelf->main__DOT__genbus__DOT__wroutput__DOT__r_active = 0U;
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__3__KET____DOT__adcd__o_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__3__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__3__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__2__KET____DOT__adcd__o_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__2__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__2__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__1__KET____DOT__adcd__o_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__1__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__1__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_valid)) 
+                   | (~ (IData)(vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_stall))))) {
+            vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__decoded 
+                = (((IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__OPT_NONESEL_REQUEST__DOT__r_request_NS) 
+                    << 3U) | (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__DECODE_REQUEST__BRA__0__KET____DOT__adcd__DOT__NO_DEFAULT_REQUEST__DOT__r_request));
+        }
+        if ((((IData)(vlSelf->main__DOT__i2ci__DOT__pf_valid) 
+              & (IData)(vlSelf->main__DOT__i2ci__DOT__pf_ready)) 
+             & (IData)(vlSelf->main__DOT__i2ci__DOT__pf_illegal))) {
+            vlSelf->main__DOT__i2ci__DOT__r_err = 1U;
+        }
+        if (vlSelf->main__DOT__i2ci__DOT__bus_write) {
+            if ((((0U == (3U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])) 
+                  & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[4U] 
+                     >> 0x14U)) & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
+                                           >> 0x12U)))) {
+                vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
+            }
+            if (((IData)(vlSelf->main__DOT__i2ci__DOT__bus_jump) 
+                 & (IData)(vlSelf->main__DOT__i2ci__DOT__r_halted))) {
+                vlSelf->main__DOT__i2ci__DOT__r_err = 0U;
+            }
+        }
+        if (vlSelf->main__DOT__i2ci__DOT__r_halted) {
+            vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
+        } else {
+            if (((IData)(vlSelf->main__DOT__i2ci__DOT__insn_valid) 
+                 & (0x800U == (0xf00U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn))))) {
+                vlSelf->main__DOT__i2ci__DOT__r_wait = 1U;
+            }
+            if (vlSelf->main__DOT__i2ci__DOT__bus_jump) {
+                vlSelf->main__DOT__i2ci__DOT__r_wait = 0U;
+            }
+        }
+        if ((1U & ((~ (IData)(vlSelf->main__DOT__i2c_valid)) 
+                   | (IData)(vlSelf->main__DOT__i2c_ready)))) {
+            if (((((IData)(vlSelf->main__DOT__i2ci__DOT__insn_valid) 
+                   & (0xd00U == (0xf00U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn)))) 
+                  & (IData)(vlSelf->main__DOT__i2ci__DOT__half_ready)) 
+                 & (~ (IData)(vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt)))) {
+                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
+                    = (3U & (IData)(vlSelf->main__DOT__i2ci__DOT__insn));
+            } else if ((((IData)(vlSelf->main__DOT__i2c_valid) 
+                         & (IData)(vlSelf->main__DOT__i2c_ready)) 
+                        & (IData)(vlSelf->main__DOT__i2c_last))) {
+                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
+                    = vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__r_channel;
+            } else if ((1U & (~ (IData)(vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt)))) {
+                vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__axis_tid 
+                    = vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__r_channel;
+            }
+        }
     }
     if (((~ (IData)(vlSelf->main__DOT__swic__DOT__cmd_reset)) 
          & ((~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__new_pc)) 
@@ -7118,7 +6625,7 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                      | (8U == (0xfU & ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_cis_op) 
                                        >> 1U))))));
     }
-    if (vlSelf->main__DOT__ddr3_controller_inst__DOT__sync_rst) {
+    if (vlSelf->main__DOT__ddr3_controller_inst__DOT__sync_rst_controller) {
         vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending = 0U;
         vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_aux = 0U;
         vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_we = 0U;
@@ -7218,9 +6725,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                 = (~ vlSelf->main__DOT__ddr3_controller_inst__DOT__stage1_dm);
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending = 0U;
         }
-        if (((((IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_scyc) 
-               >> 2U) & (~ (IData)(vlSelf->main__DOT__wbwide_ddr3_controller_stall))) 
-             & (2U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__test_state)))) {
+        if ((IData)((((IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_scyc) 
+                      >> 2U) & (~ (IData)(vlSelf->main__DOT__wbwide_ddr3_controller_stall))))) {
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending 
                 = (1U & ((IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_sstb) 
                          >> 2U));
@@ -7285,111 +6791,65 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                 = vlSelf->main__DOT____Vcellout__wbwide_xbar__o_sdata[0x2eU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xfU] 
                 = vlSelf->main__DOT____Vcellout__wbwide_xbar__o_sdata[0x2fU];
-        } else if ((0x10U != (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate))) {
+        } else if (((0x17U != (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate)) 
+                    & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_stall_calib)))) {
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_stb;
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_stb;
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_we 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_we;
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_we;
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_dm = 0xffffffffffffffffULL;
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_aux 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_aux;
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_aux;
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_col 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_col;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_bank = 0U;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_row = 0U;
-            vlSelf->main__DOT__ddr3_controller_inst__DOT__stage1_next_row = 0U;
-            vlSelf->main__DOT__ddr3_controller_inst__DOT__stage1_next_bank = 0U;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[1U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[1U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[2U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[2U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[3U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[3U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[4U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[4U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[5U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[5U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[6U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[6U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[7U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[7U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[8U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[8U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[9U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[9U];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xaU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xaU];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xbU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xbU];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xcU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xcU];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xdU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xdU];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xeU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xeU];
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xfU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__write_calib_data[0xfU];
-        } else if ((1U & (~ (IData)(vlSelf->main__DOT__wbwide_ddr3_controller_stall)))) {
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_stb;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_aux 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_aux;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_we 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_we;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_dm 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_sel;
-            vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_col 
-                = (0x3f8U & (vlSelf->main__DOT__ddr3_controller_inst__DOT__test_addr 
+                = (0x3f8U & (vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_addr 
                              << 3U));
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_bank 
-                = (7U & (vlSelf->main__DOT__ddr3_controller_inst__DOT__test_addr 
+                = (7U & (vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_addr 
                          >> 7U));
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_row 
-                = (0x3fffU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__test_addr 
+                = (0x3fffU & (vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_addr 
                               >> 0xaU));
             vlSelf->main__DOT__ddr3_controller_inst__DOT__stage1_next_row 
-                = (0x3fffU & (((IData)(5U) + vlSelf->main__DOT__ddr3_controller_inst__DOT__test_addr) 
+                = (0x3fffU & (((IData)(5U) + vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_addr) 
                               >> 0xaU));
             vlSelf->main__DOT__ddr3_controller_inst__DOT__stage1_next_bank 
-                = (7U & (((IData)(5U) + vlSelf->main__DOT__ddr3_controller_inst__DOT__test_addr) 
+                = (7U & (((IData)(5U) + vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_addr) 
                          >> 7U));
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[1U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[1U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[1U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[2U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[2U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[2U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[3U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[3U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[3U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[4U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[4U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[4U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[5U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[5U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[5U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[6U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[6U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[6U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[7U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[7U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[7U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[8U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[8U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[8U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[9U] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[9U];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[9U];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xaU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xaU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xaU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xbU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xbU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xbU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xcU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xcU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xcU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xdU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xdU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xdU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xeU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xeU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xeU];
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_data[0xfU] 
-                = vlSelf->main__DOT__ddr3_controller_inst__DOT__test_data[0xfU];
+                = vlSelf->main__DOT__ddr3_controller_inst__DOT__calib_data[0xfU];
         }
         if (((~ ((IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_scyc) 
-                 >> 2U)) & (0x10U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate)))) {
+                 >> 2U)) & (0x17U == (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate)))) {
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage2_pending = 0U;
             vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__stage1_pending = 0U;
         }
@@ -7531,6 +6991,475 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         = ((IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__mm2s_busy)
             ? (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_mm2s__DOT__next_fill)
             : 0U);
+    if (vlSelf->main__DOT__ddr3_controller_inst__DOT__sync_rst_wb2) {
+        vlSelf->main__DOT__wb32_ddr3_phy_idata = 0U;
+    } else if (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_stb) 
+                & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
+                   >> 0xaU))) {
+        if (((((((((0U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))) 
+                   | (1U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                  | (2U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                 | (3U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                | (4U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+               | (5U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+              | (6U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+             | (7U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))))) {
+            if ((0U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_data_cntvaluein
+                        [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
+                                >> 4U))];
+                }
+            } else if ((1U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__odelay_dqs_cntvaluein
+                        [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
+                                >> 4U))];
+                }
+            } else if ((2U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_data_cntvaluein
+                        [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
+                                >> 4U))];
+                }
+            } else if ((3U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__idelay_dqs_cntvaluein
+                        [(7U & ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr) 
+                                >> 4U))];
+                }
+            } else if ((4U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = ((0xffff0000U & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
+                           | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe_max) 
+                               << 0xcU) | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__instruction_address) 
+                                            << 7U) 
+                                           | (((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__state_calibrate) 
+                                               << 1U) 
+                                              | (IData)(vlSelf->i_ddr3_controller_idelayctrl_rdy)))));
+                }
+            } else if ((5U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = ((0xfffff000U & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
+                           | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                               [2U] << 8U) | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                               [1U] 
+                                               << 4U) 
+                                              | vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                              [0U])));
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = ((0xff000fffU & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
+                           | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                               [5U] << 0x14U) | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                                  [4U] 
+                                                  << 0x10U) 
+                                                 | (vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                                    [3U] 
+                                                    << 0xcU))));
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = ((0xffffffU & vlSelf->main__DOT__wb32_ddr3_phy_idata) 
+                           | ((vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                               [7U] << 0x1cU) | (vlSelf->main__DOT__ddr3_controller_inst__DOT__added_read_pipe
+                                                 [6U] 
+                                                 << 0x18U)));
+                }
+            } else if ((6U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__dqs_store);
+                }
+            } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                    = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[0U];
+            }
+        } else if (((((((((8U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))) 
+                          | (9U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                         | (0xaU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                        | (0xbU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                       | (0xcU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                      | (0xdU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                     | (0xeU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) 
+                    | (0xfU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr))))) {
+            if ((8U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[1U];
+                }
+            } else if ((9U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[2U];
+                }
+            } else if ((0xaU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[3U];
+                }
+            } else if ((0xbU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[4U];
+                }
+            } else if ((0xcU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[5U];
+                }
+            } else if ((0xdU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[6U];
+                }
+            } else if ((0xeU == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                        = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_data[7U];
+                }
+            } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                    = vlSelf->main__DOT__ddr3_controller_inst__DOT__correct_read_data;
+            }
+        } else if ((0x10U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+            if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                vlSelf->main__DOT__wb32_ddr3_phy_idata 
+                    = vlSelf->main__DOT__ddr3_controller_inst__DOT__wrong_read_data;
+            }
+        } else if ((0x11U != (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+            if ((0x12U == (0x1fU & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_addr)))) {
+                if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                    vlSelf->main__DOT__wb32_ddr3_phy_idata = 0x30U;
+                }
+            } else if ((1U & (~ (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__wb2_we)))) {
+                vlSelf->main__DOT__wb32_ddr3_phy_idata = 0xaaaaaaaaU;
+            }
+        }
+    }
+    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_ack 
+        = ((~ (((IData)(vlSelf->i_reset) | (~ (IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_scyc))) 
+               | (~ (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_cyc)))) 
+           & ((IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__fifo_empty)
+               ? (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__s_null)
+               : (((IData)(vlSelf->main__DOT__u_wbdown__DOT____Vcellout__DOWNSIZE__DOT__u_fifo__o_data) 
+                   >> 4U) & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack))));
+    vlSelf->main__DOT__wb32_fan_idata = ((1U & ((IData)(vlSelf->i_reset) 
+                                                | (~ 
+                                                   ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
+                                                    >> 7U))))
+                                          ? 0U : ((IData)(vlSelf->main__DOT__u_fan__DOT__i2c_wb_ack)
+                                                   ? vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__bus_read_data
+                                                   : vlSelf->main__DOT__u_fan__DOT__pre_data));
+    vlSelf->main__DOT__wb32_i2cdma_idata = 0U;
+    vlSelf->main__DOT__wb32_i2cdma_idata = ((0x200U 
+                                             & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
+                                             ? ((0x80000000U 
+                                                 & vlSelf->main__DOT__wb32_i2cdma_idata) 
+                                                | ((0x100U 
+                                                    & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
+                                                    ? vlSelf->main__DOT__u_i2cdma__DOT__r_memlen
+                                                    : vlSelf->main__DOT__u_i2cdma__DOT__r_baseaddr))
+                                             : ((0x100U 
+                                                 & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
+                                                 ? 
+                                                ((0x80000000U 
+                                                  & vlSelf->main__DOT__wb32_i2cdma_idata) 
+                                                 | vlSelf->main__DOT__u_i2cdma__DOT__current_addr)
+                                                 : 
+                                                ((0xfffffffcU 
+                                                  & vlSelf->main__DOT__wb32_i2cdma_idata) 
+                                                 | ((((~ (IData)(vlSelf->main__DOT__u_i2cdma__DOT__wb_last)) 
+                                                      & (vlSelf->main__DOT__u_i2cdma__DOT__current_addr 
+                                                         != vlSelf->main__DOT__u_i2cdma__DOT__r_baseaddr)) 
+                                                     << 1U) 
+                                                    | (IData)(vlSelf->main__DOT__u_i2cdma__DOT__bus_err)))));
+    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__rd_addr 
+        = vlSelf->__Vdly__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__rd_addr;
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__rd_addr 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__rd_addr;
+    vlSelf->main__DOT__spioi__DOT__knightrider__DOT__led_dir 
+        = vlSelf->__Vdly__main__DOT__spioi__DOT__knightrider__DOT__led_dir;
+    vlSelf->main__DOT__spioi__DOT__knightrider__DOT__led_owner 
+        = vlSelf->__Vdly__main__DOT__spioi__DOT__knightrider__DOT__led_owner;
+    vlSelf->main__DOT__txv__DOT__baud_counter = vlSelf->__Vdly__main__DOT__txv__DOT__baud_counter;
+    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__wr_addr 
+        = vlSelf->__Vdly__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__wr_addr;
+    if (vlSelf->__Vdlyvset__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0) {
+        vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0] 
+            = vlSelf->__Vdlyvval__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0;
+    }
+    vlSelf->main__DOT__swic__DOT__u_watchbus__DOT__r_value 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__u_watchbus__DOT__r_value;
+    vlSelf->main__DOT__genbus__DOT__ofifo_empty_n = vlSelf->__Vdly__main__DOT__genbus__DOT__ofifo_empty_n;
+    vlSelf->main__DOT__rcv__DOT__baud_counter = vlSelf->__Vdly__main__DOT__rcv__DOT__baud_counter;
+    vlSelf->main__DOT__swic__DOT__cmd_read = vlSelf->__Vdly__main__DOT__swic__DOT__cmd_read;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_inhibit 
+        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_force_inhibit;
+    vlSelf->main__DOT__i2cscopei__DOT__dr_force_inhibit 
+        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_force_inhibit;
+    vlSelf->main__DOT__scope2_ddr3i__DOT__dr_force_inhibit 
+        = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_force_inhibit;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_inhibit 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_force_inhibit;
+    vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__addr_within_table 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__addr_within_table;
+    vlSelf->main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_overflow 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_overflow;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__div_result 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__div_result;
+    vlSelf->main__DOT__genbus__DOT__r_wdt_timer = vlSelf->__Vdly__main__DOT__genbus__DOT__r_wdt_timer;
+    vlSelf->main__DOT__genbus__DOT__runwb__DOT__r_acks_needed 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__runwb__DOT__r_acks_needed;
+    vlSelf->main__DOT__genbus__DOT__runwb__DOT__r_len 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__runwb__DOT__r_len;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_divisor 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_divisor;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_dividend 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_dividend;
+    if (vlSelf->__Vdlyvset__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0;
+    }
+    vlSelf->main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__will_overflow 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__will_overflow;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__wraddr 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__wraddr;
+    vlSelf->main__DOT__genbus__DOT__wroutput__DOT__deword__DOT__r_word 
+        = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__deword__DOT__r_word;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__wr_addr 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__wr_addr;
+    vlSelf->main__DOT__scope3_ddr3i__DOT__holdoff_counter 
+        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__holdoff_counter;
+    vlSelf->main__DOT__i2cscopei__DOT__holdoff_counter 
+        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__holdoff_counter;
+    vlSelf->main__DOT__scope2_ddr3i__DOT__holdoff_counter 
+        = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__holdoff_counter;
+    vlSelf->main__DOT__scope1_ddr3i__DOT__holdoff_counter 
+        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__holdoff_counter;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_trap 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_trap;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_ticks 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_ticks;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__r_idiv_err_flag 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__r_idiv_err_flag;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__USER_DIVERR__DOT__r_udiv_err_flag 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__USER_DIVERR__DOT__r_udiv_err_flag;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ibus_err_flag 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__ibus_err_flag;
+    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__i2c_ckcount 
+        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__i2c_ckcount;
+    vlSelf->main__DOT__i2ci__DOT__i2c_ckcount = vlSelf->__Vdly__main__DOT__i2ci__DOT__i2c_ckcount;
+    vlSelf->main__DOT__console__DOT__rxfifo__DOT__r_fill 
+        = vlSelf->__Vdly__main__DOT__console__DOT__rxfifo__DOT__r_fill;
+    vlSelf->main__DOT__console__DOT__txfifo__DOT__r_fill 
+        = vlSelf->__Vdly__main__DOT__console__DOT__txfifo__DOT__r_fill;
+    vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__wr_addr 
+        = vlSelf->__Vdly__main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__wr_addr;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__rdaddr 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__rdaddr;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__npending 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__npending;
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[1U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[1U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[2U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[2U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[3U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[3U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[4U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[4U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[5U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[5U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[6U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[6U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[7U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[7U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[8U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[8U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[9U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[9U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xaU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xaU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xbU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xbU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xcU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xcU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xdU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xdU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xeU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xeU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xfU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xfU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x10U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x10U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x11U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x11U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x12U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x12U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x13U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x13U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x14U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x14U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x15U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x15U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x16U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x16U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x17U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x17U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x18U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x18U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x19U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x19U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1aU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1aU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1bU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1bU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1cU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1cU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1dU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1dU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1eU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1eU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1fU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1fU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__wr_addr 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__wr_addr;
+    if (vlSelf->__Vdlyvset__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0) {
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][1U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[1U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][2U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[2U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][3U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[3U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][4U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[4U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][5U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[5U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][6U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[6U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][7U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[7U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][8U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[8U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][9U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[9U];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xaU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xaU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xbU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xbU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xcU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xcU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xdU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xdU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xeU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xeU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xfU] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xfU];
+        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0x10U] 
+            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0x10U];
+    }
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[1U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[1U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[2U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[2U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[3U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[3U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[4U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[4U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[5U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[5U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[6U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[6U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[7U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[7U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[8U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[8U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[9U] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[9U];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xaU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xaU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xbU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xbU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xcU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xcU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xdU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xdU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xeU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xeU];
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xfU] 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xfU];
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_i 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_i;
+    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__inflight 
+        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__inflight;
+    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_jump_addr 
+        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_jump_addr;
+    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v0) {
+        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] = 0U;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v1) {
+        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] 
+            = vlSelf->__Vdlyvval__main__DOT__wbu_xbar__DOT__grant__v1;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v2) {
+        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] = 0U;
+    }
+    if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_ce) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__OP_REG_ADVANEC__DOT__r_op_rB 
+            = (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_rB) 
+                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch))) 
+               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_illegal)));
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_wF 
+            = (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wF) 
+                & ((~ ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_R) 
+                       >> 6U)) | (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wR)))) 
+               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch)));
+        if ((((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_rB) 
+              & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch))) 
+             & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_illegal)))) {
+            vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__OP_REG_ADVANEC__DOT__r_op_Bid 
+                = (0x1fU & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_B));
+        }
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__OP_REG_ADVANEC__DOT__r_op_R 
+            = (0x1fU & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_R));
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_OP_WR__DOT__r_op_wR 
+            = ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wR) 
+               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch)));
+    }
+    vlSelf->main__DOT__console__DOT__rxfifo__DOT__will_overflow 
+        = vlSelf->__Vdly__main__DOT__console__DOT__rxfifo__DOT__will_overflow;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq_q 
+        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dq_q;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq 
+        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dq;
+    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+         | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__new_pc))) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_fpu = 0U;
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_div = 0U;
+    } else if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_ce) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_fpu = 0U;
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_div 
+            = (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_DIV) 
+                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_illegal))) 
+               & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__w_op_valid));
+    } else if (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__adf_ce_unconditional) 
+                | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__mem_ce))) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_fpu = 0U;
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_valid_div = 0U;
+    }
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_q 
+        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dqs_q;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_val 
+        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dqs_val;
     if (vlSelf->i_reset) {
         vlSelf->main__DOT__genbus__DOT__soft_reset = 1U;
         vlSelf->main__DOT__genbus__DOT__wroutput__DOT__linepacker__DOT__full_line = 0U;
@@ -7544,6 +7473,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__2__KET____DOT__adcd__o_valid = 0U;
         vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__1__KET____DOT__adcd__o_valid = 0U;
         vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_valid = 0U;
+        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__r_btn = 0U;
+        vlSelf->main__DOT__spioi__DOT__led_demo = 1U;
     } else {
         if ((1U & ((~ (IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__hx_stb)) 
                    | (~ (IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__formcw__DOT__skd_busy))))) {
@@ -7624,118 +7555,19 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             vlSelf->main__DOT__wbwide_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_valid 
                 = vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__0__KET____DOT__adcd__i_valid;
         }
+        vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__r_btn 
+            = vlSelf->main__DOT__spioi__DOT__GEN_BUTTON__DOT__next_btn;
+        if ((((IData)(vlSelf->main__DOT__wb32_spio_stb) 
+              & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_swe) 
+                 >> 8U)) & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
+                                    >> 0x23U)))) {
+            vlSelf->main__DOT__spioi__DOT__led_demo 
+                = (1U & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[8U] 
+                         >> 0x18U));
+        }
     }
-    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_ack 
-        = ((~ (((IData)(vlSelf->i_reset) | (~ (IData)(vlSelf->main__DOT____Vcellout__wbwide_xbar__o_scyc))) 
-               | (~ (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_cyc)))) 
-           & ((IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__fifo_empty)
-               ? (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__s_null)
-               : (((IData)(vlSelf->main__DOT__u_wbdown__DOT____Vcellout__DOWNSIZE__DOT__u_fifo__o_data) 
-                   >> 4U) & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack))));
-    vlSelf->main__DOT__wb32_fan_idata = ((1U & ((IData)(vlSelf->i_reset) 
-                                                | (~ 
-                                                   ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_scyc) 
-                                                    >> 7U))))
-                                          ? 0U : ((IData)(vlSelf->main__DOT__u_fan__DOT__i2c_wb_ack)
-                                                   ? vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__bus_read_data
-                                                   : vlSelf->main__DOT__u_fan__DOT__pre_data));
-    vlSelf->main__DOT__wb32_i2cdma_idata = 0U;
-    vlSelf->main__DOT__wb32_i2cdma_idata = ((0x200U 
-                                             & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
-                                             ? ((0x80000000U 
-                                                 & vlSelf->main__DOT__wb32_i2cdma_idata) 
-                                                | ((0x100U 
-                                                    & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
-                                                    ? vlSelf->main__DOT__u_i2cdma__DOT__r_memlen
-                                                    : vlSelf->main__DOT__u_i2cdma__DOT__r_baseaddr))
-                                             : ((0x100U 
-                                                 & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U])
-                                                 ? 
-                                                ((0x80000000U 
-                                                  & vlSelf->main__DOT__wb32_i2cdma_idata) 
-                                                 | vlSelf->main__DOT__u_i2cdma__DOT__current_addr)
-                                                 : 
-                                                ((0xfffffffcU 
-                                                  & vlSelf->main__DOT__wb32_i2cdma_idata) 
-                                                 | ((((~ (IData)(vlSelf->main__DOT__u_i2cdma__DOT__wb_last)) 
-                                                      & (vlSelf->main__DOT__u_i2cdma__DOT__current_addr 
-                                                         != vlSelf->main__DOT__u_i2cdma__DOT__r_baseaddr)) 
-                                                     << 1U) 
-                                                    | (IData)(vlSelf->main__DOT__u_i2cdma__DOT__bus_err)))));
-    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__rd_addr 
-        = vlSelf->__Vdly__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__rd_addr;
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__rd_addr 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__rd_addr;
-    vlSelf->main__DOT__spioi__DOT__knightrider__DOT__led_dir 
-        = vlSelf->__Vdly__main__DOT__spioi__DOT__knightrider__DOT__led_dir;
-    vlSelf->main__DOT__spioi__DOT__knightrider__DOT__led_owner 
-        = vlSelf->__Vdly__main__DOT__spioi__DOT__knightrider__DOT__led_owner;
-    vlSelf->main__DOT__txv__DOT__baud_counter = vlSelf->__Vdly__main__DOT__txv__DOT__baud_counter;
-    vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__wr_addr 
-        = vlSelf->__Vdly__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__wr_addr;
-    if (vlSelf->__Vdlyvset__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0) {
-        vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0] 
-            = vlSelf->__Vdlyvval__main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__u_fifo__DOT__mem__v0;
-    }
-    vlSelf->main__DOT__swic__DOT__u_watchbus__DOT__r_value 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__u_watchbus__DOT__r_value;
-    vlSelf->main__DOT__genbus__DOT__ofifo_empty_n = vlSelf->__Vdly__main__DOT__genbus__DOT__ofifo_empty_n;
-    vlSelf->main__DOT__rcv__DOT__baud_counter = vlSelf->__Vdly__main__DOT__rcv__DOT__baud_counter;
-    vlSelf->main__DOT__swic__DOT__cmd_read = vlSelf->__Vdly__main__DOT__swic__DOT__cmd_read;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__dr_force_inhibit 
-        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__dr_force_inhibit;
-    vlSelf->main__DOT__i2cscopei__DOT__dr_force_inhibit 
-        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__dr_force_inhibit;
-    vlSelf->main__DOT__scope2_ddr3i__DOT__dr_force_inhibit 
-        = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__dr_force_inhibit;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__dr_force_inhibit 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__dr_force_inhibit;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq_q 
-        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dq_q;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq 
-        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dq;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_q 
-        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dqs_q;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_val 
-        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dqs_val;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs 
         = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__write_dqs;
-    vlSelf->main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__addr_within_table 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__GEN_COMPRESSION__DOT__packit__DOT__addr_within_table;
-    vlSelf->main__DOT__ddr3_controller_inst__DOT__check_test_address_counter 
-        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__check_test_address_counter;
-    vlSelf->main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_overflow 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__INPUT_FIFO__DOT__padififo__DOT__will_overflow;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__div_result 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__div_result;
-    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v0) {
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[0U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[1U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[2U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[3U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[4U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[5U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[6U] = 0U;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[7U] = 0U;
-    }
-    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v8) {
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[0U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v8;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[1U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v9;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[2U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v10;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[3U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v11;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[4U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v12;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[5U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v13;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[6U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v14;
-        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[7U] 
-            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v15;
-    }
     if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q__v0) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q[0U] = 0U;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q[1U] = 0U;
@@ -7763,6 +7595,34 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q__v14;
         vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q[7U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_activate_counter_q__v15;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v0) {
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[0U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[1U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[2U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[3U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[4U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[5U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[6U] = 0U;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[7U] = 0U;
+    }
+    if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v8) {
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[0U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v8;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[1U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v9;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[2U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v10;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[3U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v11;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[4U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v12;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[5U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v13;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[6U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v14;
+        vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q[7U] 
+            = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_precharge_counter_q__v15;
     }
     if (vlSelf->__Vdlyvset__main__DOT__ddr3_controller_inst__DOT__delay_before_read_counter_q__v0) {
         vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_read_counter_q[0U] = 0U;
@@ -7848,65 +7708,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__ddr3_controller_inst__DOT__delay_before_write_counter_q[7U] 
             = vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__delay_before_write_counter_q__v15;
     }
-    vlSelf->main__DOT__genbus__DOT__r_wdt_timer = vlSelf->__Vdly__main__DOT__genbus__DOT__r_wdt_timer;
-    vlSelf->main__DOT__genbus__DOT__runwb__DOT__r_acks_needed 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__runwb__DOT__r_acks_needed;
-    vlSelf->main__DOT__genbus__DOT__runwb__DOT__r_len 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__runwb__DOT__r_len;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_divisor 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_divisor;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_dividend 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVIDE__DOT__thedivide__DOT__r_dividend;
-    if (vlSelf->__Vdlyvset__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0) {
-        vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__fifo_data__v0;
-    }
-    vlSelf->main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__will_overflow 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__GEN_OUTBOUND_FIFO__DOT__busoutfifo__DOT__will_overflow;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__wraddr 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__wraddr;
-    vlSelf->main__DOT__genbus__DOT__wroutput__DOT__deword__DOT__r_word 
-        = vlSelf->__Vdly__main__DOT__genbus__DOT__wroutput__DOT__deword__DOT__r_word;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__wr_addr 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__wr_addr;
-    vlSelf->main__DOT__scope3_ddr3i__DOT__holdoff_counter 
-        = vlSelf->__Vdly__main__DOT__scope3_ddr3i__DOT__holdoff_counter;
-    vlSelf->main__DOT__i2cscopei__DOT__holdoff_counter 
-        = vlSelf->__Vdly__main__DOT__i2cscopei__DOT__holdoff_counter;
-    vlSelf->main__DOT__scope2_ddr3i__DOT__holdoff_counter 
-        = vlSelf->__Vdly__main__DOT__scope2_ddr3i__DOT__holdoff_counter;
-    vlSelf->main__DOT__scope1_ddr3i__DOT__holdoff_counter 
-        = vlSelf->__Vdly__main__DOT__scope1_ddr3i__DOT__holdoff_counter;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_trap 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_TRAP_N_UBREAK__DOT__r_trap;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_ticks 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_ticks;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__r_idiv_err_flag 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__r_idiv_err_flag;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__USER_DIVERR__DOT__r_udiv_err_flag 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__DIVERR__DOT__USER_DIVERR__DOT__r_udiv_err_flag;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ibus_err_flag 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__ibus_err_flag;
-    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__i2c_ckcount 
-        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__i2c_ckcount;
-    if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_ce) {
-        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__OP_REG_ADVANEC__DOT__r_op_rB 
-            = (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_rB) 
-                & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch))) 
-               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_illegal)));
-        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__op_wF 
-            = (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wF) 
-                & ((~ ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_R) 
-                       >> 6U)) | (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_wR)))) 
-               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_EARLY_BRANCH_LOGIC__DOT__r_early_branch)));
-    }
-    vlSelf->main__DOT__i2ci__DOT__i2c_ckcount = vlSelf->__Vdly__main__DOT__i2ci__DOT__i2c_ckcount;
-    vlSelf->main__DOT__console__DOT__rxfifo__DOT__r_fill 
-        = vlSelf->__Vdly__main__DOT__console__DOT__rxfifo__DOT__r_fill;
-    vlSelf->main__DOT__console__DOT__txfifo__DOT__r_fill 
-        = vlSelf->__Vdly__main__DOT__console__DOT__txfifo__DOT__r_fill;
-    vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__wr_addr 
-        = vlSelf->__Vdly__main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__u_fifo__DOT__wr_addr;
+    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_dma_fsm__DOT__fsm_state 
+        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_dma_fsm__DOT__fsm_state;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__index_read_pipe 
         = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__index_read_pipe;
     vlSelf->main__DOT__ddr3_controller_inst__DOT__index_wb_data 
@@ -8443,164 +8246,8 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                         vlSelf->main__DOT__ddr3_controller_inst__DOT__o_wb_data_q
                         [1U], vlSelf->__Vdlyvval__main__DOT__ddr3_controller_inst__DOT__o_wb_data_q__v129);
     }
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__rdaddr 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__OPT_PIPE_FIFO__DOT__rdaddr;
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__npending 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__npending;
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[1U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[1U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[2U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[2U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[3U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[3U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[4U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[4U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[5U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[5U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[6U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[6U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[7U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[7U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[8U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[8U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[9U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[9U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xaU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xaU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xbU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xbU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xcU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xcU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xdU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xdU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xeU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xeU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xfU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0xfU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x10U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x10U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x11U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x11U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x12U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x12U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x13U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x13U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x14U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x14U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x15U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x15U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x16U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x16U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x17U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x17U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x18U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x18U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x19U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x19U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1aU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1aU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1bU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1bU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1cU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1cU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1dU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1dU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1eU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1eU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1fU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_rxgears__DOT__sreg[0x1fU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__wr_addr 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__wr_addr;
-    if (vlSelf->__Vdlyvset__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0) {
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][1U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[1U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][2U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[2U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][3U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[3U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][4U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[4U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][5U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[5U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][6U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[6U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][7U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[7U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][8U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[8U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][9U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[9U];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xaU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xaU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xbU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xbU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xcU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xcU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xdU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xdU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xeU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xeU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0xfU] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0xfU];
-        vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem[vlSelf->__Vdlyvdim0__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0][0x10U] 
-            = vlSelf->__Vdlyvval__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_sfifo__DOT__mem__v0[0x10U];
-    }
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[1U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[1U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[2U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[2U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[3U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[3U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[4U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[4U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[5U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[5U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[6U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[6U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[7U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[7U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[8U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[8U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[9U] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[9U];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xaU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xaU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xbU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xbU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xcU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xcU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xdU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xdU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xeU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xeU];
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xfU] 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_txgears__DOT__sreg[0xfU];
-    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_i 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_i;
-    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__inflight 
-        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__u_fetch__DOT__inflight;
-    vlSelf->main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_jump_addr 
-        = vlSelf->__Vdly__main__DOT__u_fan__DOT__u_i2ccpu__DOT__pf_jump_addr;
-    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v0) {
-        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] = 0U;
-    }
-    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v1) {
-        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] 
-            = vlSelf->__Vdlyvval__main__DOT__wbu_xbar__DOT__grant__v1;
-    }
-    if (vlSelf->__Vdlyvset__main__DOT__wbu_xbar__DOT__grant__v2) {
-        vlSelf->main__DOT__wbu_xbar__DOT__grant[0U] = 0U;
-    }
-    vlSelf->main__DOT__console__DOT__rxfifo__DOT__will_overflow 
-        = vlSelf->__Vdly__main__DOT__console__DOT__rxfifo__DOT__will_overflow;
-    vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_dma_fsm__DOT__fsm_state 
-        = vlSelf->__Vdly__main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__u_dma_fsm__DOT__fsm_state;
+    vlSelf->main__DOT__ddr3_controller_inst__DOT__check_test_address_counter 
+        = vlSelf->__Vdly__main__DOT__ddr3_controller_inst__DOT__check_test_address_counter;
     vlSelf->main__DOT__i2ci__DOT__u_fetch__DOT__GEN_SUBSHIFT__DOT__r_count 
         = vlSelf->__Vdly__main__DOT__i2ci__DOT__u_fetch__DOT__GEN_SUBSHIFT__DOT__r_count;
     vlSelf->main__DOT__i2ci__DOT__u_fetch__DOT__inflight 
@@ -10044,15 +9691,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__scope1_ddr3i__DOT__dr_run_timeout 
         = (1U & ((~ ((IData)(vlSelf->main__DOT__scope1_ddr3i__DOT__br_config) 
                      >> 2U)) | (0x7ffffffeU <= vlSelf->main__DOT__scope1_ddr3i__DOT__ck_addr)));
-    vlSelf->o_ddr3_controller_dq_tri_control = (1U 
-                                                & (~ 
-                                                   ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq) 
-                                                    >> 2U)));
-    vlSelf->o_ddr3_controller_toggle_dqs = (1U & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_val));
-    vlSelf->o_ddr3_controller_dqs_tri_control = (1U 
-                                                 & (~ 
-                                                    ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs) 
-                                                     >> 2U)));
     vlSelf->main__DOT__genbus__DOT__in_stb = ((~ (IData)(vlSelf->i_reset)) 
                                               & ((IData)(vlSelf->main__DOT__genbus__DOT__getinput__DOT__GEN_COMPRESSION__DOT__unpack__DOT__r_stb) 
                                                  >> 2U));
@@ -10441,13 +10079,42 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
               >> 3U));
     if (((IData)(vlSelf->i_reset) | (IData)(vlSelf->main__DOT__i2ci__DOT__r_halted))) {
         vlSelf->main__DOT__i2ci__DOT__soft_halt_request = 0U;
-    } else if (((((IData)(vlSelf->main__DOT__i2ci__DOT__bus_write) 
-                  & (0U == (3U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U]))) 
-                 & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[4U] 
-                    >> 0x16U)) & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
-                                          >> 0x12U)))) {
-        vlSelf->main__DOT__i2ci__DOT__soft_halt_request = 1U;
+        vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt = 0U;
+    } else {
+        if (((((IData)(vlSelf->main__DOT__i2ci__DOT__bus_write) 
+               & (0U == (3U & vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U]))) 
+              & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[4U] 
+                 >> 0x16U)) & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
+                                       >> 0x12U)))) {
+            vlSelf->main__DOT__i2ci__DOT__soft_halt_request = 1U;
+        }
+        if ((((IData)(vlSelf->main__DOT__i2ci__DOT__s_tvalid) 
+              & (IData)(vlSelf->main__DOT__i2ci__DOT__insn_ready)) 
+             & ((((4U == (7U & ((IData)(vlSelf->main__DOT__i2ci__DOT__insn) 
+                                >> 8U))) | (5U == (7U 
+                                                   & ((IData)(vlSelf->main__DOT__i2ci__DOT__insn) 
+                                                      >> 8U)))) 
+                 | (6U == (7U & ((IData)(vlSelf->main__DOT__i2ci__DOT__insn) 
+                                 >> 8U)))) | (7U == 
+                                              (7U & 
+                                               ((IData)(vlSelf->main__DOT__i2ci__DOT__insn) 
+                                                >> 8U)))))) {
+            vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt = 1U;
+        } else if (((IData)(vlSelf->main__DOT__i2c_valid) 
+                    & (IData)(vlSelf->main__DOT__i2c_ready))) {
+            vlSelf->main__DOT__i2ci__DOT__GEN_TID__DOT__mid_axis_pkt 
+                = (1U & (~ (IData)(vlSelf->main__DOT__i2c_last)));
+        }
     }
+    vlSelf->o_ddr3_controller_dq_tri_control = (1U 
+                                                & (~ 
+                                                   ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dq) 
+                                                    >> 2U)));
+    vlSelf->o_ddr3_controller_toggle_dqs = (1U & (IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs_val));
+    vlSelf->o_ddr3_controller_dqs_tri_control = (1U 
+                                                 & (~ 
+                                                    ((IData)(vlSelf->main__DOT__ddr3_controller_inst__DOT__write_dqs) 
+                                                     >> 2U)));
     vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_trigger 
         = (1U & ((~ ((((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
                        | (IData)(vlSelf->main__DOT__swic__DOT__DMA__DOT__dma_controller__DOT__dma_abort)) 
@@ -10642,6 +10309,31 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         vlSelf->main__DOT__wbwide_xbar__DOT__mempty 
             = (7U & (IData)(vlSelf->main__DOT__wbwide_xbar__DOT__mempty));
     }
+    if ((1U & (((IData)(vlSelf->i_reset) | (~ (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_cyc))) 
+               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_merr)))) {
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending = 0U;
+        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 1U;
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull = 0U;
+    } else if ((1U == ((((IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stb) 
+                         & (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stall))) 
+                        << 1U) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack)))) {
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending 
+            = (0x3fU & ((IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending) 
+                        - (IData)(1U)));
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull 
+            = vlSelf->main__DOT__wb32_xbar__DOT__mfull;
+        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 
+            (1U == (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending));
+    } else if ((2U == ((((IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stb) 
+                         & (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stall))) 
+                        << 1U) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack)))) {
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending 
+            = (0x3fU & ((IData)(1U) + (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending)));
+        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull 
+            = (IData)(((0x3cU == (0x3cU & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending))) 
+                       & (0U != (3U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending)))));
+        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 0U;
+    }
     vlSelf->o_ddr3_controller_data[0U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
         [1U][0U];
     vlSelf->o_ddr3_controller_data[1U] = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_data
@@ -10676,31 +10368,6 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
         [1U][0xfU];
     vlSelf->o_ddr3_controller_dm = vlSelf->main__DOT__ddr3_controller_inst__DOT__stage2_dm
         [1U];
-    if ((1U & (((IData)(vlSelf->i_reset) | (~ (IData)(vlSelf->main__DOT__u_wbdown__DOT__DOWNSIZE__DOT__r_cyc))) 
-               | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_merr)))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending = 0U;
-        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 1U;
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull = 0U;
-    } else if ((1U == ((((IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stb) 
-                         & (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stall))) 
-                        << 1U) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack)))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending 
-            = (0x3fU & ((IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending) 
-                        - (IData)(1U)));
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull 
-            = vlSelf->main__DOT__wb32_xbar__DOT__mfull;
-        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 
-            (1U == (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending));
-    } else if ((2U == ((((IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stb) 
-                         & (~ (IData)(vlSelf->main__DOT__wb32_xbar__DOT__m_stall))) 
-                        << 1U) | (IData)(vlSelf->main__DOT__wb32_xbar__DOT__DOUBLE_BUFFERRED_STALL__DOT__r_mack)))) {
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending 
-            = (0x3fU & ((IData)(1U) + (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending)));
-        vlSelf->__Vdly__main__DOT__wb32_xbar__DOT__mnearfull 
-            = (IData)(((0x3cU == (0x3cU & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending))) 
-                       & (0U != (3U & (IData)(vlSelf->main__DOT__wb32_xbar__DOT__COUNT_PENDING_TRANSACTIONS__BRA__0__KET____DOT__lclpending)))));
-        vlSelf->main__DOT__wb32_xbar__DOT__mempty = 0U;
-    }
     vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_I 
         = (((- (IData)((1U & (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__r_I 
                               >> 0x16U)))) << 0x16U) 
@@ -11397,12 +11064,30 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                         >> ((IData)(0x24U) 
                                             + vlSelf->main__DOT__wbu_xbar__DOT__sindex
                                             [0U])))));
+            vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata 
+                = ((0xffffffff00000000ULL & vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata) 
+                   | (IData)((IData)((((0U >= vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                        [0U]) & (IData)(
+                                                        (vlSelf->main__DOT__wbu_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_data 
+                                                         >> 
+                                                         ((IData)(0x24U) 
+                                                          + 
+                                                          vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                                          [0U]))))
+                                       ? ((0U >= vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                           [0U]) ? 
+                                          vlSelf->main__DOT__wbu_xbar__DOT__m_data
+                                          [vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                          [0U]] : 0U)
+                                       : 0U))));
         }
     } else {
         vlSelf->main__DOT____Vcellout__wbu_xbar__o_ssel 
             = (0xf0U & (IData)(vlSelf->main__DOT____Vcellout__wbu_xbar__o_ssel));
         vlSelf->main__DOT____Vcellout__wbu_xbar__o_swe 
             = (2U & (IData)(vlSelf->main__DOT____Vcellout__wbu_xbar__o_swe));
+        vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata 
+            = (0xffffffff00000000ULL & vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata);
     }
     if ((2U & (IData)(vlSelf->main__DOT__wbu_xbar__DOT__sgrant))) {
         if ((1U & (~ ((IData)(vlSelf->main__DOT__wbu_xbar__DOT__s_stall) 
@@ -11421,12 +11106,30 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
                                              + vlSelf->main__DOT__wbu_xbar__DOT__sindex
                                              [1U])))) 
                       << 1U));
+            vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata 
+                = ((0xffffffffULL & vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata) 
+                   | ((QData)((IData)((((0U >= vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                         [1U]) & (IData)(
+                                                         (vlSelf->main__DOT__wbu_xbar__DOT____Vcellout__DECODE_REQUEST__BRA__0__KET____DOT__adcd__o_data 
+                                                          >> 
+                                                          ((IData)(0x24U) 
+                                                           + 
+                                                           vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                                           [1U]))))
+                                        ? ((0U >= vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                            [1U]) ? 
+                                           vlSelf->main__DOT__wbu_xbar__DOT__m_data
+                                           [vlSelf->main__DOT__wbu_xbar__DOT__sindex
+                                           [1U]] : 0U)
+                                        : 0U))) << 0x20U));
         }
     } else {
         vlSelf->main__DOT____Vcellout__wbu_xbar__o_ssel 
             = (0xfU & (IData)(vlSelf->main__DOT____Vcellout__wbu_xbar__o_ssel));
         vlSelf->main__DOT____Vcellout__wbu_xbar__o_swe 
             = (1U & (IData)(vlSelf->main__DOT____Vcellout__wbu_xbar__o_swe));
+        vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata 
+            = (0xffffffffULL & vlSelf->main__DOT____Vcellout__wbu_xbar__o_sdata);
     }
     vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__3__KET____DOT__iskid__i_data[0U] 
         = (IData)(vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__r_sel);
@@ -11468,4 +11171,89 @@ VL_INLINE_OPT void Vmain___024root___nba_sequent__TOP__1(Vmain___024root* vlSelf
     vlSelf->main__DOT__wbwide_xbar__DOT____Vcellinp__DECODE_REQUEST__BRA__3__KET____DOT__iskid__i_data[0x12U] 
         = (((IData)(vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__r_we) 
             << 0x19U) | vlSelf->main__DOT__wbu_arbiter_upsz__DOT__UPSIZE__DOT__r_addr);
+    vlSelf->main__DOT__wb32_xbar__DOT__s_data[6U] = vlSelf->main__DOT__wb32_uart_idata;
+    vlSelf->main__DOT__console__DOT__r_wb_addr = (3U 
+                                                  & (vlSelf->main__DOT____Vcellout__wb32_xbar__o_saddr[1U] 
+                                                     >> 0x10U));
+    vlSelf->o_i2c_sda = vlSelf->main__DOT__i2ci__DOT__GEN_MANUAL__DOT__o_sda;
+    vlSelf->o_i2c_scl = vlSelf->main__DOT__i2ci__DOT__GEN_MANUAL__DOT__o_scl;
+    if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT____Vcellinp__instruction_decoder__i_reset) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_OPIPE__DOT__r_pipe = 0U;
+    } else if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_ce) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_OPIPE__DOT__r_pipe 
+            = (((((((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__pf_valid) 
+                    | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_CIS_PHASE__DOT__r_phase)) 
+                   & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__GEN_OPIPE__DOT__r_insn_is_pipeable)) 
+                  & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_mem)) 
+                 & ((1U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_opn)) 
+                    == (1U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_cis_op)))) 
+                & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__instruction_decoder__DOT__w_rB)) 
+               & ((0xfU & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_preB)) 
+                  == (0xfU & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dcd_full_B))));
+    }
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_v 
+        = ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__rvsrc)
+            ? (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_v_from_pc)
+            : (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__r_v_from_last));
+    if (((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+         | (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__r_clear_icache))) {
+        vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask = 0U;
+    } else {
+        if (vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__svmask) {
+            vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask 
+                = (((~ ((IData)(1U) << (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__saddr))) 
+                    & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask)) 
+                   | (0xffU & ((1U & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__bus_abort))) 
+                               << (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__saddr))));
+        }
+        if (((~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__pf_cyc)) 
+             & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__needload))) {
+            vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask 
+                = ((~ ((IData)(1U) << (7U & (vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__lastpc 
+                                             >> 9U)))) 
+                   & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__PFCACHE__DOT__pf__DOT__valid_mask));
+        }
+    }
+    vlSelf->cpu_prof_addr = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__GEN_PROFILER__DOT__prof_addr;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__ill_err_u 
+        = vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__SET_USER_ILLEGAL_INSN__DOT__r_ill_err_u;
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dbgv 
+        = ((~ ((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+               | (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__r_halted)))) 
+           & ((IData)(vlSelf->main__DOT__swic__DOT__cmd_write) 
+              & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__w_dbg_stall))));
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_rdbusy 
+        = ((~ ((IData)(vlSelf->main__DOT__swic__DOT__cmd_reset) 
+               | ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__cyc) 
+                  & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_err)))) 
+           & (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_ce) 
+               & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__FWD_OPERATION__DOT__r_op_opn))) 
+              | ((~ ((2U == (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__state)) 
+                     & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_ack))) 
+                 & (((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_rd_pending) 
+                     & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__r_dvalid))) 
+                    | ((IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__DATA_CACHE__DOT__mem__DOT__cyc) 
+                       & (~ (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_we)))))));
+    vlSelf->main__DOT__w_console_rx_data = (0x7fU & (IData)(vlSelf->main__DOT__wbu_rx_data));
+    vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_gpreg_vl 
+        = ((4U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index))
+            ? 0U : ((2U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index))
+                     ? ((1U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index))
+                         ? vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__div_result
+                         : vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__alu_result)
+                     : ((1U & (IData)(vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__wr_index))
+                         ? vlSelf->main__DOT__swic__DOT__thecpu__DOT__mem_result
+                         : vlSelf->main__DOT__swic__DOT__thecpu__DOT__core__DOT__dbg_val)));
+    vlSelf->main__DOT__wb32_xbar__DOT__s_data[8U] = vlSelf->main__DOT__r_wb32_sio_data;
+    if (((IData)(vlSelf->main__DOT__wb32_sirefclk_stb) 
+         & ((IData)(vlSelf->main__DOT____Vcellout__wb32_xbar__o_swe) 
+            >> 8U))) {
+        if ((1U & (IData)((vlSelf->main__DOT____Vcellout__wb32_xbar__o_ssel 
+                           >> 0x23U)))) {
+            vlSelf->main__DOT__r_sirefclk_en = (1U 
+                                                & (~ 
+                                                   (vlSelf->main__DOT____Vcellout__wb32_xbar__o_sdata[8U] 
+                                                    >> 0x1fU)));
+        }
+    }
 }

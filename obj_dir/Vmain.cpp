@@ -28,6 +28,7 @@ Vmain::Vmain(VerilatedContext* _vcontextp__, const char* _vcname__)
     , o_ddr3_controller_idelay_dqs_ld{vlSymsp->TOP.o_ddr3_controller_idelay_dqs_ld}
     , o_ddr3_controller_bitslip{vlSymsp->TOP.o_ddr3_controller_bitslip}
     , o_ddr3_controller_leveling_calib{vlSymsp->TOP.o_ddr3_controller_leveling_calib}
+    , o_ddr3_controller_reset{vlSymsp->TOP.o_ddr3_controller_reset}
     , o_sirefclk_word{vlSymsp->TOP.o_sirefclk_word}
     , o_sirefclk_ce{vlSymsp->TOP.o_sirefclk_ce}
     , i_fan_sda{vlSymsp->TOP.i_fan_sda}

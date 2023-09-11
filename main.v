@@ -108,6 +108,7 @@ module	main(i_clk, i_reset,
 		o_ddr3_controller_idelay_data_ld, o_ddr3_controller_idelay_dqs_ld,
 		o_ddr3_controller_bitslip,
 		o_ddr3_controller_leveling_calib,
+		o_ddr3_controller_reset,
 		// Clock generator ports
 		o_sirefclk_word, o_sirefclk_ce,
 			i_fan_sda, i_fan_scl,
@@ -155,7 +156,7 @@ module	main(i_clk, i_reset,
                     DDR3_CONTROLLERBA_BITS  =  3,  // width of bank address
                     DDR3_CONTROLLERDQ_BITS  =  8,  // Size of one octet
                     DDR3_CONTROLLERLANES = 8, //8, //8 lanes of DQ
-                    DDR3_CONTROLLERAUX_WIDTH = 1,
+                    DDR3_CONTROLLERAUX_WIDTH = 8,
                     DDR3_CONTROLLERSERDES_RATIO = $rtoi(DDR3_CONTROLLERCONTROLLER_CLK_PERIOD/DDR3_CLK_PERIOD),
                     //4 is the width of a single ddr3 command {cs_n, ras_n, cas_n, we_n} plus 3 (ck_en, odt, reset_n) plus bank bits plus row bits
                     DDR3_CONTROLLERCMD_LEN = 4 + 3 + DDR3_CONTROLLERBA_BITS + DDR3_CONTROLLERROW_BITS;
@@ -242,6 +243,7 @@ module	main(i_clk, i_reset,
 	output wire    [DDR3_CONTROLLERLANES-1:0] o_ddr3_controller_idelay_data_ld, o_ddr3_controller_idelay_dqs_ld;
 	output wire    [DDR3_CONTROLLERLANES-1:0] o_ddr3_controller_bitslip;
 	output wire    o_ddr3_controller_leveling_calib;
+	output wire    o_ddr3_controller_reset;
 	// }}}
 	output	wire	[7:0]	o_sirefclk_word;
 	output	wire		o_sirefclk_ce;
@@ -1397,7 +1399,7 @@ module	main(i_clk, i_reset,
             .i_controller_clk(i_clk), //i_controller_clk has period of CONTROLLER_CLK_PERIOD 
             .i_rst_n(!i_reset), //200MHz input clock
             // Wishbone 1 (Controller)
-            .i_wb_cyc(1), .i_wb_stb(wbwide_ddr3_controller_stb), .i_wb_we(wbwide_ddr3_controller_we),
+            .i_wb_cyc(wbwide_ddr3_controller_cyc), .i_wb_stb(wbwide_ddr3_controller_stb), .i_wb_we(wbwide_ddr3_controller_we),
 			.i_wb_addr(wbwide_ddr3_controller_addr[24-1:0]),
 			.i_wb_data(wbwide_ddr3_controller_data), // 512 bits wide
 			.i_wb_sel(wbwide_ddr3_controller_sel),  // 512/8 bits wide
@@ -1432,6 +1434,7 @@ module	main(i_clk, i_reset,
             .o_phy_idelay_dqs_ld(o_ddr3_controller_idelay_dqs_ld),
             .o_phy_bitslip(o_ddr3_controller_bitslip),
             .o_phy_write_leveling_calib(o_ddr3_controller_leveling_calib),
+            .o_phy_reset(o_ddr3_controller_reset),
             // Debug port
             .o_debug1(ddr3_controller_debug1),
             .o_debug2(ddr3_controller_debug2),

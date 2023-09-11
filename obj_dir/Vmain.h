@@ -42,6 +42,7 @@ class alignas(VL_CACHE_LINE_BYTES) Vmain VL_NOT_FINAL : public VerilatedModel {
     VL_OUT8(&o_ddr3_controller_idelay_dqs_ld,7,0);
     VL_OUT8(&o_ddr3_controller_bitslip,7,0);
     VL_OUT8(&o_ddr3_controller_leveling_calib,0,0);
+    VL_OUT8(&o_ddr3_controller_reset,0,0);
     VL_OUT8(&o_sirefclk_word,7,0);
     VL_OUT8(&o_sirefclk_ce,0,0);
     VL_IN8(&i_fan_sda,0,0);
